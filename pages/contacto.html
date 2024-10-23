@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>contacto</title>
+</head>
+
+<body>
+    <header>
+        <!-- <p>logo</p> 
+        <nav>
+            <ul>
+                <li><a href="../index.html"class="navegador">Home </a> </li>
+                <li><a href="./sobrenosotros.html"class="navegador">Sobre nosotros</a></li>
+                <li><a href="./fondos.html"class="navegador">Fondos</a></li>
+                <li><a href="./tarifas.html"class="navegador">Tarifas</a></li>
+                <li><a href="./educacion.html"class="navegador">Educación financiera</a></li>
+                <li><a href="./contacto.html"class="navegador">Contacto</a></li>
+            </ul>
+        </nav>-->
+        <header class="navbar navbar-expand-lg navbar-dark border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" alt="" class="w-50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
+                        <a class="nav-link" href="./fondos.html">Fondos</a>
+                        <a class="nav-link" href="./tarifas.html">Tarifas</a>
+                        <a class="nav-link" href="./educacion.html">Educación Financiera</a>
+                        <a class="nav-link active" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="Home">
+        <h1>Ponte en contacto con Black Owl</h1>
+
+        <form action="">
+            <div >
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" placeholder="Ej: Sofía Martinez">
+            </div>
+            <div>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="alguien@gmail.com">
+            </div>
+            <div>
+                <label for="País">País</label>
+                <select name="" id="">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Brasil">Brasil</option>
+                </select>
+            </div>
+            <div>
+                <label for="fondo">¿En qué fondo está interesado?</label>
+                <select name="" id="">
+                    <option value="fondo1">Fondo 1</option>
+                    <option value="fondo2">Fondo 2</option>
+                    <option value="fondo3">Fondo 3</option>
+                    <option value="fondo4">Fondo 4</option>
+                </select>
+            </div>
+            <div>
+                <label for="descripcion">¿Cómo se describiría a sí mismo?</label>
+                <select name="" id="">
+                    <option value="">Inversor individual</option>
+                    <option value="">Inversor institucional</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Ingrese su mensaje</label>
+                <textarea name="" id="" placeholder="ej: quisiera recibir asesoramiento sobre..."></textarea>
+            </div>
+            <div>
+                <label for="Subscribirse">Deseo subscribirme para recibir las últimas noticias</label>
+                <input type="checkbox" name="" id="">
+            </div>
+            <div>
+                <label for="enviar"></label>
+                <input type="submit" value="enviar" class="boton">
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+
+        <strong>BlackOwl</strong>
+
+        <br>
+        <br>
+
+        <div class="footerdiv">
+            <div>
+                <p><strong>fondos</strong></p>
+                <p>Equilibrio</p>
+                <p>Automotriz</p>
+                <p>Salud</p>
+                <p>Inteligencia Artificial</p>
+            </div>
+            <br>
+
+            <div>
+                <p><strong>Tarifas</strong></p>
+                <p>tarifas</p>
+            </div>
+            <br>
+
+            <div>
+                <p><strong>Sobre nosotros</strong></p>
+                <p>Subscribirse</p>
+                <p>Trabaja con nosotros</p>
+            </div>
+            <br>
+
+            <div>
+                <p><strong>Más información</strong></p>
+                <p>Videos</p>
+                <p>Articulos</p>
+            </div>
+
+            <div>
+                <strong><a href="./pages/contacto.html">Contáctenos</a></strong>
+            </div>
+            <br>
+
+            <div>
+                <select name="" id="">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Brasil">Brasil</option>
+                </select>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

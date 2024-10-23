@@ -1,0 +1,648 @@
+/* 
+selector{
+propiedad: valor;
+
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background-color: black;
+
+}
+
+main.Home {
+    background-color: black;
+    color: white;
+}
+
+.conteinerprincipal {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.hometitulo {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.conteinerprincipal .titulos h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.imagenprincipal {
+    width: 100vw;
+    height: 50vw;
+    padding: 10px;
+}
+
+.textohome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.invertir {
+    width: 80%;
+    height: 100%;
+    padding: 40px;
+    box-shadow: 0px 0px 10px gray;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.invertir:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px gray;
+}
+
+.textohome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.textohome .invertir p {
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.Home h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.img1{
+    width: 20vw;
+    height: 15vw;
+}
+footer {
+    padding: 20px;
+    border-top: 5px solid #EC9720;
+    text-align: center;
+}
+
+.footerdiv div p {
+    line-height: 10px;
+    text-align: center;
+}
+
+.quienessomos .imgteam {
+    width: 100%;
+}
+
+.quienessomos p {
+    padding: 20px;
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+section .quehacemos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px;
+}
+
+section .quehacemos div {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px gray;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+section .quehacemos div:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 12px gray;
+}
+
+section .quehacemos p {
+    font-size: 0.8rem;
+    padding: 10px;
+    text-align: justify;
+}
+
+.integrantesequipo {
+    gap: 20px;
+}
+
+.integrantesequipo .equipo {
+    width: 30vw;
+    height: 30vw;
+}
+
+.integrantesequipo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 0.5px solid #EC9720;
+}
+
+.integrantesequipo div p {
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+@media(min-width: 320px) {
+    footer {
+        padding: 20px;
+        border-top: 5px solid #EC9720;
+        text-align: start;
+    }
+
+    .footerdiv div p {
+        line-height: 10px;
+        text-align: start;
+    }
+
+    footer .footerdiv {
+        display: grid;
+        grid-template-areas: "fondos tarifas"
+            "nosotros informacion"
+            "contacto contacto"
+            "paises paises";
+        gap: 10px;
+    }
+
+    .fondosfooter {
+        grid-area: fondos;
+    }
+
+    .tarifasfooter {
+        grid-area: tarifas;
+    }
+
+    .aboutus {
+        grid-area: nosotros;
+    }
+
+    .info {
+        grid-area: informacion;
+    }
+
+    .contact {
+        grid-area: contacto;
+    }
+
+    .paises {
+        grid-area: paises;
+    }
+}
+
+@media(min-width: 480px) {
+
+    .hometitulo {
+        font-size: 2.2rem;
+        margin: 15px;
+        text-align: left;
+    }
+
+    .conteinerprincipal .titulos h2 {
+        font-size: 1.5rem;
+        margin: 15px;
+        text-align: left;
+    }
+
+    .imagenprincipal {
+        width: 50vw;
+        height: 25vw;
+    }
+
+    .conteinerprincipal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:768px) {
+    .hometitulo {
+        font-size: 3rem;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .conteinerprincipal .titulos h2 {
+        font-size: 2rem;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .imagenprincipal {
+        width: 60vw;
+        height: 30vw;
+    }
+
+    .conteinerprincipal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .invertir {
+        width: 40%;
+        height: 100%;
+        padding: 40px;
+        box-shadow: 0px 0px 10px gray;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .invertir:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 15px gray;
+    }
+
+    .textohome {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .Home h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    footer {
+        padding: 20px;
+        border-top: 5px solid #EC9720;
+        text-align: start;
+    }
+
+    .footerdiv div p {
+        line-height: 10px;
+        text-align: start;
+    }
+
+
+    footer .footerdiv {
+        display: grid;
+        grid-template-areas: "fondos tarifas nosotros"
+            "informacion contacto paises";
+        gap: 20px;
+
+    }
+
+    .fondosfooter {
+        grid-area: fondos;
+    }
+
+    .tarifasfooter {
+        grid-area: tarifas;
+    }
+
+    .aboutus {
+        grid-area: nosotros;
+    }
+
+    .info {
+        grid-area: informacion;
+    }
+
+    .contact {
+        grid-area: contacto;
+    }
+
+    .paises {
+        grid-area: paises;
+    }
+
+    .quienessomos p {
+        padding: 20px;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    section .quehacemos {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 60px;
+    }
+
+    section .quehacemos div {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 10px gray;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    section .quehacemos div:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 12px gray;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    section .quehacemos p {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .integrantesequipo {
+        display: grid;
+        grid-template-areas: "bloque1 bloque2"
+                            "bloque3 bloque4";
+            gap:20px;
+    }
+
+    .integrante1 {
+        grid-area: bloque1;
+    }
+
+    .integrante2 {
+        grid-area: bloque2;
+    }
+
+    .integrante3 {
+        grid-area: bloque3;
+    }
+
+    .integrante4 {
+        grid-area: bloque4;
+    }
+
+    .integrantesequipo .equipo {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .integrantesequipo div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 0.0px solid black;
+    }
+
+    .integrantesequipo div p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+@media(min-width:1040px) {
+    .hometitulo {
+        font-size: 4.5rem;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .conteinerprincipal .titulos h2 {
+        font-size: 2.5rem;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .imagenprincipal {
+        width: 60vw;
+        height: 35vw;
+    }
+
+    .conteinerprincipal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .Home h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .textohome .invertir p {
+        font-size: 1rem;
+    }
+
+
+    footer {
+        padding: 20px;
+        border-top: 5px solid #EC9720;
+        text-align: start;
+    }
+
+    .footerdiv div p {
+        line-height: 10px;
+        text-align: start;
+    }
+
+    footer .footerdiv {
+        display: grid;
+        grid-template-areas: "fondos tarifas nosotros informacion contacto"
+            "paises paises paises paises paises";
+
+        justify-content: space-around;
+
+    }
+
+    .fondosfooter {
+        grid-area: fondos;
+    }
+
+    .tarifasfooter {
+        grid-area: tarifas;
+    }
+
+    .aboutus {
+        grid-area: nosotros;
+    }
+
+    .info {
+        grid-area: informacion;
+    }
+
+    .contact {
+        grid-area: contacto;
+    }
+
+    .paises {
+        grid-area: paises;
+
+    }
+    section .quehacemos{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    section .quehacemos div {
+        padding: 30px;
+        margin: 40px;
+        box-shadow: 0px 0px 10px gray;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    section .quehacemos div:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 12px gray;
+    }
+    
+    section .quehacemos p {
+        text-align: justify;
+    }
+    
+    section .integrantesequipo {
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    section .integrantesequipo div {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .integrantesequipo .equipo {
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    section .integrantesequipo strong {
+        padding: 20px;
+        font-size: 0.7rem;
+    }
+    
+    section .integrantesequipo p {
+        text-align: justify;
+        font-size: 0.8rem;
+    }
+}
+
+@media(min-width:1400px) {
+    .hometitulo {
+        font-size: 6rem;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .conteinerprincipal .titulos h2 {
+        font-size: 2.5rem;
+        margin: 15px;
+        text-align: left;
+    }
+
+    .imagenprincipal {
+        width: 60vw;
+        height: 35vw;
+    }
+
+    .conteinerprincipal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .textohome .invertir p {
+        font-size: 1rem;
+    }
+
+}
+
+.slider {
+    height: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imagenesfondos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+
+        transform: translateX(0);
+    }
+
+    100% {
+
+        transform: translateX(-250px);
+    }
+}
+
+
+em {
+    font-size: 150px;
+}
+
+.boton {
+    color: #EC9720;
+}
+
+
+section .informacion {
+    padding: 50px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+section .informacion div {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+section .informacion div:hover {
+    transform: scale(1.1);
+}
+
+section .informacion div p {
+    padding: 20px;
+    text-align: center;
+}
+
+.video {
+    padding: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.video:hover {
+    transform: scale(1.1);
+
+}
