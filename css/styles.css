@@ -125,7 +125,8 @@ footer {
 }
 
 .quienessomos .imgteam {
-    width: 100%;
+    width: 100vw;
+    height: 60vw;
 }
 
 .quienessomos p {
@@ -268,7 +269,7 @@ section .quehacemos p {
 
     .equipohome {
         width: 70vw;
-        height: 50vw;
+        height: 45vw;
         grid-area: foto;
     }
 
@@ -350,7 +351,7 @@ section .quehacemos p {
     }
 
     .equipohome {
-        width: 40vw;
+        width: 45vw;
         height: 30vw;
         grid-area: foto;
     }
@@ -527,7 +528,7 @@ section .quehacemos p {
     .nosotrosHome {
         box-shadow: 0px 0px 10px gray;
         padding: 20px;
-        margin: 100px;
+        margin: 120px;
         display: grid;
         grid-template-areas: "foto titulo "
             "foto  texto "
@@ -541,7 +542,7 @@ section .quehacemos p {
 
     .equipohome {
         width: 40vw;
-        height: 25vw;
+        height: 28vw;
         grid-area: foto;
     }
 
@@ -688,7 +689,7 @@ section .quehacemos p {
     .nosotrosHome {
         box-shadow: 0px 0px 10px gray;
         padding: 20px;
-        margin: 120px;
+        margin: 180px;
         display: grid;
         grid-template-areas: "foto titulo "
             "foto  texto "
