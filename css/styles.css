@@ -83,15 +83,41 @@ h2 {
 
 }
 
+.equipohome {
+    width: 100vw;
+    padding: 20px;
+}
+
+.nosotrosHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nosotrosHome p {
+    text-align: justify;
+    font-size: 0.8rem;
+    margin: 20px;
+
+}
+
+.boton {
+    color: #EC9720;
+    font-size: 0.8rem;
+    border-radius: 5%;
+}
+
 .Home h3 {
     font-size: 1rem;
     text-align: center;
 }
 
-.img1{
+.img1 {
     width: 20vw;
     height: 15vw;
 }
+
 footer {
     padding: 20px;
     border-top: 5px solid #EC9720;
@@ -233,6 +259,35 @@ section .quehacemos p {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .nosotrosHome {
+        box-shadow: 0px 0px 10px gray;
+        padding: 20px;
+        margin: 50px;
+
+    }
+
+    .Home h3 {
+        grid-area: titulo;
+    }
+
+    .equipohome {
+        width: 70vw;
+        height: 50vw;
+        grid-area: foto;
+    }
+
+    .nosotrosHome p {
+        text-align: justify;
+        font-size: 0.8rem;
+        grid-area: texto;
+    }
+
+    .boton {
+        color: #EC9720;
+        font-size: 0.7rem;
+        grid-area: boton;
+    }
 }
 
 @media(min-width:768px) {
@@ -283,6 +338,39 @@ section .quehacemos p {
     .Home h3 {
         font-size: 1rem;
         text-align: center;
+    }
+
+    .nosotrosHome {
+        box-shadow: 0px 0px 10px gray;
+        padding: 20px;
+        margin: 70px;
+        display: grid;
+        grid-template-areas: "foto titulo "
+            "foto  texto "
+            " foto  boton";
+
+    }
+
+    .Home h3 {
+        grid-area: titulo;
+    }
+
+    .equipohome {
+        width: 40vw;
+        height: 30vw;
+        grid-area: foto;
+    }
+
+    .nosotrosHome p {
+        text-align: justify;
+        font-size: 0.8rem;
+        grid-area: texto;
+    }
+
+    .boton {
+        color: #EC9720;
+        font-size: 0.8rem;
+        grid-area: boton;
     }
 
     footer {
@@ -370,8 +458,8 @@ section .quehacemos p {
     .integrantesequipo {
         display: grid;
         grid-template-areas: "bloque1 bloque2"
-                            "bloque3 bloque4";
-            gap:20px;
+            "bloque3 bloque4";
+        gap: 20px;
     }
 
     .integrante1 {
@@ -407,6 +495,7 @@ section .quehacemos p {
         font-size: 1rem;
         text-align: justify;
     }
+   
 }
 
 @media(min-width:1040px) {
@@ -440,6 +529,38 @@ section .quehacemos p {
 
     .textohome .invertir p {
         font-size: 1rem;
+    }
+    .nosotrosHome {
+        box-shadow: 0px 0px 10px gray;
+        padding: 20px;
+        margin: 100px;
+        display: grid;
+        grid-template-areas: "foto titulo "
+            "foto  texto "
+            " foto  boton";
+
+    }
+
+    .Home h3 {
+        grid-area: titulo;
+    }
+
+    .equipohome {
+        width: 40vw;
+        height: 25vw;
+        grid-area: foto;
+    }
+
+    .nosotrosHome p {
+        text-align: justify;
+        font-size: 1rem;
+        grid-area: texto;
+    }
+
+    .boton {
+        color: #EC9720;
+        font-size: 0.8rem;
+        grid-area: boton;
     }
 
 
@@ -487,11 +608,13 @@ section .quehacemos p {
         grid-area: paises;
 
     }
-    section .quehacemos{
+
+    section .quehacemos {
         display: flex;
         flex-direction: row;
-        
+
     }
+
     section .quehacemos div {
         padding: 30px;
         margin: 40px;
@@ -499,46 +622,48 @@ section .quehacemos p {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
-    h2{
+
+    h2 {
         font-size: 1.5rem;
     }
-    
+
     section .quehacemos div:hover {
         transform: scale(1.1);
         box-shadow: 0px 0px 12px gray;
     }
-    
+
     section .quehacemos p {
         text-align: justify;
     }
-    
+
     section .integrantesequipo {
         display: flex;
         justify-content: center;
-    
+
     }
-    
+
     section .integrantesequipo div {
         padding: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .integrantesequipo .equipo {
         width: 10vw;
         height: 10vw;
     }
-    
+
     section .integrantesequipo strong {
         padding: 20px;
         font-size: 0.7rem;
     }
-    
+
     section .integrantesequipo p {
         text-align: justify;
         font-size: 0.8rem;
     }
+
 }
 
 @media(min-width:1400px) {
@@ -568,6 +693,39 @@ section .quehacemos p {
     .textohome .invertir p {
         font-size: 1rem;
     }
+    .nosotrosHome {
+        box-shadow: 0px 0px 10px gray;
+        padding: 20px;
+        margin: 120px;
+        display: grid;
+        grid-template-areas: "foto titulo "
+            "foto  texto "
+            " foto  boton";
+
+    }
+
+    .Home h3 {
+        grid-area: titulo;
+    }
+
+    .equipohome {
+        width: 40vw;
+        height: 25vw;
+        grid-area: foto;
+    }
+
+    .nosotrosHome p {
+        text-align: justify;
+        font-size: 1rem;
+        grid-area: texto;
+    }
+
+    .boton {
+        color: #EC9720;
+        font-size: 1rem;
+        grid-area: boton;
+    }
+
 
 }
 
@@ -603,9 +761,7 @@ em {
     font-size: 150px;
 }
 
-.boton {
-    color: #EC9720;
-}
+
 
 
 section .informacion {
