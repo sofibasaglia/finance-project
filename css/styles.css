@@ -13,7 +13,6 @@ propiedad: valor;
 
 .navbar {
     background-color: black;
-
 }
 
 main.Home {
@@ -25,7 +24,6 @@ main.Home {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
 }
 
 .hometitulo {
@@ -80,7 +78,6 @@ main.Home {
 h2 {
     font-size: 1rem;
     text-align: center;
-
 }
 
 .equipohome {
@@ -92,14 +89,12 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .nosotrosHome p {
     text-align: justify;
     font-size: 0.8rem;
     margin: 20px;
-
 }
 
 .boton {
@@ -348,7 +343,6 @@ section .quehacemos p {
         grid-template-areas: "foto titulo "
             "foto  texto "
             " foto  boton";
-
     }
 
     .Home h3 {
@@ -390,7 +384,6 @@ section .quehacemos p {
         grid-template-areas: "fondos tarifas nosotros"
             "informacion contacto paises";
         gap: 20px;
-
     }
 
     .fondosfooter {
@@ -495,7 +488,7 @@ section .quehacemos p {
         font-size: 1rem;
         text-align: justify;
     }
-   
+
 }
 
 @media(min-width:1040px) {
@@ -530,6 +523,7 @@ section .quehacemos p {
     .textohome .invertir p {
         font-size: 1rem;
     }
+
     .nosotrosHome {
         box-shadow: 0px 0px 10px gray;
         padding: 20px;
@@ -579,7 +573,6 @@ section .quehacemos p {
         display: grid;
         grid-template-areas: "fondos tarifas nosotros informacion contacto"
             "paises paises paises paises paises";
-
         justify-content: space-around;
 
     }
@@ -612,7 +605,6 @@ section .quehacemos p {
     section .quehacemos {
         display: flex;
         flex-direction: row;
-
     }
 
     section .quehacemos div {
@@ -639,7 +631,6 @@ section .quehacemos p {
     section .integrantesequipo {
         display: flex;
         justify-content: center;
-
     }
 
     section .integrantesequipo div {
@@ -693,6 +684,7 @@ section .quehacemos p {
     .textohome .invertir p {
         font-size: 1rem;
     }
+
     .nosotrosHome {
         box-shadow: 0px 0px 10px gray;
         padding: 20px;
@@ -701,7 +693,6 @@ section .quehacemos p {
         grid-template-areas: "foto titulo "
             "foto  texto "
             " foto  boton";
-
     }
 
     .Home h3 {
@@ -725,8 +716,6 @@ section .quehacemos p {
         font-size: 1rem;
         grid-area: boton;
     }
-
-
 }
 
 .slider {
