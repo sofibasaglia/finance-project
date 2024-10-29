@@ -43,6 +43,7 @@ main.Home {
 }
 
 .textohome {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +73,7 @@ main.Home {
 
 .textohome .invertir p {
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 h2 {
@@ -86,6 +87,8 @@ h2 {
 }
 
 .nosotrosHome {
+    border-bottom: 1px solid #EC9720;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,13 +96,13 @@ h2 {
 
 .nosotrosHome p {
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 20px;
 }
 
 .boton {
     color: #EC9720;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 5%;
 }
 
@@ -111,6 +114,21 @@ h2 {
 .img1 {
     width: 20vw;
     height: 15vw;
+}
+
+span {
+    color: #EC9720;
+}
+
+.visionymision h3 {
+    text-align: start;
+    margin: 10px;
+    padding: 5px;
+}
+
+.visionymision p {
+    text-align: justify;
+    margin: 15px;
 }
 
 footer {
@@ -257,32 +275,22 @@ section .quehacemos p {
     }
 
     .nosotrosHome {
-        box-shadow: 0px 0px 10px gray;
         padding: 20px;
-        margin: 50px;
-
-    }
-
-    .Home h3 {
-        grid-area: titulo;
     }
 
     .equipohome {
-        width: 70vw;
-        height: 45vw;
-        grid-area: foto;
+        width: 100vw;
+        height: 60vw;
     }
 
     .nosotrosHome p {
         text-align: justify;
         font-size: 0.8rem;
-        grid-area: texto;
     }
 
     .boton {
         color: #EC9720;
         font-size: 0.7rem;
-        grid-area: boton;
     }
 }
 
@@ -337,17 +345,10 @@ section .quehacemos p {
     }
 
     .nosotrosHome {
-        box-shadow: 0px 0px 10px gray;
-        padding: 20px;
-        margin: 70px;
         display: grid;
-        grid-template-areas: "foto titulo "
+        grid-template-areas: "foto texto "
             "foto  texto "
             " foto  boton";
-    }
-
-    .Home h3 {
-        grid-area: titulo;
     }
 
     .equipohome {
@@ -358,14 +359,32 @@ section .quehacemos p {
 
     .nosotrosHome p {
         text-align: justify;
-        font-size: 0.8rem;
+        font-size: 1rem;
         grid-area: texto;
     }
 
     .boton {
         color: #EC9720;
-        font-size: 0.8rem;
+        font-size: 1rem;
         grid-area: boton;
+    }
+
+    .visionymision {
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .visionymision h3 {
+        text-align: start;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .visionymision p {
+        text-align: justify;
+        margin: 15px;
+        font-size: 1rem;
     }
 
     footer {
@@ -378,7 +397,6 @@ section .quehacemos p {
         line-height: 10px;
         text-align: start;
     }
-
 
     footer .footerdiv {
         display: grid;
@@ -489,7 +507,6 @@ section .quehacemos p {
         font-size: 1rem;
         text-align: justify;
     }
-
 }
 
 @media(min-width:1040px) {
@@ -526,18 +543,10 @@ section .quehacemos p {
     }
 
     .nosotrosHome {
-        box-shadow: 0px 0px 10px gray;
-        padding: 20px;
-        margin: 120px;
         display: grid;
-        grid-template-areas: "foto titulo "
+        grid-template-areas: "foto texto "
             "foto  texto "
             " foto  boton";
-
-    }
-
-    .Home h3 {
-        grid-area: titulo;
     }
 
     .equipohome {
@@ -554,10 +563,27 @@ section .quehacemos p {
 
     .boton {
         color: #EC9720;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         grid-area: boton;
     }
 
+    .visionymision {
+        display: flex;
+        gap: 20x;
+        margin: 10px;
+    }
+
+    .visionymision h3 {
+        text-align: start;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .visionymision p {
+        text-align: justify;
+        margin: 15px;
+        font-size: 1rem;
+    }
 
     footer {
         padding: 20px;
@@ -575,7 +601,6 @@ section .quehacemos p {
         grid-template-areas: "fondos tarifas nosotros informacion contacto"
             "paises paises paises paises paises";
         justify-content: space-around;
-
     }
 
     .fondosfooter {
@@ -600,7 +625,6 @@ section .quehacemos p {
 
     .paises {
         grid-area: paises;
-
     }
 
     section .quehacemos {
@@ -655,7 +679,6 @@ section .quehacemos p {
         text-align: justify;
         font-size: 0.8rem;
     }
-
 }
 
 @media(min-width:1400px) {
@@ -683,21 +706,19 @@ section .quehacemos p {
     }
 
     .textohome .invertir p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .nosotrosHome {
-        box-shadow: 0px 0px 10px gray;
         padding: 20px;
-        margin: 180px;
         display: grid;
-        grid-template-areas: "foto titulo "
+        grid-template-areas: "foto texto "
             "foto  texto "
             " foto  boton";
     }
 
-    .Home h3 {
-        grid-area: titulo;
+    strong span {
+        font-size: 1.3rem;
     }
 
     .equipohome {
@@ -708,14 +729,32 @@ section .quehacemos p {
 
     .nosotrosHome p {
         text-align: justify;
-        font-size: 1rem;
+        font-size: 1.2rem;
         grid-area: texto;
     }
 
     .boton {
         color: #EC9720;
-        font-size: 1rem;
+        font-size: 1.2rem;
         grid-area: boton;
+    }
+
+    .visionymision {
+        display: flex;
+        gap: 20x;
+        margin: 10px;
+    }
+
+    .visionymision h3 {
+        text-align: start;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .visionymision p {
+        text-align: justify;
+        margin: 15px;
+        font-size: 1.2rem;
     }
 }
 
