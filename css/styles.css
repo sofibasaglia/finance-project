@@ -295,7 +295,7 @@ h4{
         background-size: cover;
         display: grid;
         place-items: center;
-        height: 85vw;
+        height: 80vw;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -316,6 +316,22 @@ h4{
     }
 }
 
+@media(min-width:350px){
+    .nosotrosHome {
+        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        height: 65vw;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
 @media(min-width:400px){
     .nosotrosHome {
         background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
@@ -324,7 +340,7 @@ h4{
         background-size: cover;
         display: grid;
         place-items: center;
-        height: 55vw;
+        height: 50vw;
         padding: 20px;
         display: flex;
         flex-direction: column;
