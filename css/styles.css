@@ -86,8 +86,6 @@ h2 {
     text-align: center;
 }
 
-
-
 .nosotrosHome {
     background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
     background-repeat: no-repeat;
@@ -234,11 +232,13 @@ label {
     width: 90vw;
     margin-top: 5px;
 }
-.formulariocontacto{
+
+.formulariocontacto {
     width: 70vw;
-    
+
 }
-.Contactanos{
+
+.Contactanos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,6 +261,34 @@ h4 {
     padding: 20px;
 }
 
+.articuloseducativos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.card{
+    width: 80vw;
+    height: 90vw;
+}
+.card h5{
+    font-size: 0.8rem;
+}
+.card a{
+    font-size: 0.8rem;
+}
+.articuloseducativos img{
+    width: 50vw;
+    height: 60vw;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+iframe{
+    width: 80vw;
+    height: 60vw;
+}
 
 @media(min-width: 320px) {
     footer {
@@ -438,38 +466,71 @@ h4 {
         flex-direction: column;
         align-items: center;
     }
-    .formulariocontacto{
+
+    .formulariocontacto {
         width: 60vw;
-            
+
     }
 
-.nosotrosHome {
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 45vw;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .nosotrosHome {
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        height: 45vw;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.nosotrosHome p {
-    text-align: justify;
-    font-size: 0.9rem;
-    margin: 20px;
-    text-align: justify;
-    background: rgba(5, 7, 12, 0.4);
-    padding: 20px;
-}
+    .nosotrosHome p {
+        text-align: justify;
+        font-size: 0.9rem;
+        margin: 20px;
+        text-align: justify;
+        background: rgba(5, 7, 12, 0.4);
+        padding: 20px;
+    }
 
-.boton {
-    color: #EC9720;
-    font-size: 0.9rem;
-}
+    .boton {
+        color: #EC9720;
+        font-size: 0.9rem;
+    }
+
+    .articuloseducativos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    .card{
+        width: 65vw;
+        height: 80vw;
+    }
+    .card h5{
+        font-size: 0.9rem;
+    }
+    .card a{
+        font-size: 0.9rem;
+    }
+    .articuloseducativos img{
+        width: 50vw;
+        height: 60vw;
+        padding: 20px;
+        margin-left: 50px;
+    }
+    
+    iframe{
+        width: 80vw;
+        height: 60vw;
+    }
 }
 
 @media(min-width:768px) {
@@ -709,10 +770,12 @@ h4 {
     .tituloscontacto h2 {
         font-size: 1.1rem;
     }
-    .formulariocontacto{
+
+    .formulariocontacto {
         width: 55vw;
-        
+
     }
+
     .Contactanos {
         display: flex;
         flex-direction: column;
@@ -746,6 +809,37 @@ h4 {
         color: #EC9720;
         font-size: 1rem;
 
+    }
+    .articuloseducativos{
+        
+        display: grid;
+        place-items: center;
+        grid-template-areas: "articulo1 articulo2"
+                            "articulo3 articulo4";
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    .card{
+        width: 40vw;
+        height: 42vw;
+    }
+    .card h5{
+        font-size: 0.9rem;
+    }
+    .card a{
+        font-size: 0.9rem;
+    }
+    .articuloseducativos img{
+        width: 30vw;
+        height: 30vw;
+        padding: 10px;
+    }
+    
+    iframe{
+        width: 60vw;
+        height: 40vw;
+        margin-left: 40px;
     }
 }
 
@@ -926,7 +1020,39 @@ h4 {
         font-size: 1rem;
 
     }
-}
+
+    .articuloseducativos{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+    h2{
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+    .card{
+        width: 50vw;
+        height: 30vw;
+    }
+    .card h5{
+        font-size: 0.8rem;
+    }
+    .card a{
+        font-size: 0.8rem;
+    }
+    .articuloseducativos img{
+        width: 18vw;
+        height: 20vw;
+        padding: 10px;
+    }
+    
+    iframe{
+        width: 40vw;
+        height: 30vw;
+        margin-left: 40px;
+    }
+    }
+
 
 @media(min-width:1400px) {
     .hometitulo {
@@ -955,8 +1081,6 @@ h4 {
     .textohome .invertir p {
         font-size: 1.2rem;
     }
-
-
 
     .visionymision {
         display: flex;
@@ -1005,6 +1129,37 @@ h4 {
         font-size: 1.2rem;
 
     }
+    
+    .articuloseducativos{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+    h2{
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+    .card{
+        width: 35vw;
+        height: 30vw;
+    }
+    .card h5{
+        font-size: 1rem;
+    }
+    .card a{
+        font-size: 1rem;
+    }
+    .articuloseducativos img{
+        width: 20vw;
+        height: 20vw;
+        padding: 10px;
+    }
+    
+    iframe{
+        width: 40vw;
+        height: 25vw;
+        margin-left: 30px;
+    }
 }
 
 .slider {
@@ -1040,7 +1195,7 @@ em {
 }
 
 
-
+/* 
 
 section .informacion {
     padding: 50px;
@@ -1079,4 +1234,4 @@ section .informacion div p {
 .video:hover {
     transform: scale(1.1);
 
-}
+} */
