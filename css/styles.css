@@ -73,13 +73,18 @@ main.Home {
 
 .textohome .invertir p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 0.8rem;
+}
+h1{
+    text-align: center;
+    padding: 10px;
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
 }
+
 
 .equipohome {
     width: 100vw;
@@ -96,13 +101,13 @@ h2 {
 
 .nosotrosHome p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 20px;
 }
 
 .boton {
     color: #EC9720;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 5%;
 }
 
@@ -129,6 +134,7 @@ span {
 .visionymision p {
     text-align: justify;
     margin: 15px;
+    font-size: 0.8rem;
 }
 
 footer {
@@ -202,6 +208,39 @@ section .quehacemos p {
     font-size: 0.8rem;
     text-align: justify;
 }
+
+form{
+    padding: 10px;
+}
+
+label{
+    font-size: 0.8rem;
+}
+::placeholder{
+    font-size: 0.8rem;
+}
+.formulariocontacto{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90vw;
+    margin-top: 5px;
+}
+.botoncontacto{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+h4{
+    font-size: 0.9rem;
+    margin: 10px;
+}
+.tituloscontacto{
+    border-bottom:1px solid #EC9720;
+    padding: 20px;
+}
+
 
 @media(min-width: 320px) {
     footer {
@@ -290,7 +329,23 @@ section .quehacemos p {
 
     .boton {
         color: #EC9720;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+    
+    
+    label{
+        font-size: 0.9rem;
+    }
+    ::placeholder{
+        font-size: 0.9rem;
+    }
+    
+    h4{
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .tituloscontacto h2{
+        font-size: 1rem;
     }
 }
 
@@ -386,7 +441,7 @@ section .quehacemos p {
         margin: 15px;
         font-size: 1rem;
     }
-
+    
     footer {
         padding: 20px;
         border-top: 5px solid #EC9720;
@@ -506,6 +561,36 @@ section .quehacemos p {
     .integrantesequipo div p {
         font-size: 1rem;
         text-align: justify;
+    }
+
+    
+    label{
+        font-size: 1rem;
+    }
+    .formulariocontacto{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        border-radius: 5px;
+        width: 60vw;
+        margin-top: 5px;
+    }
+    h4{
+        font-size:1rem;
+        margin: 10px;
+        text-align: center;
+    }
+    .tituloscontacto{
+        border-bottom:1px solid #EC9720;
+        padding: 20px;
+    }
+    .tituloscontacto h2{
+        font-size: 1.1rem;
+    }
+    .Contactanos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
