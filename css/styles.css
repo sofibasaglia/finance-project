@@ -75,7 +75,8 @@ main.Home {
     text-align: justify;
     font-size: 0.8rem;
 }
-h1{
+
+h1 {
     text-align: center;
     padding: 10px;
 }
@@ -86,8 +87,9 @@ h2 {
 }
 
 
+
 .nosotrosHome {
-    background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -97,6 +99,7 @@ h2 {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .nosotrosHome p {
@@ -104,11 +107,11 @@ h2 {
     font-size: 0.8rem;
     margin: 20px;
     text-align: justify;
-    background: rgba(5,7,12, 0.4);
+    background: rgba(5, 7, 12, 0.4);
     padding: 20px;
 }
 
-.boton{
+.boton {
     color: #EC9720;
     font-size: 0.8rem;
 }
@@ -211,17 +214,19 @@ section .quehacemos p {
     text-align: justify;
 }
 
-form{
+form {
     padding: 10px;
 }
 
-label{
+label {
     font-size: 0.8rem;
 }
-::placeholder{
+
+::placeholder {
     font-size: 0.8rem;
 }
-.formulariocontacto{
+
+.formulariocontacto {
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -229,17 +234,30 @@ label{
     width: 90vw;
     margin-top: 5px;
 }
-.botoncontacto{
+.formulariocontacto{
+    width: 70vw;
+    
+}
+.Contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botoncontacto {
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-h4{
+
+h4 {
     font-size: 0.9rem;
     margin: 10px;
+    text-align: center;
 }
-.tituloscontacto{
-    border-bottom:1px solid #EC9720;
+
+.tituloscontacto {
+    border-bottom: 1px solid #EC9720;
     padding: 20px;
 }
 
@@ -288,8 +306,9 @@ h4{
     .paises {
         grid-area: paises;
     }
+
     .nosotrosHome {
-        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -299,26 +318,27 @@ h4{
         padding: 20px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    
+
     .nosotrosHome p {
         text-align: justify;
         font-size: 0.8rem;
         margin: 20px;
         text-align: justify;
-        background: rgba(5,7,12, 0.4);
+        background: rgba(5, 7, 12, 0.4);
         padding: 20px;
     }
-    
-    .boton{
+
+    .boton {
         color: #EC9720;
         font-size: 0.8rem;
     }
 }
 
-@media(min-width:350px){
+@media(min-width:350px) {
     .nosotrosHome {
-        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -328,13 +348,14 @@ h4{
         padding: 20px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    
+
 }
 
-@media(min-width:400px){
+@media(min-width:400px) {
     .nosotrosHome {
-        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -344,8 +365,9 @@ h4{
         padding: 20px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    
+
 }
 
 
@@ -392,48 +414,62 @@ h4{
         color: #EC9720;
         font-size: 0.8rem;
     }
-    
-    
-    label{
+
+
+    label {
         font-size: 0.9rem;
     }
-    ::placeholder{
+
+    ::placeholder {
         font-size: 0.9rem;
     }
-    
-    h4{
+
+    h4 {
         font-size: 1rem;
         margin: 10px;
     }
-    .tituloscontacto h2{
+
+    .tituloscontacto h2 {
         font-size: 1rem;
     }
-    .nosotrosHome {
-        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 45vw;
-        padding: 20px;
+
+    .Contactanos {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    
-    .nosotrosHome p {
-        text-align: justify;
-        font-size: 0.9rem;
-        margin: 20px;
-        text-align: justify;
-        background: rgba(5,7,12, 0.4);
-        padding: 20px;
+    .formulariocontacto{
+        width: 60vw;
+            
     }
-    
-    .boton{
-        color: #EC9720;
-        font-size: 0.9rem;
-    }
+
+.nosotrosHome {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 45vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotrosHome p {
+    text-align: justify;
+    font-size: 0.9rem;
+    margin: 20px;
+    text-align: justify;
+    background: rgba(5, 7, 12, 0.4);
+    padding: 20px;
+}
+
+.boton {
+    color: #EC9720;
+    font-size: 0.9rem;
+}
 }
 
 @media(min-width:768px) {
@@ -485,8 +521,9 @@ h4{
         font-size: 1rem;
         text-align: center;
     }
+
     .nosotrosHome {
-        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -497,22 +534,22 @@ h4{
         display: flex;
         flex-direction: column;
     }
-    
+
     .nosotrosHome p {
         text-align: justify;
         font-size: 0.9rem;
         margin: 20px;
         text-align: justify;
-        background: rgba(5,7,12, 0.4);
+        background: rgba(5, 7, 12, 0.4);
         padding: 20px;
     }
-    
-    .boton{
+
+    .boton {
         color: #EC9720;
         font-size: 0.9rem;
     }
 
-    
+
 
     .visionymision {
         display: flex;
@@ -531,7 +568,7 @@ h4{
         margin: 15px;
         font-size: 1rem;
     }
-    
+
     footer {
         padding: 20px;
         border-top: 5px solid #EC9720;
@@ -653,29 +690,37 @@ h4{
         text-align: justify;
     }
 
-    
-    label{
+
+    label {
         font-size: 1rem;
     }
-    h4{
-        font-size:1rem;
+
+    h4 {
+        font-size: 1rem;
         margin: 10px;
         text-align: center;
     }
-    .tituloscontacto{
-        border-bottom:1px solid #EC9720;
+
+    .tituloscontacto {
+        border-bottom: 1px solid #EC9720;
         padding: 20px;
     }
-    .tituloscontacto h2{
+
+    .tituloscontacto h2 {
         font-size: 1.1rem;
     }
-    .Contactanos{
+    .formulariocontacto{
+        width: 55vw;
+        
+    }
+    .Contactanos {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .nosotrosHome {
-        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -684,20 +729,20 @@ h4{
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .nosotrosHome p {
         text-align: justify;
-        font-size:1rem;
+        font-size: 1rem;
         margin-top: 100px;
         margin-left: 50px;
         margin-right: 50px;
         text-align: justify;
-        background: rgba(5,7,12, 0.4);
+        background: rgba(5, 7, 12, 0.4);
         padding: 20px;
 
     }
-    
-    .boton{
+
+    .boton {
         color: #EC9720;
         font-size: 1rem;
 
@@ -852,8 +897,9 @@ h4{
         text-align: justify;
         font-size: 0.8rem;
     }
+
     .nosotrosHome {
-        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -862,25 +908,25 @@ h4{
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .nosotrosHome p {
         text-align: justify;
-        font-size:1.1rem;
+        font-size: 1.1rem;
         margin-top: 100px;
         margin-left: 200px;
         margin-right: 200px;
         text-align: justify;
-        background: rgba(5,7,12, 0.4);
+        background: rgba(5, 7, 12, 0.4);
         padding: 20px;
 
     }
-    
-    .boton{
+
+    .boton {
         color: #EC9720;
         font-size: 1rem;
 
     }
-    }
+}
 
 @media(min-width:1400px) {
     .hometitulo {
@@ -929,8 +975,9 @@ h4{
         margin: 15px;
         font-size: 1.2rem;
     }
+
     .nosotrosHome {
-        background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -939,21 +986,21 @@ h4{
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .nosotrosHome p {
         text-align: justify;
-        font-size:1.2rem;
+        font-size: 1.2rem;
         margin-top: 200px;
         margin-left: 300px;
         margin-right: 300px;
         margin-bottom: 50px;
         text-align: justify;
-        background: rgba(5,7,12, 0.4);
+        background: rgba(5, 7, 12, 0.4);
         padding: 20px;
 
     }
-    
-    .boton{
+
+    .boton {
         color: #EC9720;
         font-size: 1.2rem;
 
