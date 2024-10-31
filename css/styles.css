@@ -87,13 +87,13 @@ h2 {
 }
 
 .nosotrosHome {
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     display: grid;
     place-items: center;
-    height: 90vw;
+    height: 99vw;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -151,6 +151,12 @@ footer {
     text-align: center;
 }
 
+.accordion {
+    --bs-accordion-btn-bg: white;
+    --bs-accordion-active-bg: #f4b65e;
+}
+
+
 .quienessomos .imgteam {
     width: 100vw;
     height: 60vw;
@@ -161,16 +167,15 @@ footer {
     text-align: justify;
     font-size: 0.8rem;
 }
-
-section .quehacemos {
+.quehacemos {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin: 20px;
 }
 
-section .quehacemos div {
-    padding: 5px;
+.quehacemos div {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,14 +184,14 @@ section .quehacemos div {
     transition: all 0.3s ease-in-out;
 }
 
-section .quehacemos div:hover {
+.quehacemos div:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 12px gray;
 }
 
-section .quehacemos p {
+.quehacemos p {
     font-size: 0.8rem;
-    padding: 10px;
+    padding: 5px;
     text-align: justify;
 }
 
@@ -261,34 +266,87 @@ h4 {
     padding: 20px;
 }
 
-.articuloseducativos{
+.articuloseducativos {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     gap: 20px;
 }
-.card{
+
+.card {
     width: 80vw;
-    height: 90vw;
+    height: 85vw;
+    background-color: black;
+    box-shadow: 0px 0px 10px gray;
 }
-.card h5{
+
+.card h5 {
     font-size: 0.8rem;
 }
-.card a{
+
+.card a {
     font-size: 0.8rem;
 }
-.articuloseducativos img{
+
+.articuloseducativos img {
     width: 50vw;
     height: 60vw;
     padding: 20px;
     margin-left: 50px;
 }
 
-iframe{
+iframe {
     width: 80vw;
-    height: 60vw;
+    height: 70vw;
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+.titulostarifas p {
+    text-align: justify;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.categorias h5 {
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.categorias p {
+    text-align: justify;
+    padding: 30px;
+}
+
+div em {
+    font-size: 6rem;
+    display: grid;
+    place-items: center;
+
+}
+
+.asesoramiento a {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.acordionpreguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 @media(min-width: 320px) {
     footer {
@@ -336,7 +394,7 @@ iframe{
     }
 
     .nosotrosHome {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -357,16 +415,60 @@ iframe{
         background: rgba(5, 7, 12, 0.4);
         padding: 20px;
     }
-
-    .boton {
-        color: #EC9720;
-        font-size: 0.8rem;
+    .quehacemos p {
+        font-size: 0.9rem;
+        padding: 5px;
+        text-align: justify;
     }
+
+    .titulostarifas p {
+        text-align: justify;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    .categorias h5 {
+        text-align: center;
+        font-size: 1rem;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .categorias p {
+        text-align: justify;
+        padding: 40px;
+        font-size: 0.9rem;
+    }
+
+    .asesoramiento a {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .accordion {
+        width: 90vw;
+    }
+    #accordionNosotros{
+        width: 100vw;
+    }
+
+    .acordionpreguntas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
 @media(min-width:350px) {
     .nosotrosHome {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -383,7 +485,7 @@ iframe{
 
 @media(min-width:400px) {
     .nosotrosHome {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -395,6 +497,8 @@ iframe{
         flex-direction: column;
         align-items: center;
     }
+
+
 
 }
 
@@ -473,7 +577,7 @@ iframe{
     }
 
     .nosotrosHome {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -500,36 +604,91 @@ iframe{
         font-size: 0.9rem;
     }
 
-    .articuloseducativos{
+    .articuloseducativos {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
         gap: 20px;
     }
-    h2{
+
+    h2 {
         font-size: 1.1rem;
     }
-    .card{
+
+    .card {
         width: 65vw;
-        height: 80vw;
+        height: 75vw;
     }
-    .card h5{
+
+    .card h5 {
         font-size: 0.9rem;
     }
-    .card a{
+
+    .card a {
         font-size: 0.9rem;
     }
-    .articuloseducativos img{
+
+    .articuloseducativos img {
         width: 50vw;
         height: 60vw;
         padding: 20px;
         margin-left: 50px;
     }
-    
-    iframe{
+
+    iframe {
         width: 80vw;
-        height: 60vw;
+        height: 70vw;
+        margin-left: 45px;
+    }
+    .quehacemos p {
+        font-size: 1rem;
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .titulostarifas p {
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .categorias h5 {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .categorias p {
+        text-align: justify;
+        padding: 40px;
+        font-size: 1rem;
+    }
+
+    div em {
+        font-size: 7rem;
+        display: grid;
+        place-items: center;
+    }
+
+    .asesoramiento a {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .accordion {
+        width: 70vw;
+    }
+
+    .acordionpreguntas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -582,34 +741,6 @@ iframe{
         font-size: 1rem;
         text-align: center;
     }
-
-    .nosotrosHome {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 45vw;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nosotrosHome p {
-        text-align: justify;
-        font-size: 0.9rem;
-        margin: 20px;
-        text-align: justify;
-        background: rgba(5, 7, 12, 0.4);
-        padding: 20px;
-    }
-
-    .boton {
-        color: #EC9720;
-        font-size: 0.9rem;
-    }
-
 
 
     .visionymision {
@@ -678,14 +809,14 @@ iframe{
         font-size: 1rem;
     }
 
-    section .quehacemos {
+    .quehacemos {
         display: flex;
         flex-direction: column;
         gap: 30px;
         margin: 60px;
     }
 
-    section .quehacemos div {
+    .quehacemos div {
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -695,7 +826,7 @@ iframe{
         transition: all 0.3s ease-in-out;
     }
 
-    section .quehacemos div:hover {
+    .quehacemos div:hover {
         transform: scale(1.1);
         box-shadow: 0px 0px 12px gray;
     }
@@ -704,7 +835,7 @@ iframe{
         font-size: 1.2rem;
     }
 
-    section .quehacemos p {
+    .quehacemos p {
         font-size: 1rem;
         padding: 10px;
         text-align: justify;
@@ -783,7 +914,7 @@ iframe{
     }
 
     .nosotrosHome {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -807,39 +938,103 @@ iframe{
 
     .boton {
         color: #EC9720;
-        font-size: 1rem;
+        font-size: 1.1rem;
 
     }
-    .articuloseducativos{
-        
+
+    .articuloseducativos {
+
         display: grid;
         place-items: center;
         grid-template-areas: "articulo1 articulo2"
-                            "articulo3 articulo4";
+            "articulo3 articulo4";
     }
-    h2{
+
+    h2 {
         font-size: 1.1rem;
     }
-    .card{
+
+    .card {
         width: 40vw;
         height: 42vw;
     }
-    .card h5{
+
+    .card h5 {
         font-size: 0.9rem;
     }
-    .card a{
+
+    .card a {
         font-size: 0.9rem;
     }
-    .articuloseducativos img{
+
+    .articuloseducativos img {
         width: 30vw;
         height: 30vw;
         padding: 10px;
     }
-    
-    iframe{
+
+    iframe {
         width: 60vw;
         height: 40vw;
         margin-left: 40px;
+    }
+
+    .titulostarifas p {
+        text-align: justify;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .categorias h5 {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    div em {
+        font-size: 11rem;
+        padding: 40px;
+    }
+
+    .cartera {
+        display: flex;
+        align-items: center
+    }
+
+
+    .mantenimiento {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .categorias p {
+        font-size: 1rem;
+        text-align: justify;
+    
+    }
+
+    
+
+    .asesoramiento a {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .accordion {
+        width: 70vw;
+    }
+
+    .acordionpreguntas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -939,12 +1134,12 @@ iframe{
         grid-area: paises;
     }
 
-    section .quehacemos {
+    .quehacemos {
         display: flex;
         flex-direction: row;
     }
 
-    section .quehacemos div {
+    .quehacemos div {
         padding: 30px;
         margin: 40px;
         box-shadow: 0px 0px 10px gray;
@@ -956,21 +1151,21 @@ iframe{
         font-size: 1.5rem;
     }
 
-    section .quehacemos div:hover {
+    .quehacemos div:hover {
         transform: scale(1.1);
         box-shadow: 0px 0px 12px gray;
     }
-
-    section .quehacemos p {
+    .quehacemos p {
         text-align: justify;
+        font-size: 1.1rem;
     }
 
-    section .integrantesequipo {
+    .integrantesequipo {
         display: flex;
         justify-content: center;
     }
 
-    section .integrantesequipo div {
+    .integrantesequipo div {
         padding: 15px;
         display: flex;
         flex-direction: column;
@@ -982,18 +1177,18 @@ iframe{
         height: 10vw;
     }
 
-    section .integrantesequipo strong {
+    .integrantesequipo strong {
         padding: 20px;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
-    section .integrantesequipo p {
+    .integrantesequipo p {
         text-align: justify;
         font-size: 0.8rem;
     }
 
     .nosotrosHome {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(44, 42, 42, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -1017,41 +1212,101 @@ iframe{
 
     .boton {
         color: #EC9720;
-        font-size: 1rem;
+        font-size: 1.1rem;
 
     }
 
-    .articuloseducativos{
+    .articuloseducativos {
         margin-top: 40px;
         display: flex;
         flex-direction: row;
     }
-    h2{
+
+    h2 {
         margin-top: 20px;
         font-size: 1.2rem;
     }
-    .card{
-        width: 50vw;
+
+    .card {
         height: 30vw;
     }
-    .card h5{
+
+    .card h5 {
         font-size: 0.8rem;
     }
-    .card a{
+
+    .card a {
         font-size: 0.8rem;
     }
-    .articuloseducativos img{
+
+    .articuloseducativos img {
         width: 18vw;
         height: 20vw;
         padding: 10px;
     }
-    
-    iframe{
+
+    iframe {
         width: 40vw;
         height: 30vw;
         margin-left: 40px;
     }
+
+    .titulostarifas p {
+        text-align: justify;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
     }
+
+    .categorias h5 {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    div em {
+        font-size: 12rem;
+        padding: 70px;
+
+    }
+
+    .cartera {
+        display: flex;
+        align-items: center
+    }
+
+    .categorias p {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .mantenimiento {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+
+    .asesoramiento a {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .accordion {
+        width: 60vw;
+    }
+
+    .acordionpreguntas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 @media(min-width:1400px) {
@@ -1101,11 +1356,11 @@ iframe{
     }
 
     .nosotrosHome {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/team.jpg);
+        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        height: 40vw;
+        height: 30vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1123,42 +1378,114 @@ iframe{
         padding: 20px;
 
     }
+    .quehacemos p {
+        font-size: 1.1rem;
+        padding: 5px;
+        text-align: justify;
+    }
 
     .boton {
         color: #EC9720;
         font-size: 1.2rem;
 
     }
-    
-    .articuloseducativos{
+
+    .articuloseducativos {
         margin-top: 40px;
         display: flex;
         flex-direction: row;
     }
-    h2{
+
+    h2 {
         margin-top: 20px;
         font-size: 1.2rem;
     }
-    .card{
+
+    .card {
         width: 35vw;
-        height: 30vw;
+        height: 25vw;
     }
-    .card h5{
+
+    .card h5 {
         font-size: 1rem;
     }
-    .card a{
+
+    .card a {
         font-size: 1rem;
     }
-    .articuloseducativos img{
+
+    .articuloseducativos img {
         width: 20vw;
         height: 20vw;
         padding: 10px;
     }
-    
-    iframe{
+
+    iframe {
         width: 40vw;
         height: 25vw;
         margin-left: 30px;
+    }
+
+    .titulostarifas p {
+        text-align: justify;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+
+    .categorias h5 {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    div em {
+        font-size: 15rem;
+        padding: 70px;
+
+    }
+
+    .cartera {
+        display: flex;
+        align-items: center
+    }
+
+
+    .categorias p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .mantenimiento {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .asesoramiento p {
+        text-align: justify;
+        padding: 30px;
+        font-size: 1.2rem;
+    }
+
+    .asesoramiento a {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .accordion {
+        width: 60vw;
+    }
+
+    .acordionpreguntas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1190,9 +1517,6 @@ iframe{
 }
 
 
-em {
-    font-size: 150px;
-}
 
 
 /* 
