@@ -153,12 +153,11 @@ footer {
 
 .accordion {
     --bs-accordion-btn-bg: white;
-    --bs-accordion-active-bg: #f4b65e;
+    --bs-accordion-active-bg:#EC9720 ;
     --bs-accordion-border-radius: none;
+    --bs-accordion-border-width: 0.1px;
+    --bs-accordion-border-color: gray;
 }
-
-
-
 
 .quienessomos .imgteam {
     width: 100vw;
@@ -1012,7 +1011,6 @@ div em {
         align-items: center
     }
 
-
     .mantenimiento {
         display: flex;
         flex-direction: row-reverse;
@@ -1025,12 +1023,9 @@ div em {
     
     }
 
-    
-
     .asesoramiento a {
         display: flex;
         justify-content: center;
-
     }
 
     .accordion {
@@ -1304,13 +1299,15 @@ div em {
     }
 
     .accordion {
-        width: 60vw;
+        width: 45vw;
+        --bs-accordion-border-width: 0px;
     }
 
     .acordionpreguntas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
+        place-items: center;
+
     }
 }
 
@@ -1485,13 +1482,14 @@ div em {
     }
 
     .accordion {
-        width: 60vw;
+        width: 45vw;
+        --bs-accordion-border-width: 0px;
     }
 
     .acordionpreguntas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
+        place-items: center;
     }
 }
 
