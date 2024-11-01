@@ -172,8 +172,13 @@ footer {
 .quehacemos {
     display: flex;
     flex-direction: column;
+    padding: 30px;
     gap: 30px;
     margin: 20px;
+}
+.imagenquehacemos{
+    width: 60vw;
+    height: 30vw;
 }
 
 .quehacemos div {
@@ -277,6 +282,11 @@ h4 {
     align-items: center;
     padding: 20px;
     gap: 20px;
+}
+
+.tituloseducacion p{
+    padding: 40px;
+    text-align: justify;
 }
 
 .card {
@@ -820,6 +830,12 @@ div em {
         gap: 30px;
         margin: 60px;
     }
+    .imagenquehacemos{
+        width: 50vw;
+        height: 20vw;
+        padding-top:15px ;
+    }
+    
 
     .quehacemos div {
         padding: 5px;
@@ -953,6 +969,11 @@ div em {
         place-items: center;
         grid-template-areas: "articulo1 articulo2"
             "articulo3 articulo4";
+    }
+    .tituloseducacion p{
+        padding: 40px;
+        text-align: justify;
+        font-size: 1rem;
     }
 
     h2 {
@@ -1139,6 +1160,11 @@ div em {
         display: flex;
         flex-direction: row;
     }
+    .imagenquehacemos{
+        width: 20vw;
+        height: 15vw;
+        padding-top:10px ;
+        }
 
     .quehacemos div {
         padding: 30px;
@@ -1221,6 +1247,12 @@ div em {
         margin-top: 40px;
         display: flex;
         flex-direction: row;
+    }
+    .tituloseducacion p{
+        padding-left: 60px;
+        padding-right: 60px;
+        text-align: justify;
+        font-size: 1.1rem;
     }
 
     h2 {
@@ -1397,6 +1429,12 @@ div em {
         margin-top: 40px;
         display: flex;
         flex-direction: row;
+    }
+    .tituloseducacion p{
+        padding-left: 70px;
+        padding-right: 70px;
+        text-align: justify;
+        font-size: 1.2rem;
     }
 
     h2 {
