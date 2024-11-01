@@ -154,7 +154,10 @@ footer {
 .accordion {
     --bs-accordion-btn-bg: white;
     --bs-accordion-active-bg: #f4b65e;
+    --bs-accordion-border-radius: none;
 }
+
+
 
 
 .quienessomos .imgteam {
@@ -210,6 +213,9 @@ footer {
     align-items: center;
     padding: 20px;
     border-bottom: 0.5px solid #EC9720;
+}
+.integrantesequipo strong{
+    padding: 10px;
 }
 
 .integrantesequipo div p {
