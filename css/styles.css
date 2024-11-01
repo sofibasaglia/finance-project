@@ -110,8 +110,9 @@ h2 {
 }
 
 .boton {
-    color: #EC9720;
+    background-color: #EC9720;
     font-size: 0.8rem;
+    border-radius: 15px;
 }
 
 .Home h3 {
@@ -120,6 +121,7 @@ h2 {
 }
 
 .img1 {
+    opacity: 0.4;
     width: 20vw;
     height: 15vw;
 }
@@ -140,6 +142,35 @@ span {
     font-size: 0.8rem;
 }
 
+.slider {
+    height: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imagenesfondos {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+
+        transform: translateX(0);
+    }
+
+    100% {
+
+        transform: translateX(-250px);
+    }
+}
+
+
 footer {
     padding: 20px;
     border-top: 5px solid #EC9720;
@@ -153,22 +184,16 @@ footer {
 
 .accordion {
     --bs-accordion-btn-bg: white;
-    --bs-accordion-active-bg:#EC9720 ;
+    --bs-accordion-active-bg: #EC9720;
     --bs-accordion-border-radius: none;
     --bs-accordion-border-width: 0.1px;
     --bs-accordion-border-color: gray;
 }
 
-.quienessomos .imgteam {
+.imgteam img {
     width: 100vw;
-    height: 60vw;
 }
 
-.quienessomos p {
-    padding: 20px;
-    text-align: justify;
-    font-size: 0.8rem;
-}
 .quehacemos {
     display: flex;
     flex-direction: column;
@@ -176,7 +201,8 @@ footer {
     gap: 30px;
     margin: 20px;
 }
-.imagenquehacemos{
+
+.imagenquehacemos {
     width: 60vw;
     height: 30vw;
 }
@@ -218,7 +244,8 @@ footer {
     padding: 20px;
     border-bottom: 0.5px solid #EC9720;
 }
-.integrantesequipo strong{
+
+.integrantesequipo strong {
     padding: 10px;
 }
 
@@ -284,7 +311,7 @@ h4 {
     gap: 20px;
 }
 
-.tituloseducacion p{
+.titulospaginas p {
     padding: 40px;
     text-align: justify;
 }
@@ -354,12 +381,61 @@ div em {
 
 }
 
-
-
 .acordionpreguntas {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.titulofondos {
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.fondosHome div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 60vw;
+    border: 1px solid #EC9720;
+
+
+}
+
+.fondosHome {
+    display: grid;
+    grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+    place-items: center;
+    gap: 20px;
+}
+
+.fondo1 {
+    grid-area: fondo1;
+}
+
+.fondo2 {
+    grid-area: fondo2;
+}
+
+.fondo3 {
+    grid-area: fondo3;
+}
+
+.fondo4 {
+    grid-area: fondo4;
+}
+
+
+.imagenesfondos2 {
+    height: 20vw;
+    width: 20vw;
+    padding-top: 10px;
+}
+
+.fondosHome h3 {
+    font-size: 0.8rem;
 }
 
 
@@ -430,6 +506,7 @@ div em {
         background: rgba(5, 7, 12, 0.4);
         padding: 20px;
     }
+
     .quehacemos p {
         font-size: 0.9rem;
         padding: 5px;
@@ -468,7 +545,8 @@ div em {
     .accordion {
         width: 90vw;
     }
-    #accordionNosotros{
+
+    #accordionNosotros {
         width: 100vw;
     }
 
@@ -656,6 +734,7 @@ div em {
         height: 70vw;
         margin-left: 45px;
     }
+
     .quehacemos p {
         font-size: 1rem;
         padding: 5px;
@@ -830,12 +909,13 @@ div em {
         gap: 30px;
         margin: 60px;
     }
-    .imagenquehacemos{
+
+    .imagenquehacemos {
         width: 50vw;
         height: 20vw;
-        padding-top:15px ;
+        padding-top: 15px;
     }
-    
+
 
     .quehacemos div {
         padding: 5px;
@@ -970,7 +1050,8 @@ div em {
         grid-template-areas: "articulo1 articulo2"
             "articulo3 articulo4";
     }
-    .tituloseducacion p{
+
+    .titulospaginas p {
         padding: 40px;
         text-align: justify;
         font-size: 1rem;
@@ -1041,7 +1122,7 @@ div em {
     .categorias p {
         font-size: 1rem;
         text-align: justify;
-    
+
     }
 
     .asesoramiento a {
@@ -1058,6 +1139,58 @@ div em {
         flex-direction: column;
         align-items: center;
     }
+
+    .titulofondos {
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+    .fondosHome div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40vw;
+        height: 50vw;
+        border: 1px solid #EC9720;
+
+
+    }
+
+    .fondosHome {
+        display: grid;
+        grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+        place-items: center;
+        gap: 20px;
+    }
+
+    .fondo1 {
+        grid-area: fondo1;
+    }
+
+    .fondo2 {
+        grid-area: fondo2;
+    }
+
+    .fondo3 {
+        grid-area: fondo3;
+    }
+
+    .fondo4 {
+        grid-area: fondo4;
+    }
+
+
+    .imagenesfondos2 {
+        height: 20vw;
+        width: 20vw;
+        padding-top: 10px;
+    }
+
+    .fondosHome h3 {
+        font-size: 1rem;
+    }
+
 }
 
 @media(min-width:1040px) {
@@ -1160,11 +1293,12 @@ div em {
         display: flex;
         flex-direction: row;
     }
-    .imagenquehacemos{
+
+    .imagenquehacemos {
         width: 20vw;
         height: 15vw;
-        padding-top:10px ;
-        }
+        padding-top: 10px;
+    }
 
     .quehacemos div {
         padding: 30px;
@@ -1182,6 +1316,7 @@ div em {
         transform: scale(1.1);
         box-shadow: 0px 0px 12px gray;
     }
+
     .quehacemos p {
         text-align: justify;
         font-size: 1.1rem;
@@ -1248,7 +1383,8 @@ div em {
         display: flex;
         flex-direction: row;
     }
-    .tituloseducacion p{
+
+    .titulospaginas p {
         padding-left: 60px;
         padding-right: 60px;
         text-align: justify;
@@ -1339,7 +1475,40 @@ div em {
         display: grid;
         grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
         place-items: center;
+    }
 
+    .titulofondos {
+        padding: 30px;
+        font-size: 1.2rem;
+    }
+
+    .fondosHome div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        height: 30vw;
+        border: 1px solid #EC9720;
+
+
+    }
+
+    .fondosHome {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .imagenesfondos2 {
+        height: 10vw;
+        width: 10vw;
+        padding-top: 10px;
+    }
+
+    .fondosHome h3 {
+        font-size: 1rem;
     }
 }
 
@@ -1347,14 +1516,10 @@ div em {
 @media(min-width:1400px) {
     .hometitulo {
         font-size: 6rem;
-        margin: 10px;
-        text-align: left;
     }
 
-    .conteinerprincipal .titulos h2 {
+    .titulos h2 {
         font-size: 2.5rem;
-        margin: 15px;
-        text-align: left;
     }
 
     .imagenprincipal {
@@ -1413,6 +1578,7 @@ div em {
         padding: 20px;
 
     }
+
     .quehacemos p {
         font-size: 1.1rem;
         padding: 5px;
@@ -1430,7 +1596,8 @@ div em {
         display: flex;
         flex-direction: row;
     }
-    .tituloseducacion p{
+
+    .titulospaginas p {
         padding-left: 70px;
         padding-right: 70px;
         text-align: justify;
@@ -1529,34 +1696,40 @@ div em {
         grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
         place-items: center;
     }
-}
-
-.slider {
-    height: 75vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
-
-.imagenesfondos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 50px;
-    animation: scroll 5s linear infinite;
-}
-
-@keyframes scroll {
-    0% {
-
-        transform: translateX(0);
+    
+    .titulofondos {
+        padding: 30px;
+        font-size: 1.2rem;
     }
 
-    100% {
+    .fondosHome div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        height: 30vw;
+        border: 1px solid #EC9720;
 
-        transform: translateX(-250px);
+
+    }
+
+    .fondosHome {
+        display: flex;
+        justify-content: center;
+    }
+    .imagenesfondos2 {
+        height: 10vw;
+        width: 10vw;
+        padding-top: 10px;
+    }
+
+    .fondosHome h3 {
+        font-size: 1rem;
     }
 }
+
+
 
 
 
