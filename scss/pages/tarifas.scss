@@ -1,0 +1,241 @@
+.titulostarifas {
+    h1 {
+        @include h1();
+    }
+
+    p {
+        text-align: justify;
+        margin: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+.categorias {
+
+    h2 {
+        @include h2(1.2rem, center);
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    p {
+        font-size: 0.8rem;
+        text-align: justify;
+        padding: 30px;
+    }
+
+    div {
+        
+
+        em {
+            font-size: 6rem;
+            display: grid;
+            place-items: center;
+        }
+    }
+    .asesoramiento{
+        @include Flexalign(flex, column ,center );
+        .boton{
+            @include boton($color-terciario,0.8rem ,15px )
+        }
+    }
+    .acordionpreguntas {
+        @include Flexalign(flex,column ,center );
+        gap: 20px;
+        .accordion{
+            width: 90vw;
+        }
+    }
+    
+
+    
+}
+
+@media (min-width:320px) {
+    .titulostarifas {
+        p {
+            text-align: justify;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    }
+
+    .categorias {
+        p {
+            text-align: justify;
+            padding: 40px;
+            font-size: 0.9rem;
+
+        }
+    }
+}
+
+@media (min-width:480px) {
+    .titulostarifas {
+
+        p {
+            text-align: justify;
+            font-size: 1rem;
+        }
+    }
+
+    .categorias {
+        h2 {
+            @include h2(1.1, center);
+
+        }
+
+        p {
+            text-align: justify;
+            padding: 40px;
+            font-size: 1rem;
+        }
+
+        div {
+            em {
+                font-size: 7rem;
+                display: grid;
+                place-items: center;
+
+            }
+        }
+        .asesoramiento{
+            .boton{
+                @include boton($color-terciario,0.9rem ,15px )
+            }
+        }
+        .acordionpreguntas {
+            .accordion{
+                width: 70vw;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width:768px) {
+    .titulostarifas {
+        p {
+            text-align: justify;
+            margin: 20px;
+            font-size: 1rem;
+
+        }
+    }
+
+    .categorias {
+        h2 {
+            @include h2(1.1rem, center);
+
+
+        }
+
+        div {
+
+            em {
+                font-size: 11rem;
+                padding: 40px;
+            }
+
+            p {
+                font-size: 0.9rem;
+                padding-top: 60px
+            }
+        }
+        .asesoramiento{
+            .boton{
+                @include boton($color-terciario,1rem ,15px )
+            }
+        }
+
+        .cartera {
+            @include Flexcompleto(flex, row, center, center);
+
+        }
+
+        .mantenimiento {
+            @include Flexcompleto(flex, row-reverse, center, center);
+        }
+    }
+}
+
+@media (min-width:1040px) {
+    .titulostarifas {
+        p {
+            text-align: center;
+            margin: 20px;
+            font-size: 1.1rem;
+        }
+    }
+
+    .categorias {
+        h2 {
+            @include h2(1.2rem, center);
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        div {
+            em {
+                font-size: 12rem;
+                padding: 70px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin: 20px;
+            }
+        }
+        .asesoramiento{
+            .boton{
+                @include boton($color-terciario,1.1rem ,15px )
+            }
+        }
+        .acordionpreguntas {
+            display: grid;
+            grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
+            place-items: center;
+            .accordion{
+                width: 45vw;
+                --bs-accordion-border-width: 0px;
+            }
+        }
+        
+    }
+}
+
+@media (min-width:1400px) {
+    .titulostarifas {
+        p {
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .categorias {
+        h2 {
+            @include h2(1.2rem, center)
+        }
+
+        div {
+            em {
+                font-size: 15rem;
+                padding: 70px;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+        .asesoramiento{
+            .boton{
+                @include boton($color-terciario,1.2rem ,15px )
+            }
+        }
+    }
+
+}

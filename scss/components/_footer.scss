@@ -1,0 +1,152 @@
+footer {
+    padding: 20px;
+    border-top: 5px solid $color-terciario;
+    text-align: center;
+
+    .footerdiv {
+        div {
+            p {
+                line-height: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    @media(min-width: 320px) {
+        padding: 20px;
+        border-top: 5px solid $color-terciario;
+        text-align: start;
+
+        .footerdiv {
+            div {
+                p {
+                    line-height: 10px;
+                    text-align: start;
+                }
+            }
+
+            display: grid;
+            grid-template-areas: "fondos tarifas"
+            "nosotros informacion"
+            "contacto contacto"
+            "paises paises";
+            gap: 10px;
+
+            .fondosfooter {
+                grid-area: fondos;
+            }
+
+            .tarifasfooter {
+                grid-area: tarifas;
+            }
+
+            .aboutus {
+                grid-area: nosotros;
+            }
+
+            .info {
+                grid-area: informacion;
+            }
+
+            .contact {
+                grid-area: contacto;
+            }
+
+            .paises {
+                grid-area: paises;
+            }
+
+        }
+
+    }
+
+    @media(min-width: 768px) {
+        padding: 20px;
+        border-top: 5px solid $color-terciario;
+        text-align: start;
+
+        .footerdiv {
+            div {
+                p {
+                    line-height: 10px;
+                    text-align: start;
+
+                }
+            }
+
+            display: grid;
+            grid-template-areas: "fondos tarifas nosotros"
+            "informacion contacto paises";
+            gap: 20px;
+
+            .fondosfooter {
+                grid-area: fondos;
+            }
+
+            .tarifasfooter {
+                grid-area: tarifas;
+            }
+
+            .aboutus {
+                grid-area: nosotros;
+            }
+
+            .info {
+                grid-area: informacion;
+            }
+
+            .contact {
+                grid-area: contacto;
+            }
+
+            .paises {
+                grid-area: paises;
+            }
+        }
+    }
+
+    @media(min-width:1040px) {
+        padding: 20px;
+        border-top: 5px solid $color-terciario;
+        text-align: start;
+
+        .footerdiv {
+            div {
+                p {
+                    line-height: 10px;
+                    text-align: start;
+                }
+            }
+
+            display: grid;
+            grid-template-areas: "fondos tarifas nosotros informacion contacto"
+            "paises paises paises paises paises";
+            justify-content: space-around;
+
+            .fondosfooter {
+                grid-area: fondos;
+            }
+
+            .tarifasfooter {
+                grid-area: tarifas;
+            }
+
+            .aboutus {
+                grid-area: nosotros;
+            }
+
+            .info {
+                grid-area: informacion;
+            }
+
+            .contact {
+                grid-area: contacto;
+            }
+
+            .paises {
+                grid-area: paises;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.titulospaginas{
+    h1{
+        @include h1();
+    }
+    p{
+        font-size: 0.8rem;
+        padding: 40px;
+        text-align: justify;
+    }
+}
+@media (min-width:480px){
+    .titulospaginas{
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+@media (min-width:1040px){
+    .titulospaginas{
+        p{
+            padding-left: 60px;
+            padding-right: 60px;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+    }
+}
+@media (min-width:1400px){
+    .titulospaginas{
+        p{
+            padding-left: 70px;
+            padding-right: 70px;
+            text-align: justify;
+            font-size: 1.2rem;
+        }
+    }
+}
+.fondosHome {
+    div {
+        @include Flexcompleto(flex, column, center, center);
+        width: 40vw;
+        height: 60vw;
+        border: 1px solid $color-terciario;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    .imagenesfondos2 {
+        height: 20vw;
+        width: 20vw;
+        padding-top: 10px;
+    }
+
+    display: grid;
+    grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+    place-items: center;
+    gap: 20px;
+
+    .fondo1 {
+        grid-area: fondo1;
+    }
+
+    .fondo2 {
+        grid-area: fondo2;
+    }
+
+    .fondo3 {
+        grid-area: fondo3;
+    }
+
+    .fondo4 {
+        grid-area: fondo4;
+    }
+}
+
+@media(min-width:768px) {
+    h4 {
+        font-size: 2rem;
+        padding: 20px
+    }
+
+    .fondosHome {
+        div {
+            @include Flexcompleto(flex, column, center, center);
+            width: 40vw;
+            height: 50vw;
+            border: 1px solid $color-terciario;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        .imagenesfondos2 {
+            height: 20vw;
+            width: 20vw;
+            padding-top: 10px;
+        }
+
+        display: grid;
+        grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+        place-items: center;
+        gap: 20px;
+    }
+
+    .fondo1 {
+        grid-area: fondo1;
+    }
+
+    .fondo2 {
+        grid-area: fondo2;
+    }
+
+    .fondo3 {
+        grid-area: fondo3;
+    }
+
+    .fondo4 {
+        grid-area: fondo4;
+    }
+}
+
+@media(min-width:1040px) {
+
+    .fondosHome {
+        div {
+            @include Flexcompleto(flex, column, center, center);
+            width: 20vw;
+            height: 30vw;
+            border: 1px solid $color-terciario;
+        }
+        display: flex;
+        justify-content: center;
+        h3 {
+            font-size: 1rem;
+        }
+        .imagenesfondos2 {
+            height: 10vw;
+            width: 10vw;
+            padding-top: 10px;
+        }
+    }
+}

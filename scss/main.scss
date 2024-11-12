@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import"./base";
+
+@import"./components/accordion";
+@import"./components/botones";
+@import"./components/footer";
+@import"./components/header";
+
+@import"./pages/home.scss";
+@import"./pages/sobrenosotros.scss";
+@import"./pages/fondos.scss";
+@import"./pages/tarifas.scss";
+@import"./pages/educacion.scss";
+@import"./pages/contacto.scss";
+
+
+
+
+
+
+
+

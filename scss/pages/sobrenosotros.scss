@@ -1,0 +1,207 @@
+.quienessomos {
+    .imgteam {
+        img {
+            width: 100vw;
+        }
+    }
+}
+.accordionosotros{
+    #accordionNosotros {
+        width: 100vw;
+}
+}
+
+.quehacemos {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 30px;
+    margin: 30px;
+
+    div {
+        .imagenquehacemos {
+            width: 60vw;
+            height: 30vw;
+        }
+
+        padding: 20px;
+        @include Flexalign(flex, column, center);
+        box-shadow: 0px 0px 10px gray;
+        cursor: pointer;
+        transition: transform box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $box-shadow;
+        }
+
+        p {
+            font-size: 0.8rem;
+            text-align: justify;
+            padding: 5px;
+        }
+    }
+
+    @media (min-width:768px) {
+        div {
+            .imagenquehacemos {
+                width: 50vw;
+                height: 20vw;
+                padding-top: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 10px;
+                text-align: justify;
+            }
+        }
+    }
+
+    @media (min-width:1040px) {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            .imagenquehacemos {
+                width: 20vw;
+                height: 15vw;
+                padding-top: 10px;
+            }
+
+            p {
+                text-align: justify;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    @media (min-width:1400px) {
+        div {
+            p {
+                font-size: 1.2rem;
+                padding: 5px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+section {
+    h2 {
+        @include h2(0.9rem, center);
+    }
+
+    .integrantesequipo {
+        gap: 20px;
+
+        .equipo {
+            width: 30vw;
+            height: 30vw;
+
+        }
+
+        div {
+            @include Flexalign(flex, column, center);
+            padding: 20px;
+            border-bottom: 0.5px solid $color-terciario;
+
+            p {
+                font-size: 0.8rem;
+                text-align: justify;
+            }
+        }
+
+        strong {
+            padding: 10px;
+        }
+    }
+
+    @media (min-width:480px) {
+        h2 {
+            @include h2(1.1rem, center);
+        }
+
+        .integrantesequipo {
+            div {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    @media (min-width:768px) {
+        h2 {
+            @include h2 (1.2rem, center);
+        }
+
+        .integrantesequipo {
+            display: grid;
+            grid-template-areas: "bloque1 bloque2"
+                "bloque3 bloque4";
+            gap: 20px;
+
+            div {
+                @include Flexalign(flex, column, center);
+                padding: 20px;
+                border-bottom: 0px solid black;
+            }
+
+            p {
+                font-size: 1rem;
+                text-align: justify;
+            }
+
+            .equipo {
+                width: 15vw;
+                height: 15vw;
+            }
+        }
+
+        .integrante1 {
+            grid-area: bloque1;
+        }
+
+        .integrante2 {
+            grid-area: bloque2;
+        }
+
+        .integrante3 {
+            grid-area: bloque3;
+        }
+
+        .integrante4 {
+            grid-area: bloque4;
+        }
+    }
+    @media (min-width:1040px) {
+        h2 {
+            @include h2(1.5rem, center);
+        }
+
+        .integrantesequipo {
+            display: flex;
+            justify-content: center;
+
+            div {
+                padding: 15px;
+                @include Flexalign(flex, column, center)
+            }
+
+            .equipo {
+                width: 10vw;
+                height: 10vw;
+            }
+
+            strong {
+                padding: 20px;
+                font-size: 0.9rem;
+            }
+            p{
+                font-size: 0.8rem;
+                text-align: justify;
+            }
+        }
+    }
+}

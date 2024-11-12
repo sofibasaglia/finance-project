@@ -1,0 +1,154 @@
+.tituloscontacto {
+    border-bottom: 1px solid #EC9720;
+    padding: 20px;
+
+    h1 {
+        @include h1();
+    }
+
+    h2 {
+        @include h2(0.8rem, center)
+    }
+}
+
+h4 {
+    font-size: 0.9rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.Contactanos {
+    @include Flexalign(flex, column, center);
+    padding: 20px;
+
+    div {
+        .formulariocontacto {
+            @include Flexalign(flex, column, center);
+            padding: 5px;
+            border-radius: 5px;
+            width: 70vw;
+            margin-top: 5px;
+        }
+
+        label {
+            font-size: 0.8rem;
+        }
+
+        ::placeholder {
+            font-size: 0.8rem;
+        }
+    }
+
+    .botoncontacto {
+        .boton {
+            @include boton($color-terciario, 0.8rem, 15px)
+        }
+    }
+}
+
+@media (min-width:480px) {
+    .tituloscontacto {
+        h2 {
+            @include h2(1rem, center)
+        }
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .Contactanos {
+
+        div {
+            .formulariocontacto {
+                width: 60vw;
+            }
+
+            label {
+                font-size: 0.9rem;
+            }
+
+            ::placeholder {
+                font-size: 0.9rem;
+            }
+        }
+
+        .botoncontacto {
+            .boton {
+                @include boton($color-terciario, 0.9rem, 15px)
+            }
+        }
+    }
+
+}
+
+@media (min-width:768px) {
+    .tituloscontacto {
+        h2 {
+            @include h2(1.1rem, center)
+        }
+    }
+
+    h4 {
+        font-size: 1rem
+    }
+
+    .Contactanos {
+
+        div {
+            .formulariocontacto {
+                width: 55vw;
+            }
+
+            label {
+                font-size: 1rem;
+            }
+
+            ::placeholder {
+                font-size: 1rem;
+            }
+        }
+
+        .botoncontacto {
+            .boton {
+                @include boton($color-terciario, 1rem, 15px)
+            }
+        }
+    }
+}
+
+@media (min-width:1400px) {
+    .tituloscontacto {
+        h2 {
+            @include h2(1.3rem, center)
+        }
+    }
+
+    h4 {
+        font-size: 1.2rem
+    }
+
+
+    .Contactanos {
+
+        div {
+            .formulariocontacto {
+                width: 50vw;
+            }
+
+            label {
+                font-size: 1.2rem;
+            }
+
+            ::placeholder {
+                font-size: 1.1rem;
+            }
+        }
+
+        .botoncontacto {
+            .boton {
+                @include boton($color-terciario, 1.1rem, 15px)
+            }
+        }
+    }
+}

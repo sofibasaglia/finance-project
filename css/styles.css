@@ -1,1774 +1,1431 @@
-/* 
-selector{
-propiedad: valor;
-
-}
-*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.navbar {
-    background-color: black;
+span {
+  color: #EC9720;
 }
 
 main.Home {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+}
+
+.accordion {
+  --bs-accordion-btn-bg: white;
+  --bs-accordion-active-bg: #EC9720;
+  --bs-accordion-border-radius: none;
+  --bs-accordion-border-width: none;
+  --bs-accordion-border-color: gray;
+}
+
+footer {
+  padding: 20px;
+  border-top: 5px solid #EC9720;
+  text-align: center;
+}
+footer .footerdiv div p {
+  line-height: 10px;
+  text-align: center;
+}
+@media (min-width: 320px) {
+  footer {
+    padding: 20px;
+    border-top: 5px solid #EC9720;
+    text-align: start;
+  }
+  footer .footerdiv {
+    display: grid;
+    grid-template-areas: "fondos tarifas" "nosotros informacion" "contacto contacto" "paises paises";
+    gap: 10px;
+  }
+  footer .footerdiv div p {
+    line-height: 10px;
+    text-align: start;
+  }
+  footer .footerdiv .fondosfooter {
+    grid-area: fondos;
+  }
+  footer .footerdiv .tarifasfooter {
+    grid-area: tarifas;
+  }
+  footer .footerdiv .aboutus {
+    grid-area: nosotros;
+  }
+  footer .footerdiv .info {
+    grid-area: informacion;
+  }
+  footer .footerdiv .contact {
+    grid-area: contacto;
+  }
+  footer .footerdiv .paises {
+    grid-area: paises;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 20px;
+    border-top: 5px solid #EC9720;
+    text-align: start;
+  }
+  footer .footerdiv {
+    display: grid;
+    grid-template-areas: "fondos tarifas nosotros" "informacion contacto paises";
+    gap: 20px;
+  }
+  footer .footerdiv div p {
+    line-height: 10px;
+    text-align: start;
+  }
+  footer .footerdiv .fondosfooter {
+    grid-area: fondos;
+  }
+  footer .footerdiv .tarifasfooter {
+    grid-area: tarifas;
+  }
+  footer .footerdiv .aboutus {
+    grid-area: nosotros;
+  }
+  footer .footerdiv .info {
+    grid-area: informacion;
+  }
+  footer .footerdiv .contact {
+    grid-area: contacto;
+  }
+  footer .footerdiv .paises {
+    grid-area: paises;
+  }
+}
+@media (min-width: 1040px) {
+  footer {
+    padding: 20px;
+    border-top: 5px solid #EC9720;
+    text-align: start;
+  }
+  footer .footerdiv {
+    display: grid;
+    grid-template-areas: "fondos tarifas nosotros informacion contacto" "paises paises paises paises paises";
+    justify-content: space-around;
+  }
+  footer .footerdiv div p {
+    line-height: 10px;
+    text-align: start;
+  }
+  footer .footerdiv .fondosfooter {
+    grid-area: fondos;
+  }
+  footer .footerdiv .tarifasfooter {
+    grid-area: tarifas;
+  }
+  footer .footerdiv .aboutus {
+    grid-area: nosotros;
+  }
+  footer .footerdiv .info {
+    grid-area: informacion;
+  }
+  footer .footerdiv .contact {
+    grid-area: contacto;
+  }
+  footer .footerdiv .paises {
+    grid-area: paises;
+  }
+}
+
+.navbar {
+  background-color: black;
 }
 
 .conteinerprincipal {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
-
-.hometitulo {
-    font-size: 3rem;
-    text-align: center;
+.conteinerprincipal .titulos .hometitulo {
+  font-size: 3rem;
+  text-align: center;
 }
-
 .conteinerprincipal .titulos h2 {
-    font-size: 2rem;
-    text-align: center;
+  font-size: 2rem;
+  text-align: center;
 }
-
-.imagenprincipal {
-    width: 100vw;
-    height: 50vw;
-    padding: 10px;
+.conteinerprincipal .imagenprincipal {
+  width: 100vw;
+  height: 50vw;
+  padding: 10px;
+}
+@media (min-width: 480px) {
+  .conteinerprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .conteinerprincipal .titulos .hometitulo {
+    font-size: 2.2rem;
+    margin: 15px;
+    text-align: left;
+  }
+  .conteinerprincipal .titulos h2 {
+    font-size: 1.5rem;
+    margin: 15px;
+    text-align: left;
+  }
+  .conteinerprincipal .imagenprincipal {
+    width: 50vw;
+    height: 25vw;
+  }
+}
+@media (min-width: 768px) {
+  .conteinerprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .conteinerprincipal .titulos .hometitulo {
+    font-size: 3rem;
+    margin: 20px;
+    text-align: left;
+  }
+  .conteinerprincipal .titulos h2 {
+    font-size: 1.8rem;
+    margin: 20px;
+    text-align: left;
+  }
+  .conteinerprincipal .imagenprincipal {
+    width: 60vw;
+    height: 30vw;
+  }
+}
+@media (min-width: 1040px) {
+  .conteinerprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .conteinerprincipal .titulos .hometitulo {
+    font-size: 4rem;
+    margin: 30px;
+    text-align: left;
+  }
+  .conteinerprincipal .titulos h2 {
+    font-size: 2.5rem;
+    margin: 30px;
+    text-align: left;
+  }
+  .conteinerprincipal .imagenprincipal {
+    width: 60vw;
+    height: 35vw;
+  }
+}
+@media (min-width: 1400px) {
+  .conteinerprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .conteinerprincipal .titulos .hometitulo {
+    font-size: 5rem;
+  }
+  .conteinerprincipal .titulos h2 {
+    font-size: 2.5rem;
+    margin: 35px;
+  }
+  .conteinerprincipal .imagenprincipal {
+    width: 60vw;
+    height: 35vw;
+  }
 }
 
 .textohome {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-
-.invertir {
-    width: 80%;
+.textohome .invertir {
+  width: 80%;
+  height: 100%;
+  padding: 40px;
+  box-shadow: 0px 0px 10px gray;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.textohome .invertir:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px gray;
+}
+.textohome .invertir h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+.textohome .invertir p {
+  text-align: justify;
+  font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  .textohome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+  .textohome .invertir {
+    width: 40%;
     height: 100%;
     padding: 40px;
     box-shadow: 0px 0px 10px gray;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.invertir:hover {
+    transition: transform box-shadow 0.3s ease-in-out;
+  }
+  .textohome .invertir:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 15px gray;
+  }
+  .textohome .invertir h3 {
+    font-size: 1.1rem;
+  }
+  .textohome .invertir p {
+    font-size: 1rem;
+  }
 }
-
-.textohome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.textohome .invertir p {
-    text-align: justify;
-    font-size: 0.8rem;
-}
-
-h1 {
+@media (min-width: 1040px) {
+  .textohome .invertir p {
+    font-size: 1.1rem;
+  }
+  .textohome .invertir h3 {
+    font-size: 1.3rem;
     text-align: center;
-    padding: 10px;
+  }
 }
-
-h2 {
-    font-size: 0.8rem;
-    text-align: center;
+@media (min-width: 1400px) {
+  .textohome .invertir p {
+    font-size: 1.2rem;
+  }
 }
 
 .nosotrosHome {
+  background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  height: 99vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nosotrosHome p {
+  text-align: justify;
+  font-size: 0.8rem;
+  margin: 20px;
+  text-align: justify;
+  background: rgba(5, 7, 12, 0.4);
+  padding: 20px;
+}
+.nosotrosHome .boton {
+  background-color: #EC9720;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+@media (min-width: 320px) {
+  .nosotrosHome {
     background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     display: grid;
     place-items: center;
-    height: 99vw;
+    height: 80vw;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.nosotrosHome p {
+  }
+  .nosotrosHome p {
     text-align: justify;
     font-size: 0.8rem;
     margin: 20px;
     text-align: justify;
     background: rgba(5, 7, 12, 0.4);
     padding: 20px;
-}
-
-.boton {
+  }
+  .nosotrosHome .boton {
     background-color: #EC9720;
     font-size: 0.8rem;
     border-radius: 15px;
+  }
 }
-
-.Home h3 {
-    font-size: 1rem;
-    text-align: center;
+@media (min-width: 350px) {
+  .nosotrosHome {
+    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 65vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-.img1 {
-    opacity: 0.4;
-    width: 20vw;
-    height: 15vw;
+@media (min-width: 400px) {
+  .nosotrosHome {
+    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 50vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-span {
+@media (min-width: 480px) {
+  .nosotrosHome {
+    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 45vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotrosHome p {
+    text-align: justify;
+    font-size: 0.9rem;
+    margin: 20px;
+    text-align: justify;
+    background: rgba(5, 7, 12, 0.4);
+    padding: 20px;
+  }
+  .nosotrosHome .boton {
     color: #EC9720;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .nosotrosHome {
+    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nosotrosHome p {
+    text-align: justify;
+    font-size: 1rem;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    background: rgba(5, 7, 12, 0.4);
+    padding: 20px;
+  }
+  .nosotrosHome .boton {
+    color: #EC9720;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1040px) {
+  .nosotrosHome {
+    background: linear-gradient(rgba(44, 42, 42, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nosotrosHome p {
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+    background: rgba(5, 7, 12, 0.4);
+    padding: 20px;
+  }
+  .nosotrosHome .boton {
+    color: #EC9720;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .nosotrosHome {
+    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nosotrosHome p {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    text-align: justify;
+    background: rgba(5, 7, 12, 0.4);
+    padding: 20px;
+  }
 }
 
+.visionymision {
+  border-bottom: 0.5px solid gray;
+}
 .visionymision h3 {
+  text-align: start;
+  margin: 10px;
+  padding: 5px;
+}
+.visionymision span {
+  color: #EC9720;
+}
+.visionymision p {
+  text-align: justify;
+  margin: 15px;
+  font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  .visionymision {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+  }
+  .visionymision h3 {
     text-align: start;
     margin: 10px;
     padding: 5px;
-}
-
-.visionymision p {
+  }
+  .visionymision p {
     text-align: justify;
     margin: 15px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
 }
-
-.slider {
-    height: 75vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
-
-.imagenesfondos {
-
+@media (min-width: 1040px) {
+  .visionymision {
+    height: 20vw;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px;
-    padding: 50px;
-    animation: scroll 5s linear infinite;
-}
-
-@keyframes scroll {
-    0% {
-
-        transform: translateX(0);
-    }
-
-    100% {
-
-        transform: translateX(-250px);
-    }
-}
-
-
-footer {
-    padding: 20px;
-    border-top: 5px solid #EC9720;
-    text-align: center;
-}
-
-.footerdiv div p {
-    line-height: 10px;
-    text-align: center;
-}
-
-.accordion {
-    --bs-accordion-btn-bg: white;
-    --bs-accordion-active-bg: #EC9720;
-    --bs-accordion-border-radius: none;
-    --bs-accordion-border-width: 0.1px;
-    --bs-accordion-border-color: gray;
-}
-
-.imgteam img {
-    width: 100vw;
-}
-
-.quehacemos {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    gap: 30px;
-    margin: 20px;
-}
-
-.imagenquehacemos {
-    width: 60vw;
-    height: 30vw;
-}
-
-.quehacemos div {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 10px gray;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.quehacemos div:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 12px gray;
-}
-
-.quehacemos p {
-    font-size: 0.8rem;
-    padding: 5px;
-    text-align: justify;
-}
-
-.integrantesequipo {
-    gap: 20px;
-}
-
-.integrantesequipo .equipo {
-    width: 30vw;
-    height: 30vw;
-}
-
-.integrantesequipo div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 0.5px solid #EC9720;
-}
-
-.integrantesequipo strong {
-    padding: 10px;
-}
-
-.integrantesequipo div p {
-    font-size: 0.8rem;
-    text-align: justify;
-}
-
-form {
-    padding: 10px;
-}
-
-label {
-    font-size: 0.8rem;
-}
-
-::placeholder {
-    font-size: 0.8rem;
-}
-
-.formulariocontacto {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    border-radius: 5px;
-    width: 90vw;
-    margin-top: 5px;
-}
-
-.formulariocontacto {
-    width: 70vw;
-
-}
-
-.Contactanos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.botoncontacto {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-h4 {
-    font-size: 0.9rem;
+    gap: 20x;
     margin: 10px;
-    text-align: center;
-}
-
-.tituloscontacto {
-    border-bottom: 1px solid #EC9720;
-    padding: 20px;
-}
-
-.articuloseducativos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
-}
-
-.titulospaginas p {
-    padding: 40px;
+  }
+  .visionymision h3 {
+    text-align: start;
+    margin: 10px;
+    padding: 5px;
+  }
+  .visionymision p {
     text-align: justify;
+    margin: 15px;
+    font-size: 1.1rem;
+  }
 }
-
-.card {
-    width: 80vw;
-    height: 85vw;
-    background-color: black;
-    box-shadow: 0px 0px 10px gray;
-}
-
-.card h5 {
-    font-size: 0.8rem;
-}
-
-.card a {
-    font-size: 0.8rem;
-}
-
-.articuloseducativos img {
-    width: 50vw;
-    height: 60vw;
-    padding: 20px;
-    margin-left: 50px;
-}
-
-iframe {
-    width: 80vw;
-    height: 70vw;
-    margin-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.titulostarifas p {
+@media (min-width: 1400px) {
+  .visionymision p {
     text-align: justify;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.8rem;
+    margin: 15px;
+    font-size: 1.2rem;
+  }
 }
 
-.categorias h5 {
-    text-align: center;
-    font-size: 1rem;
+.fondoshome h4 {
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+}
+.fondoshome .fondosHome {
+  display: grid;
+  grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+  place-items: center;
+  gap: 20px;
+}
+.fondoshome .fondosHome div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 60vw;
+  border: 1px solid #EC9720;
+}
+.fondoshome .fondosHome h3 {
+  font-size: 0.8rem;
+}
+.fondoshome .fondosHome .imagenesfondos2 {
+  height: 20vw;
+  width: 20vw;
+  padding-top: 10px;
+}
+.fondoshome .fondosHome .fondo1 {
+  grid-area: fondo1;
+}
+.fondoshome .fondosHome .fondo2 {
+  grid-area: fondo2;
+}
+.fondoshome .fondosHome .fondo3 {
+  grid-area: fondo3;
+}
+.fondoshome .fondosHome .fondo4 {
+  grid-area: fondo4;
+}
+@media (min-width: 768px) {
+  .fondoshome h4 {
+    font-size: 2rem;
     padding: 20px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 10px gray;
-}
-
-.categorias p {
-    text-align: justify;
-    padding: 30px;
-}
-
-div em {
-    font-size: 6rem;
-    display: grid;
-    place-items: center;
-
-}
-
-.asesoramiento a {
-    display: flex;
-    justify-content: center;
-
-}
-
-.acordionpreguntas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.titulofondos {
-    padding: 20px;
-    font-size: 1rem;
-}
-
-.fondosHome div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40vw;
-    height: 60vw;
-    border: 1px solid #EC9720;
-}
-
-.fondosHome {
+  }
+  .fondoshome .fondosHome {
     display: grid;
     grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
     place-items: center;
     gap: 20px;
-}
-
-.fondo1 {
-    grid-area: fondo1;
-}
-
-.fondo2 {
-    grid-area: fondo2;
-}
-
-.fondo3 {
-    grid-area: fondo3;
-}
-
-.fondo4 {
-    grid-area: fondo4;
-}
-
-
-.imagenesfondos2 {
+  }
+  .fondoshome .fondosHome div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50vw;
+    border: 1px solid #EC9720;
+  }
+  .fondoshome .fondosHome h3 {
+    font-size: 1rem;
+  }
+  .fondoshome .fondosHome .imagenesfondos2 {
     height: 20vw;
     width: 20vw;
     padding-top: 10px;
+  }
+  .fondoshome .fondo1 {
+    grid-area: fondo1;
+  }
+  .fondoshome .fondo2 {
+    grid-area: fondo2;
+  }
+  .fondoshome .fondo3 {
+    grid-area: fondo3;
+  }
+  .fondoshome .fondo4 {
+    grid-area: fondo4;
+  }
 }
-
-.fondosHome h3 {
-    font-size: 0.8rem;
-}
-
-
-@media(min-width: 320px) {
-    footer {
-        padding: 20px;
-        border-top: 5px solid #EC9720;
-        text-align: start;
-    }
-
-    .footerdiv div p {
-        line-height: 10px;
-        text-align: start;
-    }
-
-    footer .footerdiv {
-        display: grid;
-        grid-template-areas: "fondos tarifas"
-            "nosotros informacion"
-            "contacto contacto"
-            "paises paises";
-        gap: 10px;
-    }
-
-    .fondosfooter {
-        grid-area: fondos;
-    }
-
-    .tarifasfooter {
-        grid-area: tarifas;
-    }
-
-    .aboutus {
-        grid-area: nosotros;
-    }
-
-    .info {
-        grid-area: informacion;
-    }
-
-    .contact {
-        grid-area: contacto;
-    }
-
-    .paises {
-        grid-area: paises;
-    }
-
-    .nosotrosHome {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 80vw;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nosotrosHome p {
-        text-align: justify;
-        font-size: 0.8rem;
-        margin: 20px;
-        text-align: justify;
-        background: rgba(5, 7, 12, 0.4);
-        padding: 20px;
-    }
-
-    .quehacemos p {
-        font-size: 0.9rem;
-        padding: 5px;
-        text-align: justify;
-    }
-
-    .titulostarifas p {
-        text-align: justify;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 0.9rem;
-    }
-
-    .categorias h5 {
-        text-align: center;
-        font-size: 1rem;
-        padding: 20px;
-        border: 1px solid black;
-        box-shadow: 0px 0px 10px gray;
-    }
-
-    .categorias p {
-        text-align: justify;
-        padding: 40px;
-        font-size: 0.9rem;
-    }
-
-    .asesoramiento a {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .accordion {
-        width: 90vw;
-    }
-
-    #accordionNosotros {
-        width: 100vw;
-    }
-
-    .acordionpreguntas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-}
-
-@media(min-width:350px) {
-    .nosotrosHome {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 65vw;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
-@media(min-width:400px) {
-    .nosotrosHome {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 50vw;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-}
-
-
-@media(min-width: 480px) {
-
-    .hometitulo {
-        font-size: 2.2rem;
-        margin: 15px;
-        text-align: left;
-    }
-
-    .conteinerprincipal .titulos h2 {
-        font-size: 1.5rem;
-        margin: 15px;
-        text-align: left;
-    }
-
-    .imagenprincipal {
-        width: 50vw;
-        height: 25vw;
-    }
-
-    .conteinerprincipal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .nosotrosHome {
-        padding: 20px;
-    }
-
-    .equipohome {
-        width: 100vw;
-        height: 60vw;
-    }
-
-    .nosotrosHome p {
-        text-align: justify;
-        font-size: 0.8rem;
-    }
-
-    .boton {
-        color: #EC9720;
-        font-size: 0.8rem;
-    }
-
-
-    label {
-        font-size: 0.9rem;
-    }
-
-    ::placeholder {
-        font-size: 0.9rem;
-    }
-
-    h4 {
-        font-size: 1rem;
-        margin: 10px;
-    }
-
-    .tituloscontacto h2 {
-        font-size: 1rem;
-    }
-
-    .Contactanos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .formulariocontacto {
-        width: 60vw;
-
-    }
-
-    .nosotrosHome {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 45vw;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nosotrosHome p {
-        text-align: justify;
-        font-size: 0.9rem;
-        margin: 20px;
-        text-align: justify;
-        background: rgba(5, 7, 12, 0.4);
-        padding: 20px;
-    }
-
-    .boton {
-        color: #EC9720;
-        font-size: 0.9rem;
-    }
-
-    .articuloseducativos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    h2 {
-        font-size: 1.1rem;
-    }
-
-    .card {
-        width: 65vw;
-        height: 75vw;
-    }
-
-    .card h5 {
-        font-size: 0.9rem;
-    }
-
-    .card a {
-        font-size: 0.9rem;
-    }
-
-    .articuloseducativos img {
-        width: 50vw;
-        height: 60vw;
-        padding: 20px;
-        margin-left: 50px;
-    }
-
-    iframe {
-        width: 80vw;
-        height: 70vw;
-        margin-left: 45px;
-    }
-
-    .quehacemos p {
-        font-size: 1rem;
-        padding: 5px;
-        text-align: justify;
-    }
-
-    .titulostarifas p {
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1rem;
-    }
-
-    .categorias h5 {
-        text-align: center;
-        font-size: 1.1rem;
-        padding: 20px;
-        border: 1px solid black;
-        box-shadow: 0px 0px 10px gray;
-    }
-
-    .categorias p {
-        text-align: justify;
-        padding: 40px;
-        font-size: 1rem;
-    }
-
-    div em {
-        font-size: 7rem;
-        display: grid;
-        place-items: center;
-    }
-
-    .asesoramiento a {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .accordion {
-        width: 70vw;
-    }
-
-    .acordionpreguntas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media(min-width:768px) {
-    .hometitulo {
-        font-size: 3rem;
-        margin: 10px;
-        text-align: left;
-    }
-
-    .conteinerprincipal .titulos h2 {
-        font-size: 2rem;
-        margin: 10px;
-        text-align: left;
-    }
-
-    .imagenprincipal {
-        width: 60vw;
-        height: 30vw;
-    }
-
-    .conteinerprincipal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .invertir {
-        width: 40%;
-        height: 100%;
-        padding: 40px;
-        box-shadow: 0px 0px 10px gray;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .invertir:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 15px gray;
-    }
-
-    .textohome {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .Home h3 {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-
-    .visionymision {
-        display: flex;
-        gap: 10px;
-        margin: 10px;
-    }
-
-    .visionymision h3 {
-        text-align: start;
-        margin: 10px;
-        padding: 5px;
-    }
-
-    .visionymision p {
-        text-align: justify;
-        margin: 15px;
-        font-size: 1rem;
-    }
-
-    footer {
-        padding: 20px;
-        border-top: 5px solid #EC9720;
-        text-align: start;
-    }
-
-    .footerdiv div p {
-        line-height: 10px;
-        text-align: start;
-    }
-
-    footer .footerdiv {
-        display: grid;
-        grid-template-areas: "fondos tarifas nosotros"
-            "informacion contacto paises";
-        gap: 20px;
-    }
-
-    .fondosfooter {
-        grid-area: fondos;
-    }
-
-    .tarifasfooter {
-        grid-area: tarifas;
-    }
-
-    .aboutus {
-        grid-area: nosotros;
-    }
-
-    .info {
-        grid-area: informacion;
-    }
-
-    .contact {
-        grid-area: contacto;
-    }
-
-    .paises {
-        grid-area: paises;
-    }
-
-    .quienessomos p {
-        padding: 20px;
-        text-align: justify;
-        font-size: 1rem;
-    }
-
-    .quehacemos {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin: 60px;
-    }
-
-    .imagenquehacemos {
-        width: 50vw;
-        height: 20vw;
-        padding-top: 15px;
-    }
-
-
-    .quehacemos div {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0px 0px 10px gray;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .quehacemos div:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 12px gray;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .quehacemos p {
-        font-size: 1rem;
-        padding: 10px;
-        text-align: justify;
-    }
-
-    .integrantesequipo {
-        display: grid;
-        grid-template-areas: "bloque1 bloque2"
-            "bloque3 bloque4";
-        gap: 20px;
-    }
-
-    .integrante1 {
-        grid-area: bloque1;
-    }
-
-    .integrante2 {
-        grid-area: bloque2;
-    }
-
-    .integrante3 {
-        grid-area: bloque3;
-    }
-
-    .integrante4 {
-        grid-area: bloque4;
-    }
-
-    .integrantesequipo .equipo {
-        width: 15vw;
-        height: 15vw;
-    }
-
-    .integrantesequipo div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        border-bottom: 0.0px solid black;
-    }
-
-    .integrantesequipo div p {
-        font-size: 1rem;
-        text-align: justify;
-    }
-
-
-    label {
-        font-size: 1rem;
-    }
-
-    h4 {
-        font-size: 1rem;
-        margin: 10px;
-        text-align: center;
-    }
-
-    .tituloscontacto {
-        border-bottom: 1px solid #EC9720;
-        padding: 20px;
-    }
-
-    .tituloscontacto h2 {
-        font-size: 1.1rem;
-    }
-
-    .formulariocontacto {
-        width: 55vw;
-
-    }
-
-    .Contactanos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nosotrosHome {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 40vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .nosotrosHome p {
-        text-align: justify;
-        font-size: 1rem;
-        margin-top: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        text-align: justify;
-        background: rgba(5, 7, 12, 0.4);
-        padding: 20px;
-
-    }
-
-    .boton {
-        color: #EC9720;
-        font-size: 1.1rem;
-
-    }
-
-    .articuloseducativos {
-
-        display: grid;
-        place-items: center;
-        grid-template-areas: "articulo1 articulo2"
-            "articulo3 articulo4";
-    }
-
-    .titulospaginas p {
-        padding: 40px;
-        text-align: justify;
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 1.1rem;
-    }
-
-    .card {
-        width: 40vw;
-        height: 42vw;
-    }
-
-    .card h5 {
-        font-size: 0.9rem;
-    }
-
-    .card a {
-        font-size: 0.9rem;
-    }
-
-    .articuloseducativos img {
-        width: 30vw;
-        height: 30vw;
-        padding: 10px;
-    }
-
-    iframe {
-        width: 60vw;
-        height: 40vw;
-        margin-left: 40px;
-    }
-
-    .titulostarifas p {
-        text-align: justify;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1rem;
-    }
-
-    .categorias h5 {
-        text-align: center;
-        font-size: 1.1rem;
-        padding: 20px;
-        border: 1px solid black;
-        box-shadow: 0px 0px 10px gray;
-    }
-
-    div em {
-        font-size: 11rem;
-        padding: 40px;
-    }
-
-    .cartera {
-        display: flex;
-        align-items: center
-    }
-
-    .mantenimiento {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .categorias p {
-        font-size: 1rem;
-        text-align: justify;
-
-    }
-
-    .asesoramiento a {
-        display: flex;
-        justify-content: center;
-    }
-
-    .accordion {
-        width: 70vw;
-    }
-
-    .acordionpreguntas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .titulofondos {
-        padding: 30px;
-        font-size: 1rem;
-    }
-
-    .fondosHome div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 40vw;
-        height: 50vw;
-        border: 1px solid #EC9720;
-
-
-    }
-
-    .fondosHome {
-        display: grid;
-        grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
-        place-items: center;
-        gap: 20px;
-    }
-
-    .fondo1 {
-        grid-area: fondo1;
-    }
-
-    .fondo2 {
-        grid-area: fondo2;
-    }
-
-    .fondo3 {
-        grid-area: fondo3;
-    }
-
-    .fondo4 {
-        grid-area: fondo4;
-    }
-
-
-    .imagenesfondos2 {
-        height: 20vw;
-        width: 20vw;
-        padding-top: 10px;
-    }
-
-    .fondosHome h3 {
-        font-size: 1rem;
-    }
-
-}
-
-@media(min-width:1040px) {
-    .hometitulo {
-        font-size: 4.5rem;
-        margin: 10px;
-        text-align: left;
-    }
-
-    .conteinerprincipal .titulos h2 {
-        font-size: 2.5rem;
-        margin: 10px;
-        text-align: left;
-    }
-
-    .imagenprincipal {
-        width: 60vw;
-        height: 35vw;
-    }
-
-    .conteinerprincipal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .Home h3 {
-        font-size: 1.3rem;
-        text-align: center;
-    }
-
-    .textohome .invertir p {
-        font-size: 1rem;
-    }
-
-
-    .visionymision {
-        height: 20vw;
-        display: flex;
-        align-items: center;
-        gap: 20x;
-        margin: 10px;
-    }
-
-    .visionymision h3 {
-        text-align: start;
-        margin: 10px;
-        padding: 5px;
-    }
-
-    .visionymision p {
-        text-align: justify;
-        margin: 15px;
-        font-size: 1rem;
-    }
-
-    footer {
-        padding: 20px;
-        border-top: 5px solid #EC9720;
-        text-align: start;
-    }
-
-    .footerdiv div p {
-        line-height: 10px;
-        text-align: start;
-    }
-
-    footer .footerdiv {
-        display: grid;
-        grid-template-areas: "fondos tarifas nosotros informacion contacto"
-            "paises paises paises paises paises";
-        justify-content: space-around;
-    }
-
-    .fondosfooter {
-        grid-area: fondos;
-    }
-
-    .tarifasfooter {
-        grid-area: tarifas;
-    }
-
-    .aboutus {
-        grid-area: nosotros;
-    }
-
-    .info {
-        grid-area: informacion;
-    }
-
-    .contact {
-        grid-area: contacto;
-    }
-
-    .paises {
-        grid-area: paises;
-    }
-
-    .quehacemos {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .imagenquehacemos {
-        width: 20vw;
-        height: 15vw;
-        padding-top: 10px;
-    }
-
-    .quehacemos div {
-        padding: 30px;
-        margin: 40px;
-        box-shadow: 0px 0px 10px gray;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .quehacemos div:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 12px gray;
-    }
-
-    .quehacemos p {
-        text-align: justify;
-        font-size: 1.1rem;
-    }
-
-    .integrantesequipo {
-        display: flex;
-        justify-content: center;
-    }
-
-    .integrantesequipo div {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .integrantesequipo .equipo {
-        width: 10vw;
-        height: 10vw;
-    }
-
-    .integrantesequipo strong {
-        padding: 20px;
-        font-size: 0.9rem;
-    }
-
-    .integrantesequipo p {
-        text-align: justify;
-        font-size: 0.8rem;
-    }
-
-    .nosotrosHome {
-        background: linear-gradient(rgba(44, 42, 42, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 35vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .nosotrosHome p {
-        text-align: justify;
-        font-size: 1.1rem;
-        margin-top: 100px;
-        margin-left: 200px;
-        margin-right: 200px;
-        text-align: justify;
-        background: rgba(5, 7, 12, 0.4);
-        padding: 20px;
-
-    }
-
-    .boton {
-        color: #EC9720;
-        font-size: 1.1rem;
-
-    }
-
-    .articuloseducativos {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .titulospaginas p {
-        padding-left: 60px;
-        padding-right: 60px;
-        text-align: justify;
-        font-size: 1.1rem;
-    }
-
-    h2 {
-        margin-top: 20px;
-        font-size: 1.2rem;
-    }
-
-    .card {
-        height: 30vw;
-    }
-
-    .card h5 {
-        font-size: 0.8rem;
-    }
-
-    .card a {
-        font-size: 0.8rem;
-    }
-
-    .articuloseducativos img {
-        width: 18vw;
-        height: 20vw;
-        padding: 10px;
-    }
-
-    iframe {
-        width: 40vw;
-        height: 30vw;
-        margin-left: 40px;
-    }
-
-    .titulostarifas p {
-        text-align: justify;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.1rem;
-    }
-
-    .categorias h5 {
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 20px;
-        border: 1px solid black;
-        box-shadow: 0px 0px 10px gray;
-    }
-
-    div em {
-        font-size: 12rem;
-        padding: 70px;
-
-    }
-
-    .cartera {
-        display: flex;
-        align-items: center
-    }
-
-    .categorias p {
-        font-size: 1.1rem;
-        text-align: justify;
-    }
-
-    .mantenimiento {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-
-    .asesoramiento a {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .accordion {
-        width: 45vw;
-        --bs-accordion-border-width: 0px;
-    }
-
-    .acordionpreguntas {
-        display: grid;
-        grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
-        place-items: center;
-    }
-
-    .titulofondos {
-        padding: 30px;
-        font-size: 1.2rem;
-    }
-
-    .fondosHome div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 20vw;
-        height: 30vw;
-        border: 1px solid #EC9720;
-
-
-    }
-
-    .fondosHome {
-        display: flex;
-        justify-content: center;
-    }
-
-
-
-    .imagenesfondos2 {
-        height: 10vw;
-        width: 10vw;
-        padding-top: 10px;
-    }
-
-    .fondosHome h3 {
-        font-size: 1rem;
-    }
-}
-
-
-@media(min-width:1400px) {
-    .hometitulo {
-        font-size: 6rem;
-    }
-
-    .titulos h2 {
-        font-size: 2.5rem;
-    }
-
-    .imagenprincipal {
-        width: 60vw;
-        height: 35vw;
-    }
-
-    .conteinerprincipal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .textohome .invertir p {
-        font-size: 1.2rem;
-    }
-
-    .visionymision {
-        display: flex;
-        gap: 20x;
-        margin: 10px;
-    }
-
-    .visionymision h3 {
-        text-align: start;
-        margin: 10px;
-        padding: 5px;
-    }
-
-    .visionymision p {
-        text-align: justify;
-        margin: 15px;
-        font-size: 1.2rem;
-    }
-
-    .nosotrosHome {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 30vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .nosotrosHome p {
-        text-align: justify;
-        font-size: 1.2rem;
-        margin-top: 200px;
-        margin-left: 300px;
-        margin-right: 300px;
-        margin-bottom: 50px;
-        text-align: justify;
-        background: rgba(5, 7, 12, 0.4);
-        padding: 20px;
-
-    }
-
-    .quehacemos p {
-        font-size: 1.1rem;
-        padding: 5px;
-        text-align: justify;
-    }
-
-    .boton {
-        color: #EC9720;
-        font-size: 1.2rem;
-
-    }
-
-    .articuloseducativos {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .titulospaginas p {
-        padding-left: 70px;
-        padding-right: 70px;
-        text-align: justify;
-        font-size: 1.2rem;
-    }
-
-    h2 {
-        margin-top: 20px;
-        font-size: 1.2rem;
-    }
-
-    .card {
-        width: 35vw;
-        height: 25vw;
-    }
-
-    .card h5 {
-        font-size: 1rem;
-    }
-
-    .card a {
-        font-size: 1rem;
-    }
-
-    .articuloseducativos img {
-        width: 20vw;
-        height: 20vw;
-        padding: 10px;
-    }
-
-    iframe {
-        width: 40vw;
-        height: 25vw;
-        margin-left: 30px;
-    }
-
-    .titulostarifas p {
-        text-align: justify;
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.2rem;
-    }
-
-    .categorias h5 {
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 20px;
-        border: 1px solid black;
-        box-shadow: 0px 0px 10px gray;
-    }
-
-    div em {
-        font-size: 15rem;
-        padding: 70px;
-
-    }
-
-    .cartera {
-        display: flex;
-        align-items: center
-    }
-
-
-    .categorias p {
-        font-size: 1.2rem;
-        text-align: justify;
-    }
-
-    .mantenimiento {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .asesoramiento p {
-        text-align: justify;
-        padding: 30px;
-        font-size: 1.2rem;
-    }
-
-    .asesoramiento a {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .accordion {
-        width: 45vw;
-        --bs-accordion-border-width: 0px;
-    }
-
-    .acordionpreguntas {
-        display: grid;
-        grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
-        place-items: center;
-    }
-    
-    .titulofondos {
-        padding: 30px;
-        font-size: 1.2rem;
-    }
-
-    .fondosHome div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 20vw;
-        height: 30vw;
-        border: 1px solid #EC9720;
-
-
-    }
-
-    .fondosHome {
-        display: flex;
-        justify-content: center;
-    }
-    .imagenesfondos2 {
-        height: 10vw;
-        width: 10vw;
-        padding-top: 10px;
-    }
-
-    .fondosHome h3 {
-        font-size: 1rem;
-    }
-}
-
-
-
-
-
-
-/* 
-
-section .informacion {
-    padding: 50px;
-    gap: 10px;
+@media (min-width: 1040px) {
+  .fondoshome .fondosHome {
     display: flex;
     justify-content: center;
-
-
+  }
+  .fondoshome .fondosHome div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 30vw;
+    border: 1px solid #EC9720;
+  }
+  .fondoshome .fondosHome h3 {
+    font-size: 1rem;
+  }
+  .fondoshome .fondosHome .imagenesfondos2 {
+    height: 10vw;
+    width: 10vw;
+    padding-top: 10px;
+  }
 }
 
-section .informacion div {
+.slider {
+  height: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+.slider .imagenesfondos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  animation: scroll 5s linear infinite;
+}
+.slider .imagenesfondos .img1 {
+  opacity: 0.4;
+  width: 20vw;
+  height: 15vw;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250px);
+  }
+}
+
+.quienessomos .imgteam img {
+  width: 100vw;
+}
+
+.accordionosotros #accordionNosotros {
+  width: 100vw;
+}
+
+.quehacemos {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 30px;
+  margin: 30px;
+}
+.quehacemos div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px gray;
+  cursor: pointer;
+  transition: transform box-shadow 0.3s ease-in-out;
+}
+.quehacemos div .imagenquehacemos {
+  width: 60vw;
+  height: 30vw;
+}
+.quehacemos div:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px gray;
+}
+.quehacemos div p {
+  font-size: 0.8rem;
+  text-align: justify;
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .quehacemos div .imagenquehacemos {
+    width: 50vw;
+    height: 20vw;
+    padding-top: 15px;
+  }
+  .quehacemos div p {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: justify;
+  }
+}
+@media (min-width: 1040px) {
+  .quehacemos {
+    display: flex;
+    flex-direction: row;
+  }
+  .quehacemos div .imagenquehacemos {
+    width: 20vw;
+    height: 15vw;
+    padding-top: 10px;
+  }
+  .quehacemos div p {
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .quehacemos div p {
+    font-size: 1.2rem;
+    padding: 5px;
+    text-align: justify;
+  }
+}
+
+section h2 {
+  font-size: 0.9rem;
+  text-align: center;
+}
+section .integrantesequipo {
+  gap: 20px;
+}
+section .integrantesequipo .equipo {
+  width: 30vw;
+  height: 30vw;
+}
+section .integrantesequipo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 0.5px solid #EC9720;
+}
+section .integrantesequipo div p {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+section .integrantesequipo strong {
+  padding: 10px;
+}
+@media (min-width: 480px) {
+  section h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  section .integrantesequipo div p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  section h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  section .integrantesequipo {
+    display: grid;
+    grid-template-areas: "bloque1 bloque2" "bloque3 bloque4";
+    gap: 20px;
+  }
+  section .integrantesequipo div {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-section .informacion div:hover {
-    transform: scale(1.1);
-}
-
-section .informacion div p {
     padding: 20px;
+    border-bottom: 0px solid black;
+  }
+  section .integrantesequipo p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  section .integrantesequipo .equipo {
+    width: 15vw;
+    height: 15vw;
+  }
+  section .integrante1 {
+    grid-area: bloque1;
+  }
+  section .integrante2 {
+    grid-area: bloque2;
+  }
+  section .integrante3 {
+    grid-area: bloque3;
+  }
+  section .integrante4 {
+    grid-area: bloque4;
+  }
+}
+@media (min-width: 1040px) {
+  section h2 {
+    font-size: 1.5rem;
     text-align: center;
+  }
+  section .integrantesequipo {
+    display: flex;
+    justify-content: center;
+  }
+  section .integrantesequipo div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .integrantesequipo .equipo {
+    width: 10vw;
+    height: 10vw;
+  }
+  section .integrantesequipo strong {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  section .integrantesequipo p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
 }
 
-.video {
-    padding: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+.titulospaginas h1 {
+  text-align: center;
+  padding: 10px;
+}
+.titulospaginas p {
+  font-size: 0.8rem;
+  padding: 40px;
+  text-align: justify;
 }
 
-.video:hover {
-    transform: scale(1.1);
+@media (min-width: 480px) {
+  .titulospaginas p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1040px) {
+  .titulospaginas p {
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .titulospaginas p {
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+}
+.fondosHome {
+  display: grid;
+  grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+  place-items: center;
+  gap: 20px;
+}
+.fondosHome div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 60vw;
+  border: 1px solid #EC9720;
+}
+.fondosHome h3 {
+  font-size: 0.8rem;
+}
+.fondosHome .imagenesfondos2 {
+  height: 20vw;
+  width: 20vw;
+  padding-top: 10px;
+}
+.fondosHome .fondo1 {
+  grid-area: fondo1;
+}
+.fondosHome .fondo2 {
+  grid-area: fondo2;
+}
+.fondosHome .fondo3 {
+  grid-area: fondo3;
+}
+.fondosHome .fondo4 {
+  grid-area: fondo4;
+}
 
-} */
+@media (min-width: 768px) {
+  h4 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .fondosHome {
+    display: grid;
+    grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+    place-items: center;
+    gap: 20px;
+  }
+  .fondosHome div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50vw;
+    border: 1px solid #EC9720;
+  }
+  .fondosHome h3 {
+    font-size: 1rem;
+  }
+  .fondosHome .imagenesfondos2 {
+    height: 20vw;
+    width: 20vw;
+    padding-top: 10px;
+  }
+  .fondo1 {
+    grid-area: fondo1;
+  }
+  .fondo2 {
+    grid-area: fondo2;
+  }
+  .fondo3 {
+    grid-area: fondo3;
+  }
+  .fondo4 {
+    grid-area: fondo4;
+  }
+}
+@media (min-width: 1040px) {
+  .fondosHome {
+    display: flex;
+    justify-content: center;
+  }
+  .fondosHome div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 30vw;
+    border: 1px solid #EC9720;
+  }
+  .fondosHome h3 {
+    font-size: 1rem;
+  }
+  .fondosHome .imagenesfondos2 {
+    height: 10vw;
+    width: 10vw;
+    padding-top: 10px;
+  }
+}
+.titulostarifas h1 {
+  text-align: center;
+  padding: 10px;
+}
+.titulostarifas p {
+  text-align: justify;
+  margin: 20px;
+  font-size: 0.8rem;
+}
+
+.categorias h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px gray;
+}
+.categorias p {
+  font-size: 0.8rem;
+  text-align: justify;
+  padding: 30px;
+}
+.categorias div em {
+  font-size: 6rem;
+  display: grid;
+  place-items: center;
+}
+.categorias .asesoramiento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categorias .asesoramiento .boton {
+  background-color: #EC9720;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+.categorias .acordionpreguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.categorias .acordionpreguntas .accordion {
+  width: 90vw;
+}
+
+@media (min-width: 320px) {
+  .titulostarifas p {
+    text-align: justify;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  .categorias p {
+    text-align: justify;
+    padding: 40px;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 480px) {
+  .titulostarifas p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .categorias h2 {
+    font-size: 1.1;
+    text-align: center;
+  }
+  .categorias p {
+    text-align: justify;
+    padding: 40px;
+    font-size: 1rem;
+  }
+  .categorias div em {
+    font-size: 7rem;
+    display: grid;
+    place-items: center;
+  }
+  .categorias .asesoramiento .boton {
+    background-color: #EC9720;
+    font-size: 0.9rem;
+    border-radius: 15px;
+  }
+  .categorias .acordionpreguntas .accordion {
+    width: 70vw;
+  }
+}
+@media (min-width: 768px) {
+  .titulostarifas p {
+    text-align: justify;
+    margin: 20px;
+    font-size: 1rem;
+  }
+  .categorias h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .categorias div em {
+    font-size: 11rem;
+    padding: 40px;
+  }
+  .categorias div p {
+    font-size: 0.9rem;
+    padding-top: 60px;
+  }
+  .categorias .asesoramiento .boton {
+    background-color: #EC9720;
+    font-size: 1rem;
+    border-radius: 15px;
+  }
+  .categorias .cartera {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .categorias .mantenimiento {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1040px) {
+  .titulostarifas p {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.1rem;
+  }
+  .categorias h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .categorias p {
+    font-size: 1.1rem;
+  }
+  .categorias div em {
+    font-size: 12rem;
+    padding: 70px;
+  }
+  .categorias div p {
+    font-size: 1.1rem;
+    margin: 20px;
+  }
+  .categorias .asesoramiento .boton {
+    background-color: #EC9720;
+    font-size: 1.1rem;
+    border-radius: 15px;
+  }
+  .categorias .acordionpreguntas {
+    display: grid;
+    grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
+    place-items: center;
+  }
+  .categorias .acordionpreguntas .accordion {
+    width: 45vw;
+    --bs-accordion-border-width: 0px;
+  }
+}
+@media (min-width: 1400px) {
+  .titulostarifas p {
+    font-size: 1.2rem;
+  }
+  .categorias h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .categorias div em {
+    font-size: 15rem;
+    padding: 70px;
+  }
+  .categorias p {
+    font-size: 1.2rem;
+  }
+  .categorias .asesoramiento .boton {
+    background-color: #EC9720;
+    font-size: 1.2rem;
+    border-radius: 15px;
+  }
+}
+.titulospaginas h1 {
+  text-align: center;
+  padding: 10px;
+}
+.titulospaginas p {
+  text-align: justify;
+  margin: 20px;
+  font-size: 0.8rem;
+}
+
+.articuloseducativos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.articuloseducativos .card {
+  width: 80vw;
+  height: 85vw;
+  background-color: black;
+  box-shadow: 0px 0px 10px gray;
+}
+.articuloseducativos .card img {
+  width: 50vw;
+  height: 60vw;
+  padding: 20px;
+  margin-left: 50px;
+}
+.articuloseducativos .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articuloseducativos .card-body strong {
+  font-size: 0.8rem;
+  padding-bottom: 20px;
+}
+.articuloseducativos .card-body a {
+  font-size: 0.8rem;
+}
+
+iframe {
+  width: 80vw;
+  height: 70vw;
+  margin-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 480px) {
+  .titulospaginas p {
+    font-size: 1rem;
+    padding: 30px;
+  }
+  .articuloseducativos .card {
+    width: 65vw;
+    height: 75vw;
+  }
+  .articuloseducativos .card-body strong {
+    font-size: 0.9rem;
+  }
+  .articuloseducativos .card-body a {
+    font-size: 0.9rem;
+  }
+  iframe {
+    width: 80vw;
+    height: 70vw;
+    margin-left: 45px;
+  }
+}
+@media (min-width: 1040px) {
+  .titulospaginas p {
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+  .articuloseducativos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .articuloseducativos .card {
+    width: 30vw;
+    height: 35vw;
+  }
+  .articuloseducativos .card img {
+    width: 18vw;
+    height: 20vw;
+    padding: 10px;
+  }
+  .articuloseducativos .card-body strong {
+    font-size: 0.9rem;
+  }
+  .articuloseducativos .card-body a {
+    font-size: 0.9rem;
+  }
+  iframe {
+    width: 40vw;
+    height: 30vw;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .titulospaginas p {
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+  .articuloseducativos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .articuloseducativos .card {
+    width: 35vw;
+    height: 25vw;
+  }
+  .articuloseducativos .card img {
+    width: 20vw;
+    height: 20vw;
+    padding: 10px;
+  }
+  .articuloseducativos .card-body strong {
+    font-size: 1rem;
+  }
+  .articuloseducativos .card-body a {
+    font-size: 1rem;
+  }
+  iframe {
+    width: 40vw;
+    height: 25vw;
+    margin-left: 30px;
+  }
+}
+.tituloscontacto {
+  border-bottom: 1px solid #EC9720;
+  padding: 20px;
+}
+.tituloscontacto h1 {
+  text-align: center;
+  padding: 10px;
+}
+.tituloscontacto h2 {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 0.9rem;
+  margin: 10px;
+  text-align: center;
+}
+
+.Contactanos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.Contactanos div .formulariocontacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: 70vw;
+  margin-top: 5px;
+}
+.Contactanos div label {
+  font-size: 0.8rem;
+}
+.Contactanos div ::placeholder {
+  font-size: 0.8rem;
+}
+.Contactanos .botoncontacto .boton {
+  background-color: #EC9720;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+@media (min-width: 480px) {
+  .tituloscontacto h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  .Contactanos div .formulariocontacto {
+    width: 60vw;
+  }
+  .Contactanos div label {
+    font-size: 0.9rem;
+  }
+  .Contactanos div ::placeholder {
+    font-size: 0.9rem;
+  }
+  .Contactanos .botoncontacto .boton {
+    background-color: #EC9720;
+    font-size: 0.9rem;
+    border-radius: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .tituloscontacto h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  .Contactanos div .formulariocontacto {
+    width: 55vw;
+  }
+  .Contactanos div label {
+    font-size: 1rem;
+  }
+  .Contactanos div ::placeholder {
+    font-size: 1rem;
+  }
+  .Contactanos .botoncontacto .boton {
+    background-color: #EC9720;
+    font-size: 1rem;
+    border-radius: 15px;
+  }
+}
+@media (min-width: 1400px) {
+  .tituloscontacto h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  .Contactanos div .formulariocontacto {
+    width: 50vw;
+  }
+  .Contactanos div label {
+    font-size: 1.2rem;
+  }
+  .Contactanos div ::placeholder {
+    font-size: 1.1rem;
+  }
+  .Contactanos .botoncontacto .boton {
+    background-color: #EC9720;
+    font-size: 1.1rem;
+    border-radius: 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

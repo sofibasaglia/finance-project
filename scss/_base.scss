@@ -1,0 +1,47 @@
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: #EC9720;
+$box-shadow: 0px 0px 15px gray;
+
+
+@mixin h1 ($textalign: center, $padding: 10px) {
+    text-align: $textalign;
+    padding: $padding;
+}
+
+@mixin h2 ($size, $textalign) {
+    font-size: $size;
+    text-align: $textalign;
+}
+
+@mixin Flexcompleto ($display, $direction, $justify, $align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align
+}
+
+@mixin Flexjustify ($display, $direction, $justify) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin Flexalign ($display, $direction, $align) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+
+span {
+    color: $color-terciario;
+}
+
+main.Home {
+    background-color: $color-principal;
+    color: $color-secundario;
+}
+
+
+
