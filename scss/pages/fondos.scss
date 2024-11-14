@@ -1,23 +1,26 @@
-.titulospaginas{
-    h1{
+.titulospaginas {
+    h1 {
         @include h1();
     }
-    p{
+
+    p {
         font-size: 0.8rem;
         padding: 40px;
         text-align: justify;
     }
 }
-@media (min-width:480px){
-    .titulospaginas{
-        p{
+
+@media (min-width:480px) {
+    .titulospaginas {
+        p {
             font-size: 1rem;
         }
     }
 }
-@media (min-width:1040px){
-    .titulospaginas{
-        p{
+
+@media (min-width:1040px) {
+    .titulospaginas {
+        p {
             padding-left: 60px;
             padding-right: 60px;
             text-align: justify;
@@ -25,9 +28,10 @@
         }
     }
 }
-@media (min-width:1400px){
-    .titulospaginas{
-        p{
+
+@media (min-width:1400px) {
+    .titulospaginas {
+        p {
             padding-left: 70px;
             padding-right: 70px;
             text-align: justify;
@@ -35,111 +39,228 @@
         }
     }
 }
-.fondosHome {
-    div {
-        @include Flexcompleto(flex, column, center, center);
-        width: 40vw;
-        height: 60vw;
-        border: 1px solid $color-terciario;
-    }
 
-    h3 {
-        font-size: 0.8rem;
-    }
+.conteinerFondos {
+    @include Flexalign (flex, column, center);
 
-    .imagenesfondos2 {
-        height: 20vw;
-        width: 20vw;
-        padding-top: 10px;
-    }
+    .cardFondo {
 
-    display: grid;
-    grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
-    place-items: center;
-    gap: 20px;
+        width: 250px;
+        height: 300px;
+        perspective: 1000px;
+        @include Flexcompleto (flex, column, center, space-around);
+        margin: 20px;
 
-    .fondo1 {
-        grid-area: fondo1;
-    }
-
-    .fondo2 {
-        grid-area: fondo2;
-    }
-
-    .fondo3 {
-        grid-area: fondo3;
-    }
-
-    .fondo4 {
-        grid-area: fondo4;
-    }
-}
-
-@media(min-width:768px) {
-    h4 {
-        font-size: 2rem;
-        padding: 20px
-    }
-
-    .fondosHome {
-        div {
-            @include Flexcompleto(flex, column, center, center);
-            width: 40vw;
-            height: 50vw;
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            overflow: hidden;
+            transition: .5s;
             border: 1px solid $color-terciario;
         }
 
-        h3 {
-            font-size: 1rem;
+        .front {
+            transform: rotateY(0deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 10px gray;
+
+            .imagenesfondos2 {
+
+                height: 50vw;
+                width: 50vw;
+            }
+
+            h3 {
+                font-size: 1rem;
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                padding-bottom: 30px;
+            }
+
         }
 
-        .imagenesfondos2 {
-            height: 20vw;
-            width: 20vw;
-            padding-top: 10px;
+        .back {
+            transform: rotateY(180deg);
+            background: black;
+            border: 1px solid $color-terciario;
+            padding: 15px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            box-shadow: 0px 0px 10px gray;
+
+            .link {
+                border-top: 1px solid $color-terciario;
+                height: 40px;
+                line-height: 50px;
+                text-align: center;
+
+            }
+
+            .link a {
+                color: $color-terciario;
+                font-size: 0.8rem;
+
+
+            }
+
+            p {
+                font-size: 0.8rem;
+                text-align: justify;
+                
+            }
+
         }
 
+        &:hover .front {
+            transform: rotateY(180deg);
+
+        }
+
+        &:hover .back {
+            transform: rotateY(360deg);
+
+        }
+
+        @media (min-width:320px) {
+            .front {
+                .imagenesfondos2 {
+
+                    height: 30vw;
+                    width: 30vw;
+                }
+            }
+        }
+    }
+
+    @media (min-width:468px) {
         display: grid;
         grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
         place-items: center;
-        gap: 20px;
-    }
 
-    .fondo1 {
-        grid-area: fondo1;
-    }
+        .cardFondo {
 
-    .fondo2 {
-        grid-area: fondo2;
-    }
+            width: 200px;
+            height: 350px;
 
-    .fondo3 {
-        grid-area: fondo3;
-    }
+            .front {
 
-    .fondo4 {
-        grid-area: fondo4;
-    }
-}
+                .imagenesfondos2 {
 
-@media(min-width:1040px) {
+                    height: 20vw;
+                    width: 20vw;
+                }
+            }
 
-    .fondosHome {
-        div {
-            @include Flexcompleto(flex, column, center, center);
-            width: 20vw;
-            height: 30vw;
-            border: 1px solid $color-terciario;
+            .back {
+                .link a {
+                    font-size: 0.9rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+
+            }
         }
-        display: flex;
-        justify-content: center;
-        h3 {
-            font-size: 1rem;
+    }
+
+    @media (min-width:768px) {
+        display: grid;
+        grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+        place-items: center;
+
+        .cardFondo {
+
+            width: 300px;
+            height: 400px;
+
+            .front {
+
+                .imagenesfondos2 {
+
+                    height: 15vw;
+                    width: 15vw;
+                }
+            }
+
+            .back {
+                .link a {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+            }
         }
-        .imagenesfondos2 {
-            height: 10vw;
-            width: 10vw;
-            padding-top: 10px;
+    }
+    @media (min-width:1040px) {
+        @include Flexcompleto (flex,row,center,center);
+
+        .cardFondo {
+
+            width: 300px;
+            height: 400px;
+
+            .front {
+
+                .imagenesfondos2 {
+
+                    height: 10vw;
+                    width: 10vw;
+                }
+                h3 {
+
+                    font-size: 1.2rem;
+            }
+            }
+            .back {
+
+                .link a {
+                    font-size: 1.1rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    @media (min-width:1400px) {
+        @include Flexcompleto (flex,row,center,center);
+
+        .cardFondo {
+
+            width: 300px;
+            height:400px;
+
+            .front {
+
+                .imagenesfondos2 {
+
+                    height: 10vw;
+                    width: 10vw;
+                }
+                h3 {
+
+                    font-size: 1.3rem;}
+            }
+            .back {
+                .link a {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }

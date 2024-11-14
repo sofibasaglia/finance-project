@@ -330,6 +330,9 @@ footer .footerdiv div p {
   font-size: 0.8rem;
   border-radius: 15px;
 }
+.nosotrosHome .boton:hover {
+  background-color: rgb(38, 56, 63);
+}
 @media (min-width: 320px) {
   .nosotrosHome {
     background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
@@ -579,6 +582,11 @@ footer .footerdiv div p {
 .fondoshome .fondosHome h3 {
   font-size: 0.8rem;
 }
+.fondoshome .fondosHome a {
+  color: #EC9720;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
 .fondoshome .fondosHome .imagenesfondos2 {
   height: 20vw;
   width: 20vw;
@@ -700,9 +708,9 @@ footer .footerdiv div p {
 .quehacemos {
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 25px;
   gap: 30px;
-  margin: 30px;
+  margin: 10px;
 }
 .quehacemos div {
   padding: 20px;
@@ -893,106 +901,178 @@ section .integrantesequipo strong {
     font-size: 1.2rem;
   }
 }
-.fondosHome {
-  display: grid;
-  grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
-  place-items: center;
-  gap: 20px;
+.conteinerFondos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.fondosHome div {
+.conteinerFondos .cardFondo {
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 40vw;
-  height: 60vw;
+  align-items: space-around;
+  margin: 20px;
+}
+.conteinerFondos .cardFondo .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
   border: 1px solid #EC9720;
 }
-.fondosHome h3 {
+.conteinerFondos .cardFondo .front {
+  transform: rotateY(0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px gray;
+}
+.conteinerFondos .cardFondo .front .imagenesfondos2 {
+  height: 50vw;
+  width: 50vw;
+}
+.conteinerFondos .cardFondo .front h3 {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.conteinerFondos .cardFondo .back {
+  transform: rotateY(180deg);
+  background: black;
+  border: 1px solid #EC9720;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px gray;
+}
+.conteinerFondos .cardFondo .back .link {
+  border-top: 1px solid #EC9720;
+  height: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+.conteinerFondos .cardFondo .back .link a {
+  color: #EC9720;
   font-size: 0.8rem;
 }
-.fondosHome .imagenesfondos2 {
-  height: 20vw;
-  width: 20vw;
-  padding-top: 10px;
+.conteinerFondos .cardFondo .back p {
+  font-size: 0.8rem;
+  text-align: justify;
 }
-.fondosHome .fondo1 {
-  grid-area: fondo1;
+.conteinerFondos .cardFondo:hover .front {
+  transform: rotateY(180deg);
 }
-.fondosHome .fondo2 {
-  grid-area: fondo2;
+.conteinerFondos .cardFondo:hover .back {
+  transform: rotateY(360deg);
 }
-.fondosHome .fondo3 {
-  grid-area: fondo3;
-}
-.fondosHome .fondo4 {
-  grid-area: fondo4;
-}
-
-@media (min-width: 768px) {
-  h4 {
-    font-size: 2rem;
-    padding: 20px;
+@media (min-width: 320px) {
+  .conteinerFondos .cardFondo .front .imagenesfondos2 {
+    height: 30vw;
+    width: 30vw;
   }
-  .fondosHome {
+}
+@media (min-width: 468px) {
+  .conteinerFondos {
     display: grid;
     grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
     place-items: center;
-    gap: 20px;
   }
-  .fondosHome div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40vw;
-    height: 50vw;
-    border: 1px solid #EC9720;
+  .conteinerFondos .cardFondo {
+    width: 200px;
+    height: 350px;
   }
-  .fondosHome h3 {
-    font-size: 1rem;
-  }
-  .fondosHome .imagenesfondos2 {
+  .conteinerFondos .cardFondo .front .imagenesfondos2 {
     height: 20vw;
     width: 20vw;
-    padding-top: 10px;
   }
-  .fondo1 {
-    grid-area: fondo1;
+  .conteinerFondos .cardFondo .back .link a {
+    font-size: 0.9rem;
   }
-  .fondo2 {
-    grid-area: fondo2;
+  .conteinerFondos .cardFondo .back p {
+    font-size: 0.9rem;
   }
-  .fondo3 {
-    grid-area: fondo3;
+}
+@media (min-width: 768px) {
+  .conteinerFondos {
+    display: grid;
+    grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
+    place-items: center;
   }
-  .fondo4 {
-    grid-area: fondo4;
+  .conteinerFondos .cardFondo {
+    width: 300px;
+    height: 400px;
+  }
+  .conteinerFondos .cardFondo .front .imagenesfondos2 {
+    height: 15vw;
+    width: 15vw;
+  }
+  .conteinerFondos .cardFondo .back .link a {
+    font-size: 1rem;
+  }
+  .conteinerFondos .cardFondo .back p {
+    font-size: 1rem;
   }
 }
 @media (min-width: 1040px) {
-  .fondosHome {
+  .conteinerFondos {
     display: flex;
-    justify-content: center;
-  }
-  .fondosHome div {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 20vw;
-    height: 30vw;
-    border: 1px solid #EC9720;
   }
-  .fondosHome h3 {
-    font-size: 1rem;
+  .conteinerFondos .cardFondo {
+    width: 300px;
+    height: 400px;
   }
-  .fondosHome .imagenesfondos2 {
+  .conteinerFondos .cardFondo .front .imagenesfondos2 {
     height: 10vw;
     width: 10vw;
-    padding-top: 10px;
+  }
+  .conteinerFondos .cardFondo .front h3 {
+    font-size: 1.2rem;
+  }
+  .conteinerFondos .cardFondo .back .link a {
+    font-size: 1.1rem;
+  }
+  .conteinerFondos .cardFondo .back p {
+    font-size: 1.1rem;
   }
 }
+@media (min-width: 1400px) {
+  .conteinerFondos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteinerFondos .cardFondo {
+    width: 300px;
+    height: 400px;
+  }
+  .conteinerFondos .cardFondo .front .imagenesfondos2 {
+    height: 10vw;
+    width: 10vw;
+  }
+  .conteinerFondos .cardFondo .front h3 {
+    font-size: 1.3rem;
+  }
+  .conteinerFondos .cardFondo .back .link a {
+    font-size: 1.2rem;
+  }
+  .conteinerFondos .cardFondo .back p {
+    font-size: 1.2rem;
+  }
+}
+
 .titulostarifas h1 {
   text-align: center;
   padding: 10px;
@@ -1029,6 +1109,9 @@ section .integrantesequipo strong {
   background-color: #EC9720;
   font-size: 0.8rem;
   border-radius: 15px;
+}
+.categorias .asesoramiento .boton:hover {
+  background-color: rgb(38, 56, 63);
 }
 .categorias .acordionpreguntas {
   display: flex;
@@ -1076,6 +1159,9 @@ section .integrantesequipo strong {
     font-size: 0.9rem;
     border-radius: 15px;
   }
+  .categorias .asesoramiento .boton:hover {
+    background-color: rgb(38, 56, 63);
+  }
   .categorias .acordionpreguntas .accordion {
     width: 70vw;
   }
@@ -1102,6 +1188,9 @@ section .integrantesequipo strong {
     background-color: #EC9720;
     font-size: 1rem;
     border-radius: 15px;
+  }
+  .categorias .asesoramiento .boton:hover {
+    background-color: rgb(38, 56, 63);
   }
   .categorias .cartera {
     display: flex;
@@ -1142,6 +1231,9 @@ section .integrantesequipo strong {
     font-size: 1.1rem;
     border-radius: 15px;
   }
+  .categorias .asesoramiento .boton:hover {
+    background-color: rgb(38, 56, 63);
+  }
   .categorias .acordionpreguntas {
     display: grid;
     grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
@@ -1171,6 +1263,9 @@ section .integrantesequipo strong {
     background-color: #EC9720;
     font-size: 1.2rem;
     border-radius: 15px;
+  }
+  .categorias .asesoramiento .boton:hover {
+    background-color: rgb(38, 56, 63);
   }
 }
 .titulospaginas h1 {
@@ -1215,14 +1310,6 @@ section .integrantesequipo strong {
   font-size: 0.8rem;
 }
 
-iframe {
-  width: 80vw;
-  height: 70vw;
-  margin-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 @media (min-width: 480px) {
   .titulospaginas p {
     font-size: 1rem;
@@ -1237,11 +1324,6 @@ iframe {
   }
   .articuloseducativos .card-body a {
     font-size: 0.9rem;
-  }
-  iframe {
-    width: 80vw;
-    height: 70vw;
-    margin-left: 45px;
   }
 }
 @media (min-width: 1040px) {
@@ -1272,11 +1354,6 @@ iframe {
   .articuloseducativos .card-body a {
     font-size: 0.9rem;
   }
-  iframe {
-    width: 40vw;
-    height: 30vw;
-    margin-left: 40px;
-  }
 }
 @media (min-width: 1400px) {
   .titulospaginas p {
@@ -1305,11 +1382,6 @@ iframe {
   }
   .articuloseducativos .card-body a {
     font-size: 1rem;
-  }
-  iframe {
-    width: 40vw;
-    height: 25vw;
-    margin-left: 30px;
   }
 }
 .tituloscontacto {
@@ -1357,6 +1429,9 @@ h4 {
   font-size: 0.8rem;
   border-radius: 15px;
 }
+.Contactanos .botoncontacto .boton:hover {
+  background-color: rgb(38, 56, 63);
+}
 
 @media (min-width: 480px) {
   .tituloscontacto h2 {
@@ -1379,6 +1454,9 @@ h4 {
     background-color: #EC9720;
     font-size: 0.9rem;
     border-radius: 15px;
+  }
+  .Contactanos .botoncontacto .boton:hover {
+    background-color: rgb(38, 56, 63);
   }
 }
 @media (min-width: 768px) {
@@ -1403,6 +1481,9 @@ h4 {
     font-size: 1rem;
     border-radius: 15px;
   }
+  .Contactanos .botoncontacto .boton:hover {
+    background-color: rgb(38, 56, 63);
+  }
 }
 @media (min-width: 1400px) {
   .tituloscontacto h2 {
@@ -1425,6 +1506,9 @@ h4 {
     background-color: #EC9720;
     font-size: 1.1rem;
     border-radius: 15px;
+  }
+  .Contactanos .botoncontacto .boton:hover {
+    background-color: rgb(38, 56, 63);
   }
 }
 

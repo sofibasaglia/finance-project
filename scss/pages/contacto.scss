@@ -41,7 +41,7 @@ h4 {
 
     .botoncontacto {
         .boton {
-            @include boton($color-terciario, 0.8rem, 15px)
+            @include boton($color-terciario, 0.8rem, 15px);
         }
     }
 }
