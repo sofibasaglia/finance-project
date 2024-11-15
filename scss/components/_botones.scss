@@ -1,7 +1,8 @@
-@mixin boton ($color, $size, $radio) {
+@mixin boton ($color, $size, $radio,) {
     background-color: $color;
     font-size: $size;
     border-radius: $radio;
+  
 
     &:hover{
         background-color: rgb(38, 56, 63);
