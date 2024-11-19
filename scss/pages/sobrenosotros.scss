@@ -12,40 +12,45 @@
 }
 
 .quehacemos {
-    @include Flexalign (flex,column,center);
+    @include Flexcompleto (flex,column,center,center);
     padding: 25px;
     
     margin: 10px;
 
     div {
-       
+      
         .imagenquehacemos {
             width: 28vw;
             height: 30vw;
+            padding-top: 15px;
         }
+       
+       
 
         padding: 20px;
         @include Flexalign(flex, column, center);
-        border: 1px solid gray;
-        cursor: pointer;
-        transition: transform  0.3s ease-in-out;
-
-        &:hover {
-            transform: scale(1.1);
-            
-        }
 
         p {
+            border-top : 1px solid gray;
             font-size: 0.8rem;
-            text-align: left;
+            text-align: center;
             padding: 5px;
+        }
+    }
+    @media (min-width:468px) {
+        div {
+          
+            .imagenquehacemos {
+                width: 15vw;
+                height: 18vw;
+                padding-top: 15px;
+            }
         }
     }
 
     @media (min-width:768px) {
         div {
-            height: 60vw;
-            width: 60vw;
+         
             .imagenquehacemos {
                 width: 18vw;
                 height: 20vw;
@@ -55,6 +60,7 @@
             p {
                 font-size: 1rem;
                 padding: 10px;
+                margin: 50px;
                 
             }
         }
@@ -66,7 +72,7 @@
         gap: 20px;
 
         div {
-            height: 40vw;
+          
             .imagenquehacemos {
                 width: 8vw;
                 height: 10vw;
@@ -82,7 +88,7 @@
 
     @media (min-width:1400px) {
         div {
-            height:30vw ;
+            
             p {
                 font-size: 1.2rem;
                 padding: 5px;

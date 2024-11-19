@@ -681,6 +681,7 @@ footer .footerdiv div p {
 .quehacemos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 25px;
   margin: 10px;
@@ -690,27 +691,26 @@ footer .footerdiv div p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid gray;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
 }
 .quehacemos div .imagenquehacemos {
   width: 28vw;
   height: 30vw;
-}
-.quehacemos div:hover {
-  transform: scale(1.1);
+  padding-top: 15px;
 }
 .quehacemos div p {
+  border-top: 1px solid gray;
   font-size: 0.8rem;
-  text-align: left;
+  text-align: center;
   padding: 5px;
 }
-@media (min-width: 768px) {
-  .quehacemos div {
-    height: 60vw;
-    width: 60vw;
+@media (min-width: 468px) {
+  .quehacemos div .imagenquehacemos {
+    width: 15vw;
+    height: 18vw;
+    padding-top: 15px;
   }
+}
+@media (min-width: 768px) {
   .quehacemos div .imagenquehacemos {
     width: 18vw;
     height: 20vw;
@@ -719,6 +719,7 @@ footer .footerdiv div p {
   .quehacemos div p {
     font-size: 1rem;
     padding: 10px;
+    margin: 50px;
   }
 }
 @media (min-width: 1040px) {
@@ -726,9 +727,6 @@ footer .footerdiv div p {
     display: flex;
     flex-direction: row;
     gap: 20px;
-  }
-  .quehacemos div {
-    height: 40vw;
   }
   .quehacemos div .imagenquehacemos {
     width: 8vw;
@@ -740,9 +738,6 @@ footer .footerdiv div p {
   }
 }
 @media (min-width: 1400px) {
-  .quehacemos div {
-    height: 30vw;
-  }
   .quehacemos div p {
     font-size: 1.2rem;
     padding: 5px;
