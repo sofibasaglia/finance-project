@@ -4,7 +4,7 @@
     }
 
     p {
-        text-align: justify;
+        text-align: center;
         margin: 20px;
         font-size: 0.8rem;
     }
@@ -37,7 +37,8 @@
     .asesoramiento{
         @include Flexalign(flex, column ,center );
         .boton{
-            @include boton($color-terciario,0.8rem ,15px )
+            padding: 15px 50px;
+            @include boton($color-terciario,0.8rem ,15px );
         }
     }
     .acordionpreguntas {

@@ -3,29 +3,32 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vw;
-    @include Flexcompleto(flex, column, center, center);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 110vw;
+    @include Flexcompleto(flex, column, center, start);
+    padding: 20px;
+
 
     div {
         .boton {
             padding: 15px 50px;
+            margin-left: 10px;
             @include boton ($color-terciario, 0.8rem, 15px);
 
         }
     }
+
     .titulos {
         .hometitulo {
-            font-size: 3rem;
-            text-align: center;
+            font-size: 1.5rem;
+            text-align: left;
+            margin: 10px;
         }
 
-        h2 {
-            font-size: 2rem;
-            text-align: center;
+        p {
+            font-size: 1rem;
+            text-align: left;
+            padding-top: 20px;
+            margin: 10px;
         }
     }
 
@@ -33,68 +36,75 @@
     @media(min-width:480px) {
 
         height: 70vw;
-        @include Flexcompleto(flex, column, center, center);
+
         .titulos {
             .hometitulo {
-                font-size: 3.5rem;
+                font-size: 2rem;
+
             }
 
-            h2 {
-                font-size: 1.6rem;
+            p {
+                font-size: 1.1rem;
             }
         }
     }
 
     @media(min-width:768px) {
-        @include Flexcompleto(flex,column,center,start);
         height: 60vw;
 
 
         .titulos {
-            .hometitulo {
-                font-size: 4rem;
-                margin: 20px;
-            }
 
-            h2 {
-                font-size: 2rem;
+            .hometitulo {
+                font-size: 2.5rem;
                 margin: 20px;
                 text-align: left;
             }
+
+            p {
+                padding-top: 0px;
+                font-size: 1.2rem;
+                text-align: left;
+                margin: 20px
+            }
         }
-        div{
-            .boton{
-                @include boton ($color-terciario,1.1rem,15px);
+
+        div {
+            .boton {
+                @include boton ($color-terciario, 1.1rem, 15px);
                 margin-left: 20px;
             }
         }
     }
 
     @media(min-width:1040px) {
-        @include Flexcompleto(flex,column,center,start);
         height: 50vw;
 
 
         .titulos {
+            width: 90vw;
+
             .hometitulo {
-                font-size: 5.5rem;
+                font-size: 3.2rem;
+                text-align: left;
             }
 
-            h2 {
-                font-size: 2.5rem;
-                
+            p {
+                font-size: 1.3rem;
+                margin: 20px
             }
         }
-        div{
-            .boton{
-                @include boton ($color-terciario,1.2rem,15px);
-                
+
+        div {
+            .boton {
+                @include boton ($color-terciario, 1.2rem, 15px);
+
             }
         }
     }
 
     @media(min-width:1400px) {
-        @include Flexcompleto(flex,column,center,start);
+        @include Flexcompleto(flex, column, center, start);
         height: 45vw;
     }
 }
@@ -108,23 +118,23 @@
         width: 80%;
         height: 100%;
         padding: 40px;
-        box-shadow: 0px 0px 10px gray;
         cursor: pointer;
+        border: 1px solid gray;
         transition: all 0.3s ease-in-out;
 
         &:hover {
             transform: scale(1.1);
-            box-shadow: $box-shadow;
         }
 
-        h3 {
+        h2 {
             font-size: 1rem;
             text-align: center;
         }
 
         p {
-            text-align: left;
+            text-align: center;
             font-size: 0.8rem;
+            padding: 10px;
         }
     }
 
@@ -137,16 +147,14 @@
             width: 40%;
             height: 100%;
             padding: 40px;
-            box-shadow: 0px 0px 10px gray;
             cursor: pointer;
-            transition: transform box-shadow 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
 
             &:hover {
                 transform: scale(1.1);
-                box-shadow: $box-shadow;
             }
 
-            h3 {
+            h2 {
                 font-size: 1.1rem;
             }
 
@@ -162,8 +170,8 @@
                 font-size: 1.1rem;
             }
 
-            h3 {
-                font-size: 1.3rem;
+            h2 {
+                font-size: 1.4rem;
                 text-align: center;
             }
         }
@@ -192,10 +200,10 @@
     @include Flexalign(flex, column, center);
 
     p {
-        text-align: left;
+        text-align: center;
         font-size: 0.8rem;
         margin: 20px;
-        background: rgba(5, 7, 12, 0.4);
+    
         padding: 20px;
     }
 
@@ -215,20 +223,6 @@
         padding: 20px;
         @include Flexalign(flex, column, center);
 
-        p {
-
-            font-size: 0.8rem;
-            margin: 20px;
-
-            background: rgba(5, 7, 12, 0.4);
-            padding: 20px;
-        }
-
-        .boton {
-            background-color: $color-terciario;
-            font-size: 0.8rem;
-            border-radius: 15px;
-        }
     }
 
     @media(min-width:350px) {
@@ -269,14 +263,10 @@
         p {
 
             font-size: 0.9rem;
-            margin: 20px;
-
-            background: rgba(5, 7, 12, 0.4);
-            padding: 20px;
+           
         }
 
         .boton {
-            color: $color-terciario;
             font-size: 0.9rem;
         }
     }
@@ -296,13 +286,11 @@
             margin-top: 100px;
             margin-left: 50px;
             margin-right: 50px;
-            background: rgba(5, 7, 12, 0.4);
-            padding: 20px;
-
+           
         }
 
         .boton {
-            color: $color-terciario;
+            
             font-size: 1rem;
 
         }
@@ -323,12 +311,11 @@
             margin-left: 200px;
             margin-right: 200px;
 
-            background: rgba(5, 7, 12, 0.4);
-            padding: 20px;
+        
         }
 
         .boton {
-            color: $color-terciario;
+            
             font-size: 1.1rem;
         }
     }
@@ -349,15 +336,12 @@
             margin-right: 300px;
             margin-bottom: 50px;
 
-            background: rgba(5, 7, 12, 0.4);
-            padding: 20px;
+           
         }
     }
 }
 
 .visionymision {
-    border-bottom: 0.5px solid gray;
-
     h3 {
         text-align: start;
         margin: 10px;
@@ -369,9 +353,10 @@
     }
 
     p {
-        text-align: justify;
+        text-align: left;
         margin: 15px;
         font-size: 0.8rem;
+        padding-right: 20px;
     }
 
     @media(min-width: 768px) {
@@ -386,8 +371,7 @@
         }
 
         p {
-            text-align: justify;
-            margin: 15px;
+
             font-size: 1rem
         }
     }
@@ -405,7 +389,7 @@
         }
 
         p {
-            text-align: justify;
+            text-align: left;
             margin: 15px;
             font-size: 1.1rem;
         }
@@ -414,7 +398,7 @@
     @media(min-width: 1400px) {
 
         p {
-            text-align: justify;
+            text-align: left;
             margin: 15px;
             font-size: 1.2rem;
         }
@@ -431,7 +415,8 @@
     .fondosHome {
         div {
             @include Flexcompleto(flex, column, center, center);
-            width: 40vw;
+            width: 45vw;
+
             height: 60vw;
             border: 1px solid $color-terciario;
         }
@@ -455,7 +440,7 @@
         display: grid;
         grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
         place-items: center;
-        gap: 20px;
+        gap:10px;
 
         .fondo1 {
             grid-area: fondo1;
@@ -483,25 +468,25 @@
         .fondosHome {
             div {
                 @include Flexcompleto(flex, column, center, center);
-                width: 40vw;
-                height: 50vw;
+                width: 45vw;
+                height: 40vw;
                 border: 1px solid $color-terciario;
             }
 
             h3 {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
 
             .imagenesfondos2 {
-                height: 20vw;
-                width: 20vw;
+                height: 15vw;
+                width: 15vw;
                 padding-top: 10px;
             }
 
             display: grid;
             grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
             place-items: center;
-            gap: 20px;
+
         }
 
         .fondo1 {
