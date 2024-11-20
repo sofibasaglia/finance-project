@@ -4,6 +4,7 @@
 
     h1 {
         @include h1();
+        text-align: center;
     }
 
     h2 {

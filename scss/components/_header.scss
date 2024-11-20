@@ -1,12 +1,4 @@
 .navbar {
-    background-color: $color-principal;
-    
-        .navbar-brand{
-            p{
-                font-size: 1.5rem;
-                padding: 10px;
-            }
-            @include Flexcompleto (flex, row, center,center)
-        }
-    
+    background-color: black;
+
 }

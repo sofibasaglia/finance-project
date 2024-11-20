@@ -1,97 +1,102 @@
-.conteinerprincipal {
-    background-image: linear-gradient(rgba(43, 42, 40, 0.853), rgba(32, 32, 31, 0.8)), url(../images/screen-with-graph-it-that-says-word-financial-it.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 110vw;
-    @include Flexcompleto(flex, column, center, start);
-    padding: 20px;
+.background-container {
 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 
-    div {
-        .boton {
-            padding: 15px 50px;
-            margin-left: 10px;
-            @include boton ($color-terciario, 0.8rem, 15px);
-
-        }
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
     }
 
+   .overlayhome{
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+   }
+
+
     .titulos {
-        .hometitulo {
-            font-size: 1.5rem;
-            text-align: left;
-            margin: 10px;
+        margin-left: 10px;
+        position: relative;
+        z-index: 3;
+        top: 50%;
+        transform: translateY(-50%);
+        
+
+        h1 {
+            @include h1();
+            font-size: 2.5rem;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             text-align: left;
-            padding-top: 20px;
+            padding: 0;
             margin: 10px;
+            max-width: 800px;
+        }
+
+        .boton {
+            @include boton ($color-terciario, 1rem, 15px);
+            padding: 15px 50px;
+            text-decoration: none;
+            text-align: center;
+            margin: 10px;
+
         }
     }
 
-
     @media(min-width:480px) {
 
-        height: 70vw;
-
         .titulos {
-            .hometitulo {
-                font-size: 2rem;
+            h1 {
+                font-size: 3rem;
 
             }
 
             p {
-                font-size: 1.1rem;
+                font-size: 1.3rem;
+
             }
         }
     }
 
     @media(min-width:768px) {
-        height: 60vw;
 
-
-        .titulos {
-
-            .hometitulo {
-                font-size: 2.5rem;
-                margin: 20px;
-                text-align: left;
-            }
-
-            p {
-                padding-top: 0px;
-                font-size: 1.2rem;
-                text-align: left;
-                margin: 20px
-            }
-        }
 
         div {
             .boton {
                 @include boton ($color-terciario, 1.1rem, 15px);
-                margin-left: 20px;
+
             }
         }
     }
 
     @media(min-width:1040px) {
-        height: 50vw;
+
 
 
         .titulos {
-            width: 90vw;
 
-            .hometitulo {
-                font-size: 3.2rem;
+            h1 {
+                font-size: 4rem;
                 text-align: left;
             }
 
             p {
-                font-size: 1.3rem;
-                margin: 20px
+                font-size: 1.4rem;
+
             }
         }
 
@@ -104,10 +109,28 @@
     }
 
     @media(min-width:1400px) {
-        @include Flexcompleto(flex, column, center, start);
-        height: 45vw;
+
+        .titulos {
+            h1 {
+                font-size:3.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+            
+        }
+        div {
+            .boton {
+                @include boton ($color-terciario, 1.4rem, 15px);
+
+            }
+
     }
 }
+}
+
+
 
 .textohome {
     @include Flexalign(flex, column, center);
@@ -203,7 +226,7 @@
         text-align: center;
         font-size: 0.8rem;
         margin: 20px;
-    
+
         padding: 20px;
     }
 
@@ -263,7 +286,7 @@
         p {
 
             font-size: 0.9rem;
-           
+
         }
 
         .boton {
@@ -286,11 +309,11 @@
             margin-top: 100px;
             margin-left: 50px;
             margin-right: 50px;
-           
+
         }
 
         .boton {
-            
+
             font-size: 1rem;
 
         }
@@ -311,11 +334,11 @@
             margin-left: 200px;
             margin-right: 200px;
 
-        
+
         }
 
         .boton {
-            
+
             font-size: 1.1rem;
         }
     }
@@ -336,7 +359,7 @@
             margin-right: 300px;
             margin-bottom: 50px;
 
-           
+
         }
     }
 }

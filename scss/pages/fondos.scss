@@ -1,47 +1,126 @@
-.titulospaginas {
-    h1 {
-        @include h1();
-    }
+.background-container {
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 
-    p {
-        font-size: 0.8rem;
-        padding: 40px;
-        text-align: justify;
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
     }
-}
-
-@media (min-width:480px) {
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(99, 57, 6, 0.5);
+        z-index: 2;
+    }
+    
+    
     .titulospaginas {
-        p {
-            font-size: 1rem;
+        position: relative;
+        z-index: 3;
+        top: 40%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+    
+        h1 {
+            @include h1();
+            font-size: 2.5rem;
         }
-    }
-}
-
-@media (min-width:1040px) {
-    .titulospaginas {
+    
         p {
-            padding-left: 60px;
-            padding-right: 60px;
-            text-align: justify;
-            font-size: 1.1rem;
-        }
-    }
-}
-
-@media (min-width:1400px) {
-    .titulospaginas {
-        p {
-            padding-left: 70px;
-            padding-right: 70px;
-            text-align: justify;
             font-size: 1.2rem;
+            text-align: left;
+            padding: 0;
+            margin: 10px;
+            max-width: 800px;
+        }
+
+        .boton{
+            @include boton ($color-terciario,1rem,15px );
+            padding:15px 50px;
+            text-decoration: none;
+            text-align: center;
+            margin: 10px;
+
+        }
+            
+    
+    
+    }
+    @media (min-width:480px) {
+        height: 100vh;
+        .titulospaginas {
+           h1{
+            font-size: 3rem;
+           }
+            p {
+                font-size: 1.3rem;
+                padding: 0;
+                margin: 10px;
+            }
+            .boton{
+                @include boton ($color-terciario,1.2rem,15px );
+    
+            }
+            
+        }
+    }
+    
+    @media (min-width:1040px) {
+       height: 100vh;
+        .titulospaginas {
+            h1{
+                font-size: 4rem;
+            }
+            p {
+                
+                font-size: 1.4rem;
+            }
+        }
+    }
+    
+    @media (min-width:1400px) {
+        height: 100vh;
+        .titulospaginas {
+            h1{
+                font-size: 5rem;
+            }
+            p {
+                
+                text-align: left;
+                font-size: 1.5rem;
+            }
+            .boton{
+                @include boton ($color-terciario,1.2rem,15px );
+                padding:15px 50px;
+                text-decoration: none;
+                text-align: center;
+                margin: 10px;
+    
+            }
         }
     }
 }
+
+
+
+
 
 .conteinerFondos {
     @include Flexalign (flex, column, center);
+    padding-top: 50px;
 
     .cardFondo {
 
@@ -92,7 +171,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-        
+
 
             .link {
                 border-top: 1px solid $color-terciario;
@@ -112,7 +191,7 @@
             p {
                 font-size: 0.8rem;
                 text-align: left;
-                
+
             }
 
         }
@@ -145,8 +224,8 @@
 
         .cardFondo {
 
-            width: 250px;
-            height: 350px;
+            width: 200px;
+            height: 300px;
 
             .front {
 
@@ -201,8 +280,9 @@
             }
         }
     }
+
     @media (min-width:1040px) {
-        @include Flexcompleto (flex,row,center,center);
+        @include Flexcompleto (flex, row, center, center);
 
         .cardFondo {
 
@@ -216,29 +296,33 @@
                     height: 8vw;
                     width: 8vw;
                 }
+
                 h3 {
 
                     font-size: 1.2rem;
+                }
             }
-            }
+
             .back {
 
                 .link a {
                     font-size: 1.1rem;
                 }
+
                 p {
                     font-size: 1.1rem;
                 }
             }
         }
     }
+
     @media (min-width:1400px) {
-        @include Flexcompleto (flex,row,center,center);
+        @include Flexcompleto (flex, row, center, center);
 
         .cardFondo {
 
             width: 300px;
-            height:400px;
+            height: 400px;
 
             .front {
 
@@ -247,14 +331,18 @@
                     height: 5vw;
                     width: 5vw;
                 }
+
                 h3 {
 
-                    font-size: 1.3rem;}
+                    font-size: 1.3rem;
+                }
             }
+
             .back {
                 .link a {
                     font-size: 1.2rem;
                 }
+
                 p {
                     font-size: 1.2rem;
                 }

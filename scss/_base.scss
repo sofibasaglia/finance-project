@@ -1,10 +1,10 @@
-$color-principal: black;
+$color-principal: #0b0b0c;
 $color-secundario: white;
 $color-terciario: #EC9720;
 
 
 
-@mixin h1 ($textalign: center, $padding: 10px) {
+@mixin h1 ($textalign:left, $padding: 10px) {
     text-align: $textalign;
     padding: $padding;
 }
