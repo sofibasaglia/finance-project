@@ -58,7 +58,7 @@
 
         .back {
             transform: rotateY(180deg);
-            background: black;
+            background: $color-principal;
             border: 1px solid $color-terciario;
             padding: 15px;
             color: white;
