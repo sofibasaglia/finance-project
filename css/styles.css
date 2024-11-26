@@ -119,13 +119,14 @@ footer .footerdiv div p {
   z-index: 2;
 }
 .background-container .titulos {
-  margin-left: 10px;
+  margin-left: 20px;
   position: relative;
   z-index: 3;
   top: 50%;
   transform: translateY(-50%);
 }
 .background-container .titulos h1 {
+  width: 80vw;
   text-align: left;
   padding: 10px;
   font-size: 2.5rem;
@@ -135,7 +136,7 @@ footer .footerdiv div p {
   text-align: left;
   padding: 0;
   margin: 10px;
-  max-width: 800px;
+  width: 70vw;
 }
 .background-container .titulos .boton {
   background-color: #EC9720;
@@ -186,7 +187,7 @@ footer .footerdiv div p {
 }
 @media (min-width: 1400px) {
   .background-container .titulos h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
   .background-container .titulos p {
     font-size: 1.5rem;
@@ -500,7 +501,7 @@ footer .footerdiv div p {
   justify-content: center;
   align-items: center;
   width: 45vw;
-  height: 60vw;
+  height: 60vh;
   border: 1px solid #EC9720;
 }
 .fondoshome .fondosHome h3 {
@@ -512,8 +513,8 @@ footer .footerdiv div p {
   font-size: 0.8rem;
 }
 .fondoshome .fondosHome .imagenesfondos2 {
-  height: 20vw;
-  width: 20vw;
+  height: 15vh;
+  width: 15vw;
   padding-top: 10px;
 }
 .fondoshome .fondosHome .fondo1 {
@@ -551,7 +552,7 @@ footer .footerdiv div p {
     font-size: 1.2rem;
   }
   .fondoshome .fondosHome .imagenesfondos2 {
-    height: 15vw;
+    height: 20vh;
     width: 15vw;
     padding-top: 10px;
   }
@@ -579,15 +580,12 @@ footer .footerdiv div p {
     justify-content: center;
     align-items: center;
     width: 20vw;
-    height: 30vw;
+    height: 50vh;
     border: 1px solid #EC9720;
   }
-  .fondoshome .fondosHome h3 {
-    font-size: 1rem;
-  }
   .fondoshome .fondosHome .imagenesfondos2 {
-    height: 10vw;
-    width: 10vw;
+    height: 18vh;
+    width: 8vw;
     padding-top: 10px;
   }
 }
@@ -620,13 +618,26 @@ footer .footerdiv div p {
   }
 }
 
-.quienessomos .imgteam img {
-  width: 100vw;
-  height: 100vh;
+.parrafo p {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 40px;
+  border-bottom: 0.5px solid gray;
 }
-
-.accordionosotros #accordionNosotros {
-  width: 100vw;
+@media (min-width: 768px) {
+  .parrafo p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1040px) {
+  .parrafo p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .parrafo p {
+    font-size: 1.2rem;
+  }
 }
 
 .quehacemos {
@@ -649,7 +660,6 @@ footer .footerdiv div p {
   padding-top: 15px;
 }
 .quehacemos div p {
-  border-top: 1px solid gray;
   font-size: 0.8rem;
   text-align: center;
   padding: 5px;
@@ -686,6 +696,7 @@ footer .footerdiv div p {
   }
   .quehacemos div p {
     font-size: 1.1rem;
+    width: 30vw;
   }
 }
 @media (min-width: 1400px) {
@@ -794,50 +805,6 @@ section .integrantesequipo strong {
   }
 }
 
-.background-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.background-container .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-.background-container .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(99, 57, 6, 0.5);
-  z-index: 2;
-}
-.background-container .titulospaginas {
-  position: relative;
-  z-index: 3;
-  top: 40%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-}
-.background-container .titulospaginas h1 {
-  text-align: left;
-  padding: 10px;
-  font-size: 2.5rem;
-}
-.background-container .titulospaginas p {
-  font-size: 1.2rem;
-  text-align: left;
-  padding: 0;
-  margin: 10px;
-  max-width: 800px;
-}
 .background-container .titulospaginas .boton {
   background-color: #EC9720;
   font-size: 1rem;
@@ -845,66 +812,10 @@ section .integrantesequipo strong {
   padding: 15px 50px;
   text-decoration: none;
   text-align: center;
-  margin: 10px;
+  margin-left: 20px;
 }
 .background-container .titulospaginas .boton:hover {
   background-color: rgb(38, 56, 63);
-}
-@media (min-width: 480px) {
-  .background-container {
-    height: 100vh;
-  }
-  .background-container .titulospaginas h1 {
-    font-size: 3rem;
-  }
-  .background-container .titulospaginas p {
-    font-size: 1.3rem;
-    padding: 0;
-    margin: 10px;
-  }
-  .background-container .titulospaginas .boton {
-    background-color: #EC9720;
-    font-size: 1.2rem;
-    border-radius: 15px;
-  }
-  .background-container .titulospaginas .boton:hover {
-    background-color: rgb(38, 56, 63);
-  }
-}
-@media (min-width: 1040px) {
-  .background-container {
-    height: 100vh;
-  }
-  .background-container .titulospaginas h1 {
-    font-size: 4rem;
-  }
-  .background-container .titulospaginas p {
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1400px) {
-  .background-container {
-    height: 100vh;
-  }
-  .background-container .titulospaginas h1 {
-    font-size: 5rem;
-  }
-  .background-container .titulospaginas p {
-    text-align: left;
-    font-size: 1.5rem;
-  }
-  .background-container .titulospaginas .boton {
-    background-color: #EC9720;
-    font-size: 1.2rem;
-    border-radius: 15px;
-    padding: 15px 50px;
-    text-decoration: none;
-    text-align: center;
-    margin: 10px;
-  }
-  .background-container .titulospaginas .boton:hover {
-    background-color: rgb(38, 56, 63);
-  }
 }
 
 .conteinerFondos {
@@ -930,7 +841,7 @@ section .integrantesequipo strong {
   backface-visibility: hidden;
   overflow: hidden;
   transition: 0.5s;
-  border: 1px solid #EC9720;
+  border: 0.5px solid #EC9720;
 }
 .conteinerFondos .cardFondo .front {
   transform: rotateY(0deg);
@@ -939,8 +850,8 @@ section .integrantesequipo strong {
   justify-content: center;
 }
 .conteinerFondos .cardFondo .front .imagenesfondos2 {
-  height: 50vw;
-  width: 50vw;
+  height: 20vh;
+  width: 20vw;
 }
 .conteinerFondos .cardFondo .front h3 {
   font-size: 1rem;
@@ -979,12 +890,6 @@ section .integrantesequipo strong {
 .conteinerFondos .cardFondo:hover .back {
   transform: rotateY(360deg);
 }
-@media (min-width: 320px) {
-  .conteinerFondos .cardFondo .front .imagenesfondos2 {
-    height: 30vw;
-    width: 30vw;
-  }
-}
 @media (min-width: 468px) {
   .conteinerFondos {
     display: grid;
@@ -1013,7 +918,7 @@ section .integrantesequipo strong {
     place-items: center;
   }
   .conteinerFondos .cardFondo {
-    width: 360px;
+    width: 300px;
     height: 400px;
   }
   .conteinerFondos .cardFondo .front .imagenesfondos2 {
@@ -1088,8 +993,8 @@ section .integrantesequipo strong {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   z-index: 1;
 }
@@ -1102,21 +1007,21 @@ section .integrantesequipo strong {
   background: rgba(12, 12, 12, 0.801);
   z-index: 2;
 }
-.background-container .titulostarifas {
+.background-container .titulospaginas {
   position: relative;
   z-index: 3;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
 }
-.background-container .titulostarifas .tarifas {
+.background-container .titulospaginas h1 {
+  font-size: 2.5rem;
   margin-left: 20px;
 }
-.background-container .titulostarifas .tarifas h1 {
-  font-size: 2.5rem;
-}
-.background-container .titulostarifas p {
-  margin: 20px;
+.background-container .titulospaginas p {
+  width: 70vw;
   font-size: 1.2rem;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .categorias h2 {
@@ -1161,10 +1066,10 @@ section .integrantesequipo strong {
 }
 
 @media (min-width: 480px) {
-  .titulostarifas h1 {
+  .background-container .titulospaginas h1 {
     font-size: 3rem;
   }
-  .titulostarifas p {
+  .background-container .titulospaginas p {
     font-size: 1.3rem;
   }
   .categorias h2 {
@@ -1228,10 +1133,10 @@ section .integrantesequipo strong {
   }
 }
 @media (min-width: 1040px) {
-  .titulostarifas h1 {
+  .background-container .titulospaginas h1 {
     font-size: 4rem;
   }
-  .titulostarifas p {
+  .background-container .titulospaginas p {
     font-size: 1.4rem;
   }
   .categorias h2 {
@@ -1268,10 +1173,10 @@ section .integrantesequipo strong {
   }
 }
 @media (min-width: 1400px) {
-  .titulostarifas h1 {
+  .background-container .titulospaginas h1 {
     font-size: 5rem;
   }
-  .titulostarifas p {
+  .background-container .titulospaginas p {
     font-size: 1.5rem;
   }
   .categorias h2 {
@@ -1294,23 +1199,13 @@ section .integrantesequipo strong {
     background-color: rgb(38, 56, 63);
   }
 }
-.titulospaginas h1 {
-  text-align: left;
-  padding: 10px;
-}
-.titulospaginas p {
-  text-align: left;
-  margin: 20px;
-  font-size: 0.8rem;
-}
-
 .articuloseducativos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  gap: 20px;
+  gap: 10px;
 }
 .articuloseducativos .card {
   display: flex;
@@ -1320,13 +1215,12 @@ section .integrantesequipo strong {
   width: 80vw;
   height: 90vw;
   background-color: black;
-  box-shadow: 0px 0px 10px gray;
+  border: 1px solid gray;
 }
 .articuloseducativos .card img {
-  width: 50vw;
-  height: 60vw;
+  width: 38vw;
+  height: 18vh;
   padding: 20px;
-  margin-left: 50px;
 }
 .articuloseducativos .card-body {
   display: flex;
@@ -1334,21 +1228,57 @@ section .integrantesequipo strong {
   align-items: center;
 }
 .articuloseducativos .card-body strong {
+  margin-top: 10px;
   font-size: 0.9rem;
 }
 .articuloseducativos .card-body a {
   font-size: 0.9rem;
   padding: 10px 15px;
+  margin-top: 20px;
 }
 
 @media (min-width: 480px) {
+  .titulospaginas h1 {
+    font-size: 3rem;
+  }
   .titulospaginas p {
-    font-size: 1rem;
-    padding: 30px;
+    font-size: 1.3rem;
+  }
+  .titulospaginas .boton {
+    background-color: #EC9720;
+    font-size: 1.3rem;
+    border-radius: 15px;
+  }
+  .titulospaginas .boton:hover {
+    background-color: rgb(38, 56, 63);
+  }
+  .articuloseducativos {
+    display: grid;
+    grid-template-areas: "articulo1 articulo2" "articulo3 articulo4";
   }
   .articuloseducativos .card {
-    width: 65vw;
-    height: 85vw;
+    width: 40vw;
+    height: 45vh;
+  }
+  .articuloseducativos .card img {
+    width: 22vw;
+    height: 20vh;
+  }
+  .articuloseducativos .card-body strong {
+    font-size: 1rem;
+  }
+  .articuloseducativos .card-body a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .articuloseducativos .card {
+    width: 35vw;
+    height: 44vh;
+  }
+  .articuloseducativos .card img {
+    width: 15vw;
+    height: 20vh;
   }
   .articuloseducativos .card-body strong {
     font-size: 1rem;
@@ -1358,10 +1288,19 @@ section .integrantesequipo strong {
   }
 }
 @media (min-width: 1040px) {
+  .titulospaginas h1 {
+    font-size: 4rem;
+  }
   .titulospaginas p {
-    padding-left: 60px;
-    padding-right: 60px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+  }
+  .titulospaginas .boton {
+    background-color: #EC9720;
+    font-size: 1.2rem;
+    border-radius: 15px;
+  }
+  .titulospaginas .boton:hover {
+    background-color: rgb(38, 56, 63);
   }
   .articuloseducativos {
     margin-top: 40px;
@@ -1370,13 +1309,12 @@ section .integrantesequipo strong {
     justify-content: center;
   }
   .articuloseducativos .card {
-    width: 30vw;
-    height: 35vw;
+    width: 25vw;
+    height: 45vh;
   }
   .articuloseducativos .card img {
-    width: 18vw;
-    height: 20vw;
-    padding: 10px;
+    width: 8vw;
+    height: 18vh;
   }
   .articuloseducativos .card-body strong {
     font-size: 0.9rem;
@@ -1386,27 +1324,25 @@ section .integrantesequipo strong {
   }
 }
 @media (min-width: 1400px) {
+  .titulospaginas h1 {
+    font-size: 5rem;
+  }
   .titulospaginas p {
-    padding-left: 70px;
-    padding-right: 70px;
-    text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .articuloseducativos {
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
   .articuloseducativos .card {
-    width: 35vw;
-    height: 30vw;
+    width: 20vw;
+    height: 45vh;
   }
   .articuloseducativos .card img {
-    width: 15vw;
-    height: 15vw;
-    padding: 10px;
+    width: 10vw;
+    height: 20vh;
   }
   .articuloseducativos .card-body strong {
     font-size: 1.1rem;

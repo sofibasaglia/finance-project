@@ -1,46 +1,41 @@
-.titulospaginas {
-    h1 {
-        @include h1();
-    }
-
-    p {
-        text-align: left;
-        margin: 20px;
-        font-size: 0.8rem;
-    }
-}
 
 .articuloseducativos {
-    @include Flexcompleto(flex, column, center,center);
+
+    @include Flexcompleto(flex, column, center, center);
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
 
     .card {
-        @include Flexcompleto(flex,column,center,center);
+        @include Flexcompleto(flex, column, center, center);
         width: 80vw;
         height: 90vw;
         background-color: black;
-        box-shadow: 0px 0px 10px gray;
+        border: 1px solid gray;
+
 
         img {
-            width: 50vw;
-            height: 60vw;
+            width: 38vw;
+            height: 18vh;
             padding: 20px;
-            margin-left: 50px;
+
         }
     }
 
     .card-body {
         @include Flexalign(flex, column, center);
 
+
         strong {
+            margin-top: 10px;
             font-size: 0.9rem;
-            
+
         }
 
         a {
             font-size: 0.9rem;
             padding: 10px 15px;
+            margin-top: 20px;
+
         }
     }
 }
@@ -48,16 +43,62 @@
 
 @media (min-width:480px) {
     .titulospaginas {
+        h1 {
+            font-size: 3rem;
+        }
+
         p {
-            font-size: 1rem;
-            padding: 30px;
+            font-size: 1.3rem;
+        }
+
+        .boton {
+            @include boton ($color-terciario, 1.3rem, 15px);
         }
     }
 
     .articuloseducativos {
+        display: grid;
+        grid-template-areas: "articulo1 articulo2" "articulo3 articulo4";
         .card {
-            width: 65vw;
-            height: 85vw;
+            width: 40vw;
+            height: 45vh;
+
+            img {
+                width: 22vw;
+                height: 20vh;
+                
+    
+            }
+        }
+
+        .card-body {
+            strong {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+
+
+    .articuloseducativos {
+        
+        .card {
+            
+            width: 35vw;
+            height: 44vh;
+
+            img {
+                width: 15vw;
+                height: 20vh;
+
+
+            }
         }
 
         .card-body {
@@ -74,26 +115,33 @@
 
 @media (min-width:1040px) {
     .titulospaginas {
+        h1 {
+            font-size: 4rem;
+        }
+
         p {
-            padding-left: 60px;
-            padding-right: 60px;
-            font-size: 1.1rem;
+
+            font-size: 1.4rem;
+        }
+
+        .boton {
+            @include boton ($color-terciario, 1.2rem, 15px);
         }
     }
 
     .articuloseducativos {
         margin-top: 40px;
-        @include Flexjustify(flex,row ,center );
+        @include Flexjustify(flex, row, center);
 
         .card {
-            width: 30vw;
-            height: 35vw;
-            
+            width: 25vw;
+            height: 45vh;
+
 
             img {
-                width: 18vw;
-                height: 20vw;
-                padding: 10px;
+                width: 8vw;
+                height: 18vh;
+
 
             }
         }
@@ -111,32 +159,35 @@
     }
 
 }
+
 @media (min-width:1400px) {
-    .titulospaginas{
-        p{
-            padding-left: 70px;
-            padding-right: 70px;
-            text-align: justify;
-            font-size: 1.2rem;
+    .titulospaginas {
+        h1 {
+            font-size: 5rem;
+        }
+
+        p {
+
+            font-size: 1.5rem;
         }
     }
-    
+
     .articuloseducativos {
-        margin-top: 40px;
-        @include Flexcompleto(flex,row ,center,center );
-        
-    
+
+        @include Flexcompleto(flex, row, center, center);
         .card {
-            width: 35vw;
-            height: 30vw;
+            width: 20vw;
+            height: 45vh;
+
 
             img {
-                width: 15vw;
-                height: 15vw;
-                padding: 10px;
+                width: 10vw;
+                height: 20vh;
+
 
             }
         }
+
         .card-body {
             strong {
                 font-size: 1.1rem;

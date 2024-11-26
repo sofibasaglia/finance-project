@@ -9,8 +9,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         object-fit: cover;
         z-index: 1;
     }
@@ -25,25 +25,23 @@
         z-index: 2;
     }
 
-    .titulostarifas {
+    .titulospaginas {
         position: relative;
         z-index: 3;
-        top: 40%;
+        top: 50%;
         transform: translateY(-50%);
 
-        .tarifas {
+        h1 {
+
+            font-size: 2.5rem;
             margin-left: 20px;
-            h1 {
-                
-                font-size: 2.5rem;
-            }
-
         }
-
         p {
 
-            margin: 20px;
+            width: 70vw;
             font-size: 1.2rem;
+            margin-left: 20px;
+            margin-top: 20px
         }
 
     }
@@ -98,20 +96,21 @@
 
 
 @media (min-width:480px) {
-    .titulostarifas {
-       
+    .background-container{
+        .titulospaginas {
+
             h1 {
                 font-size: 3rem;
-
+    
             }
-
-        
-
-        p {
-
-            font-size: 1.3rem;
+            p {
+    
+                font-size: 1.3rem;
+            }
         }
+
     }
+    
 
     .categorias {
         h2 {
@@ -191,19 +190,22 @@
 }
 
 @media (min-width:1040px) {
-    .titulostarifas {
-        
+    
+    .background-container{
+        .titulospaginas {
+
             h1 {
                 font-size: 4rem;
-
+    
             }
-
-        
-
-        p {
-            font-size: 1.4rem;
+            p {
+                font-size: 1.4rem;
+            }
         }
+
     }
+    
+    
 
     .categorias {
         h2 {
@@ -247,18 +249,23 @@
 }
 
 @media (min-width:1400px) {
-    .titulostarifas {
-        
+
+    .background-container{
+        .titulospaginas {
+
             h1 {
                 font-size: 5rem;
             }
-        
-
-        p {
-            font-size: 1.5rem;
-
+    
+    
+            p {
+                font-size: 1.5rem;
+    
+            }
         }
+
     }
+    
 
     .categorias {
         h2 {

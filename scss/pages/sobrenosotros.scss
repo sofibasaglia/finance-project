@@ -1,47 +1,54 @@
-.quienessomos {
-    .imgteam {
-        img {
-            width: 100vw;
-            height: 100vh;
+.parrafo {
 
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 40px;
+
+        border-bottom: 0.5px solid gray;
+
+        @media (min-width:768px) {
+            font-size: 1rem;
+        }
+
+        @media (min-width:1040px) {
+            font-size: 1.1rem;
+        }
+
+        @media (min-width:1400px) {
+            font-size: 1.2rem;
         }
     }
 }
-.accordionosotros{
-    #accordionNosotros {
-        width: 100vw;
-}
-}
 
 .quehacemos {
-    @include Flexcompleto (flex,column,center,center);
+    @include Flexcompleto (flex, column, center, center);
     padding: 25px;
-    
+
     margin: 10px;
 
     div {
-      
         .imagenquehacemos {
             width: 28vw;
             height: 30vw;
             padding-top: 15px;
         }
-       
-       
 
         padding: 20px;
         @include Flexalign(flex, column, center);
 
         p {
-            border-top : 1px solid gray;
+
             font-size: 0.8rem;
             text-align: center;
             padding: 5px;
+
         }
     }
+
     @media (min-width:468px) {
         div {
-          
+
             .imagenquehacemos {
                 width: 15vw;
                 height: 18vw;
@@ -51,8 +58,9 @@
     }
 
     @media (min-width:768px) {
+
         div {
-         
+
             .imagenquehacemos {
                 width: 18vw;
                 height: 20vw;
@@ -63,7 +71,8 @@
                 font-size: 1rem;
                 padding: 10px;
                 margin: 50px;
-                
+
+
             }
         }
     }
@@ -73,8 +82,10 @@
         flex-direction: row;
         gap: 20px;
 
+
+
         div {
-          
+
             .imagenquehacemos {
                 width: 8vw;
                 height: 10vw;
@@ -82,19 +93,22 @@
             }
 
             p {
-                
+
                 font-size: 1.1rem;
+                width: 30vw;
             }
         }
     }
 
     @media (min-width:1400px) {
+
         div {
-            
+
             p {
                 font-size: 1.2rem;
                 padding: 5px;
-                
+
+
             }
         }
     }
@@ -163,7 +177,7 @@ section {
 
             p {
                 font-size: 1rem;
-              
+
             }
 
             .equipo {
@@ -188,6 +202,7 @@ section {
             grid-area: bloque4;
         }
     }
+
     @media (min-width:1040px) {
         h2 {
             @include h2(1.5rem, center);
@@ -211,7 +226,8 @@ section {
                 padding: 20px;
                 font-size: 0.9rem;
             }
-            p{
+
+            p {
                 font-size: 0.8rem;
             }
         }
