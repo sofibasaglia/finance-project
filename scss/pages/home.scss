@@ -437,11 +437,12 @@
     }
 
     .fondosHome {
+        @include Flexcompleto(flex, column, center, center);
         div {
             @include Flexcompleto(flex, column, center, center);
-            width: 45vw;
+            width: 65vw;
 
-            height: 60vh;
+            height: 50vh;
             border: 1px solid $color-terciario;
         }
 
@@ -457,30 +458,14 @@
 
         .imagenesfondos2 {
             height: 15vh;
-            width: 15vw;
+            width: 20vw;
             padding-top: 10px;
         }
 
-        display: grid;
-        grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
-        place-items: center;
-        gap:10px;
+       
+        gap:15px;
 
-        .fondo1 {
-            grid-area: fondo1;
-        }
-
-        .fondo2 {
-            grid-area: fondo2;
-        }
-
-        .fondo3 {
-            grid-area: fondo3;
-        }
-
-        .fondo4 {
-            grid-area: fondo4;
-        }
+      
     }
 
     @media(min-width:768px) {
@@ -533,6 +518,9 @@
     @media(min-width:1040px) {
 
         .fondosHome {
+            display: flex;
+            flex-direction: row;
+
             div {
                 @include Flexcompleto(flex, column, center, center);
                 width: 20vw;
@@ -540,8 +528,7 @@
                 border: 1px solid $color-terciario;
             }
 
-            display: flex;
-            justify-content: center;
+            
 
 
             .imagenesfondos2 {

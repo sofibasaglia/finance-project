@@ -487,18 +487,19 @@ footer .footerdiv div p {
   text-align: center;
 }
 .fondoshome .fondosHome {
-  display: grid;
-  grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
-  place-items: center;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 .fondoshome .fondosHome div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45vw;
-  height: 60vh;
+  width: 65vw;
+  height: 50vh;
   border: 1px solid #EC9720;
 }
 .fondoshome .fondosHome h3 {
@@ -511,20 +512,8 @@ footer .footerdiv div p {
 }
 .fondoshome .fondosHome .imagenesfondos2 {
   height: 15vh;
-  width: 15vw;
+  width: 20vw;
   padding-top: 10px;
-}
-.fondoshome .fondosHome .fondo1 {
-  grid-area: fondo1;
-}
-.fondoshome .fondosHome .fondo2 {
-  grid-area: fondo2;
-}
-.fondoshome .fondosHome .fondo3 {
-  grid-area: fondo3;
-}
-.fondoshome .fondosHome .fondo4 {
-  grid-area: fondo4;
 }
 @media (min-width: 768px) {
   .fondoshome h4 {
@@ -569,7 +558,7 @@ footer .footerdiv div p {
 @media (min-width: 1040px) {
   .fondoshome .fondosHome {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
   }
   .fondoshome .fondosHome div {
     display: flex;
