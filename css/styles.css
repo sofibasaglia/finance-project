@@ -14,12 +14,9 @@ main.Home {
 }
 
 .accordion {
-  --bs-accordion-btn-bg: white;
+  --bs-accordion-btn-bg: #121212;
   --bs-accordion-active-bg: #EC9720;
-  --bs-accordion-border-radius: none;
-  --bs-accordion-border-width: none;
-  --bs-accordion-button-padding-y: none;
-  --bs-accordion-button-padding-x: none;
+  --bs-accordion-border-color: gray;
 }
 
 footer {
@@ -1028,8 +1025,8 @@ section .integrantesequipo strong {
   font-size: 1.2rem;
   text-align: center;
   padding: 20px;
-  border: 1px solid black;
-  box-shadow: 0px 0px 10px gray;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
 }
 .categorias p {
   font-size: 0.8rem;
@@ -1055,13 +1052,14 @@ section .integrantesequipo strong {
 .categorias .asesoramiento .boton:hover {
   background-color: rgb(38, 56, 63);
 }
-.categorias .acordionpreguntas {
+
+.preguntasfrecuentes .acordionpreguntas {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.categorias .acordionpreguntas .accordion {
+.preguntasfrecuentes .acordionpreguntas .accordion {
   width: 90vw;
 }
 
@@ -1094,7 +1092,7 @@ section .integrantesequipo strong {
   .categorias .asesoramiento .boton:hover {
     background-color: rgb(38, 56, 63);
   }
-  .categorias .acordionpreguntas .accordion {
+  .preguntasfrecuentes .acordionpreguntas .accordion {
     width: 70vw;
   }
 }
@@ -1162,14 +1160,13 @@ section .integrantesequipo strong {
   .categorias .asesoramiento .boton:hover {
     background-color: rgb(38, 56, 63);
   }
-  .categorias .acordionpreguntas {
+  .preguntasfrecuentes .acordionpreguntas {
     display: grid;
     grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
     place-items: center;
   }
-  .categorias .acordionpreguntas .accordion {
+  .preguntasfrecuentes .acordionpreguntas .accordion {
     width: 45vw;
-    --bs-accordion-border-width: 0px;
   }
 }
 @media (min-width: 1400px) {

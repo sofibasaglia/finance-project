@@ -36,6 +36,7 @@
             font-size: 2.5rem;
             margin-left: 20px;
         }
+
         p {
 
             width: 70vw;
@@ -52,8 +53,9 @@
     h2 {
         @include h2(1.2rem, center);
         padding: 20px;
-        border: 1px solid black;
-        box-shadow: 0px 0px 10px gray;
+        border-bottom: 1px solid gray; 
+        border-top: 1px solid gray;
+       
     }
 
     p {
@@ -81,6 +83,10 @@
         }
     }
 
+
+}
+
+.preguntasfrecuentes {
     .acordionpreguntas {
         @include Flexalign(flex, column, center);
         gap: 20px;
@@ -90,27 +96,26 @@
         }
     }
 
-
-
 }
 
 
 @media (min-width:480px) {
-    .background-container{
+    .background-container {
         .titulospaginas {
 
             h1 {
                 font-size: 3rem;
-    
+
             }
+
             p {
-    
+
                 font-size: 1.3rem;
             }
         }
 
     }
-    
+
 
     .categorias {
         h2 {
@@ -139,12 +144,17 @@
             }
         }
 
+
+
+
+    }
+
+    .preguntasfrecuentes {
         .acordionpreguntas {
             .accordion {
                 width: 70vw;
             }
         }
-
 
     }
 }
@@ -190,22 +200,23 @@
 }
 
 @media (min-width:1040px) {
-    
-    .background-container{
+
+    .background-container {
         .titulospaginas {
 
             h1 {
                 font-size: 4rem;
-    
+
             }
+
             p {
                 font-size: 1.4rem;
             }
         }
 
     }
-    
-    
+
+
 
     .categorias {
         h2 {
@@ -234,6 +245,10 @@
             }
         }
 
+       
+
+    }
+    .preguntasfrecuentes {
         .acordionpreguntas {
             display: grid;
             grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4" "pregunta5 pregunta6";
@@ -241,7 +256,7 @@
 
             .accordion {
                 width: 45vw;
-                --bs-accordion-border-width: 0px;
+
             }
         }
 
@@ -250,22 +265,22 @@
 
 @media (min-width:1400px) {
 
-    .background-container{
+    .background-container {
         .titulospaginas {
 
             h1 {
                 font-size: 5rem;
             }
-    
-    
+
+
             p {
                 font-size: 1.5rem;
-    
+
             }
         }
 
     }
-    
+
 
     .categorias {
         h2 {
