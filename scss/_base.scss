@@ -14,7 +14,13 @@ $color-terciario: #EC9720;
     text-align: $textalign;
 }
 
+@mixin flex ($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 
+}
 
 @mixin Flexcompleto ($display, $direction, $justify, $align) {
     display: $display;
