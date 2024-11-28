@@ -1,3 +1,4 @@
+
 .parrafo {
 
     p {
@@ -5,7 +6,6 @@
         text-align: center;
         padding: 40px;
 
-        border-bottom: 0.5px solid gray;
 
         @media (min-width:768px) {
             font-size: 1rem;
@@ -20,7 +20,14 @@
         }
     }
 }
-
+section{
+    h2{
+        @include h2 (1.2rem, center);
+        padding: 20px;
+        border-bottom: 1px solid gray;
+        border-top: 1px solid gray;
+    }
+}
 .quehacemos {
     @include Flexcompleto (flex, column, center, center);
     padding: 25px;

@@ -13,16 +13,17 @@
 
 
 .conteinerFondos {
-    @include Flexalign (flex, column, center);
-    padding-top: 50px;
+    @include Flexcompleto (flex, column, center,center);
+  
 
     .cardFondo {
 
         width: 250px;
         height: 300px;
         perspective: 1000px;
-        @include Flexcompleto (flex, column, center, space-around);
-        margin: 20px;
+        @include Flexcompleto (flex, column, center, center);
+        margin: 10px;
+        padding-top: 40px;
 
         .face {
             position: absolute;
@@ -42,8 +43,8 @@
 
             .imagenesfondos2 {
 
-                height: 20vh;
-                width: 20vw;
+                height: 90px;
+                width: 90px;
             }
 
             h3 {
@@ -107,19 +108,27 @@
         grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
         place-items: center;
 
+        .fondo1 {
+            grid-area: fondo1;
+        }
+
+        .fondo2 {
+            grid-area: fondo2;
+        }
+
+        .fondo3 {
+            grid-area: fondo3;
+        }
+
+        .fondo4 {
+            grid-area: fondo4;
+        }
+
         .cardFondo {
 
             width: 200px;
             height: 300px;
 
-            .front {
-
-                .imagenesfondos2 {
-
-                    height: 20vw;
-                    width: 20vw;
-                }
-            }
 
             .back {
                 .link a {
@@ -135,23 +144,13 @@
     }
 
     @media (min-width:768px) {
-        display: grid;
-        grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
-        place-items: center;
 
         .cardFondo {
 
             width: 300px;
             height: 400px;
 
-            .front {
 
-                .imagenesfondos2 {
-
-                    height: 15vw;
-                    width: 15vw;
-                }
-            }
 
             .back {
                 .link a {
@@ -175,12 +174,6 @@
             height: 400px;
 
             .front {
-
-                .imagenesfondos2 {
-
-                    height: 8vw;
-                    width: 8vw;
-                }
 
                 h3 {
 
@@ -210,12 +203,6 @@
             height: 400px;
 
             .front {
-
-                .imagenesfondos2 {
-
-                    height: 5vw;
-                    width: 5vw;
-                }
 
                 h3 {
 

@@ -87,6 +87,12 @@
 }
 
 .preguntasfrecuentes {
+   h2{
+    @include h2 (1.2rem, center);
+    padding: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+   }
     .acordionpreguntas {
         @include Flexalign(flex, column, center);
         gap: 20px;
@@ -118,10 +124,7 @@
 
 
     .categorias {
-        h2 {
-            @include h2(1.1, center);
-
-        }
+        
 
         p {
             text-align: justify;
@@ -143,10 +146,6 @@
                 @include boton($color-terciario, 0.9rem, 15px)
             }
         }
-
-
-
-
     }
 
     .preguntasfrecuentes {
@@ -161,13 +160,8 @@
 
 @media (min-width:768px) {
 
-
     .categorias {
-        h2 {
-            @include h2(1.1rem, center);
-
-
-        }
+       
 
         div {
 
@@ -219,9 +213,7 @@
 
 
     .categorias {
-        h2 {
-            @include h2(1.2rem, center);
-        }
+       
 
         p {
             font-size: 1.1rem;
@@ -283,9 +275,7 @@
 
 
     .categorias {
-        h2 {
-            @include h2(1.2rem, center)
-        }
+        
 
         div {
             em {

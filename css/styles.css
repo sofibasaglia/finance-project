@@ -206,18 +206,23 @@ footer .footerdiv div p {
   gap: 20px;
 }
 .textohome .invertir {
-  width: 80%;
-  height: 100%;
-  padding: 40px;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
   cursor: pointer;
   border: 1px solid gray;
   transition: all 0.3s ease-in-out;
+}
+.textohome .invertir h2 {
+  font-size: 1rem;
+  text-align: center;
+  border: none;
 }
 .textohome .invertir:hover {
   transform: scale(1.1);
 }
 .textohome .invertir h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 .textohome .invertir p {
@@ -225,31 +230,33 @@ footer .footerdiv div p {
   font-size: 0.8rem;
   padding: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
+  .textohome .invertir {
+    height: 230px;
+    width: 400px;
+  }
+}
+@media (min-width: 480px) and (min-width: 768px) {
   .textohome {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
   }
   .textohome .invertir {
-    width: 40%;
-    height: 100%;
-    padding: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-  .textohome .invertir:hover {
-    transform: scale(1.1);
-  }
-  .textohome .invertir h2 {
-    font-size: 1.1rem;
+    width: 360px;
+    height: 300px;
+    padding: 20px;
   }
   .textohome .invertir p {
     font-size: 1rem;
   }
 }
-@media (min-width: 1040px) {
+@media (min-width: 480px) and (min-width: 1040px) {
+  .textohome .invertir {
+    width: 500px;
+    height: 250px;
+  }
   .textohome .invertir p {
     font-size: 1.1rem;
   }
@@ -258,7 +265,11 @@ footer .footerdiv div p {
     text-align: center;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 480px) and (min-width: 1400px) {
+  .textohome .invertir {
+    width: 600px;
+    height: 280px;
+  }
   .textohome .invertir p {
     font-size: 1.2rem;
   }
@@ -498,8 +509,8 @@ footer .footerdiv div p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 65vw;
-  height: 50vh;
+  width: 250px;
+  height: 300px;
   border: 1px solid #EC9720;
 }
 .fondoshome .fondosHome h3 {
@@ -511,8 +522,8 @@ footer .footerdiv div p {
   font-size: 0.8rem;
 }
 .fondoshome .fondosHome .imagenesfondos2 {
-  height: 15vh;
-  width: 20vw;
+  height: 100px;
+  width: 80px;
   padding-top: 10px;
 }
 @media (min-width: 768px) {
@@ -530,17 +541,11 @@ footer .footerdiv div p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45vw;
-    height: 40vw;
-    border: 1px solid #EC9720;
+    width: 250px;
+    height: 350px;
   }
   .fondoshome .fondosHome h3 {
     font-size: 1.2rem;
-  }
-  .fondoshome .fondosHome .imagenesfondos2 {
-    height: 20vh;
-    width: 15vw;
-    padding-top: 10px;
   }
   .fondoshome .fondo1 {
     grid-area: fondo1;
@@ -559,20 +564,6 @@ footer .footerdiv div p {
   .fondoshome .fondosHome {
     display: flex;
     flex-direction: row;
-  }
-  .fondoshome .fondosHome div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20vw;
-    height: 50vh;
-    border: 1px solid #EC9720;
-  }
-  .fondoshome .fondosHome .imagenesfondos2 {
-    height: 18vh;
-    width: 8vw;
-    padding-top: 10px;
   }
 }
 
@@ -608,7 +599,6 @@ footer .footerdiv div p {
   font-size: 0.8rem;
   text-align: center;
   padding: 40px;
-  border-bottom: 0.5px solid gray;
 }
 @media (min-width: 768px) {
   .parrafo p {
@@ -624,6 +614,14 @@ footer .footerdiv div p {
   .parrafo p {
     font-size: 1.2rem;
   }
+}
+
+section h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
 }
 
 .quehacemos {
@@ -807,8 +805,8 @@ section .integrantesequipo strong {
 .conteinerFondos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 50px;
 }
 .conteinerFondos .cardFondo {
   width: 250px;
@@ -817,8 +815,9 @@ section .integrantesequipo strong {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-around;
-  margin: 20px;
+  align-items: center;
+  margin: 10px;
+  padding-top: 40px;
 }
 .conteinerFondos .cardFondo .face {
   position: absolute;
@@ -836,8 +835,8 @@ section .integrantesequipo strong {
   justify-content: center;
 }
 .conteinerFondos .cardFondo .front .imagenesfondos2 {
-  height: 20vh;
-  width: 20vw;
+  height: 90px;
+  width: 90px;
 }
 .conteinerFondos .cardFondo .front h3 {
   font-size: 1rem;
@@ -882,13 +881,21 @@ section .integrantesequipo strong {
     grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
     place-items: center;
   }
+  .conteinerFondos .fondo1 {
+    grid-area: fondo1;
+  }
+  .conteinerFondos .fondo2 {
+    grid-area: fondo2;
+  }
+  .conteinerFondos .fondo3 {
+    grid-area: fondo3;
+  }
+  .conteinerFondos .fondo4 {
+    grid-area: fondo4;
+  }
   .conteinerFondos .cardFondo {
     width: 200px;
     height: 300px;
-  }
-  .conteinerFondos .cardFondo .front .imagenesfondos2 {
-    height: 20vw;
-    width: 20vw;
   }
   .conteinerFondos .cardFondo .back .link a {
     font-size: 0.9rem;
@@ -898,18 +905,9 @@ section .integrantesequipo strong {
   }
 }
 @media (min-width: 768px) {
-  .conteinerFondos {
-    display: grid;
-    grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
-    place-items: center;
-  }
   .conteinerFondos .cardFondo {
     width: 300px;
     height: 400px;
-  }
-  .conteinerFondos .cardFondo .front .imagenesfondos2 {
-    height: 15vw;
-    width: 15vw;
   }
   .conteinerFondos .cardFondo .back .link a {
     font-size: 1rem;
@@ -928,10 +926,6 @@ section .integrantesequipo strong {
   .conteinerFondos .cardFondo {
     width: 300px;
     height: 400px;
-  }
-  .conteinerFondos .cardFondo .front .imagenesfondos2 {
-    height: 8vw;
-    width: 8vw;
   }
   .conteinerFondos .cardFondo .front h3 {
     font-size: 1.2rem;
@@ -953,10 +947,6 @@ section .integrantesequipo strong {
   .conteinerFondos .cardFondo {
     width: 300px;
     height: 400px;
-  }
-  .conteinerFondos .cardFondo .front .imagenesfondos2 {
-    height: 5vw;
-    width: 5vw;
   }
   .conteinerFondos .cardFondo .front h3 {
     font-size: 1.3rem;
@@ -1042,6 +1032,13 @@ section .integrantesequipo strong {
   background-color: rgb(38, 56, 63);
 }
 
+.preguntasfrecuentes h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
 .preguntasfrecuentes .acordionpreguntas {
   display: flex;
   flex-direction: column;
@@ -1058,10 +1055,6 @@ section .integrantesequipo strong {
   }
   .background-container .titulospaginas p {
     font-size: 1.3rem;
-  }
-  .categorias h2 {
-    font-size: 1.1;
-    text-align: center;
   }
   .categorias p {
     text-align: justify;
@@ -1086,10 +1079,6 @@ section .integrantesequipo strong {
   }
 }
 @media (min-width: 768px) {
-  .categorias h2 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
   .categorias div em {
     font-size: 11rem;
     padding: 40px;
@@ -1126,10 +1115,6 @@ section .integrantesequipo strong {
   .background-container .titulospaginas p {
     font-size: 1.4rem;
   }
-  .categorias h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
   .categorias p {
     font-size: 1.1rem;
   }
@@ -1165,10 +1150,6 @@ section .integrantesequipo strong {
   .background-container .titulospaginas p {
     font-size: 1.5rem;
   }
-  .categorias h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
   .categorias div em {
     font-size: 15rem;
     padding: 70px;
@@ -1198,14 +1179,14 @@ section .integrantesequipo strong {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  height: 90vw;
+  width: 250px;
+  height: 300px;
   background-color: #0b0b0c;
   border: 1px solid gray;
 }
 .articuloseducativos .card img {
-  width: 38vw;
-  height: 18vh;
+  width: 130px;
+  height: 130px;
   padding: 20px;
 }
 .articuloseducativos .card-body {
@@ -1243,12 +1224,8 @@ section .integrantesequipo strong {
     grid-template-areas: "articulo1 articulo2" "articulo3 articulo4";
   }
   .articuloseducativos .card {
-    width: 40vw;
-    height: 45vh;
-  }
-  .articuloseducativos .card img {
-    width: 22vw;
-    height: 20vh;
+    width: 260px;
+    height: 300px;
   }
   .articuloseducativos .card-body strong {
     font-size: 1rem;
@@ -1259,12 +1236,8 @@ section .integrantesequipo strong {
 }
 @media (min-width: 768px) {
   .articuloseducativos .card {
-    width: 35vw;
-    height: 44vh;
-  }
-  .articuloseducativos .card img {
-    width: 15vw;
-    height: 20vh;
+    width: 260px;
+    height: 290px;
   }
   .articuloseducativos .card-body strong {
     font-size: 1rem;
@@ -1295,12 +1268,8 @@ section .integrantesequipo strong {
     justify-content: center;
   }
   .articuloseducativos .card {
-    width: 25vw;
-    height: 50vh;
-  }
-  .articuloseducativos .card img {
-    width: 10vw;
-    height: 22vh;
+    width: 240px;
+    height: 300px;
   }
   .articuloseducativos .card-body strong {
     font-size: 0.9rem;
@@ -1323,8 +1292,8 @@ section .integrantesequipo strong {
     align-items: center;
   }
   .articuloseducativos .card {
-    width: 20vw;
-    height: 45vh;
+    width: 300px;
+    height: 350px;
   }
   .articuloseducativos .card img {
     width: 10vw;

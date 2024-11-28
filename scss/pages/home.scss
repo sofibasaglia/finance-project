@@ -135,13 +135,18 @@
 
 .textohome {
     @include Flexalign(flex, column, center);
-
     gap: 20px;
 
+    
+
     .invertir {
-        width: 80%;
-        height: 100%;
-        padding: 40px;
+        h2{
+            @include h2 (1rem, center);
+            border: none;
+        }
+        width: 300px;
+        height: 300px;
+        padding: 20px;
         cursor: pointer;
         border: 1px solid gray;
         transition: all 0.3s ease-in-out;
@@ -151,8 +156,7 @@
         }
 
         h2 {
-            font-size: 1rem;
-            text-align: center;
+            @include h2 (1.2rem, center);
         }
 
         p {
@@ -161,26 +165,21 @@
             padding: 10px;
         }
     }
+    @media(min-width: 480px) {
+        .invertir{
+            height: 230px;
+            width: 400px;
+        }
 
     @media(min-width: 768px) {
         @include Flexjustify(flex, row, center);
 
-        gap: 40px;
+        gap: 20px;
 
         .invertir {
-            width: 40%;
-            height: 100%;
-            padding: 40px;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            h2 {
-                font-size: 1.1rem;
-            }
+            width: 360px;
+            height: 300px;
+            padding: 20px;
 
             p {
                 font-size: 1rem;
@@ -190,6 +189,8 @@
 
     @media(min-width: 1040px) {
         .invertir {
+            width: 500px;
+            height: 250px;
             p {
                 font-size: 1.1rem;
             }
@@ -203,6 +204,8 @@
 
     @media (min-width:1400px) {
         .invertir {
+            width: 600px;
+            height: 280px;
             p {
                 font-size: 1.2rem;
             }
@@ -210,6 +213,7 @@
     }
 
 
+}
 }
 
 .nosotrosHome {
@@ -440,9 +444,9 @@
         @include Flexcompleto(flex, column, center, center);
         div {
             @include Flexcompleto(flex, column, center, center);
-            width: 65vw;
+            width: 250px;
 
-            height: 50vh;
+            height: 300px;
             border: 1px solid $color-terciario;
         }
 
@@ -457,8 +461,8 @@
         }
 
         .imagenesfondos2 {
-            height: 15vh;
-            width: 20vw;
+            height: 100px;
+            width: 80px;
             padding-top: 10px;
         }
 
@@ -477,20 +481,15 @@
         .fondosHome {
             div {
                 @include Flexcompleto(flex, column, center, center);
-                width: 45vw;
-                height: 40vw;
-                border: 1px solid $color-terciario;
+                width: 250px;
+                height: 350px;
+                
             }
 
             h3 {
                 font-size: 1.2rem;
             }
 
-            .imagenesfondos2 {
-                height: 20vh;
-                width: 15vw;
-                padding-top: 10px;
-            }
 
             display: grid;
             grid-template-areas: "fondo1 fondo2" "fondo3 fondo4";
@@ -520,22 +519,6 @@
         .fondosHome {
             display: flex;
             flex-direction: row;
-
-            div {
-                @include Flexcompleto(flex, column, center, center);
-                width: 20vw;
-                height: 50vh;
-                border: 1px solid $color-terciario;
-            }
-
-            
-
-
-            .imagenesfondos2 {
-                height: 18vh;
-                width: 8vw;
-                padding-top: 10px;
-            }
 
         }
 
