@@ -1,7 +1,7 @@
 .background-container {
 
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 
@@ -9,21 +9,21 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         object-fit: cover;
         z-index: 1;
     }
 
-   .overlayhome{
-    position: absolute;
+    .overlayhome {
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         z-index: 2;
-   }
+    }
 
 
     .titulos {
@@ -32,12 +32,11 @@
         z-index: 3;
         top: 50%;
         transform: translateY(-50%);
-        
+
 
         h1 {
             width: 80vw;
-            @include h1();
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         p {
@@ -45,7 +44,7 @@
             text-align: left;
             padding: 0;
             margin: 10px;
-           width: 70vw;
+            width: 70vw;
         }
 
         .boton {
@@ -62,7 +61,7 @@
 
         .titulos {
             h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
 
             }
 
@@ -113,22 +112,23 @@
 
         .titulos {
             h1 {
-                font-size:5rem;
+                font-size: 5rem;
             }
 
             p {
                 font-size: 1.5rem;
             }
-            
+
         }
+
         div {
             .boton {
                 @include boton ($color-terciario, 1.4rem, 15px);
 
             }
 
+        }
     }
-}
 }
 
 
@@ -137,16 +137,17 @@
     @include Flexalign(flex, column, center);
     gap: 20px;
 
-    
+
 
     .invertir {
-        h2{
-            @include h2 (1rem, center);
+        h2 {
+
             border: none;
         }
-        width: 300px;
-        height: 300px;
-        padding: 20px;
+
+        width: 250px;
+        height: 280px;
+        padding: 10px;
         cursor: pointer;
         border: 1px solid gray;
         transition: all 0.3s ease-in-out;
@@ -165,55 +166,58 @@
             padding: 10px;
         }
     }
+
     @media(min-width: 480px) {
-        .invertir{
+        .invertir {
             height: 230px;
             width: 400px;
         }
 
-    @media(min-width: 768px) {
-        @include Flexjustify(flex, row, center);
+        @media(min-width: 768px) {
+            @include Flexjustify(flex, row, center);
 
-        gap: 20px;
+            gap: 20px;
 
-        .invertir {
-            width: 360px;
-            height: 300px;
-            padding: 20px;
+            .invertir {
+                width: 360px;
+                height: 300px;
+                padding: 20px;
 
-            p {
-                font-size: 1rem;
+                p {
+                    font-size: 1rem;
+                }
             }
         }
-    }
 
-    @media(min-width: 1040px) {
-        .invertir {
-            width: 500px;
-            height: 250px;
-            p {
-                font-size: 1.1rem;
-            }
+        @media(min-width: 1040px) {
+            .invertir {
+                width: 500px;
+                height: 250px;
 
-            h2 {
-                font-size: 1.4rem;
-                text-align: center;
-            }
-        }
-    }
+                p {
+                    font-size: 1.1rem;
+                }
 
-    @media (min-width:1400px) {
-        .invertir {
-            width: 600px;
-            height: 280px;
-            p {
-                font-size: 1.2rem;
+                h2 {
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
             }
         }
+
+        @media (min-width:1400px) {
+            .invertir {
+                width: 600px;
+                height: 280px;
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+
     }
-
-
-}
 }
 
 .nosotrosHome {
@@ -223,15 +227,13 @@
     background-size: cover;
     display: grid;
     place-items: center;
-    height: 99vw;
-    padding: 20px;
+    height: 35vh;
+    padding: 10px;
     @include Flexalign(flex, column, center);
 
     p {
         text-align: center;
         font-size: 0.8rem;
-        margin: 20px;
-
         padding: 20px;
     }
 
@@ -247,46 +249,24 @@
         background-size: cover;
         display: grid;
         place-items: center;
-        height: 80vw;
+        height: 35vh;
         padding: 20px;
         @include Flexalign(flex, column, center);
 
     }
 
-    @media(min-width:350px) {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 65vw;
-        padding: 20px;
-        @include Flexalign(flex, column, center);
-    }
 
     @media(min-width:400px) {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 50vw;
-        padding: 20px;
-        @include Flexalign(flex, column, center);
+
+        height: 32vh;
+
+
     }
 
     @media(min-width:480px) {
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        display: grid;
-        place-items: center;
-        height: 45vw;
-        padding: 20px;
-        @include Flexalign(flex, column, center);
+
+        height: 35vh;
+
 
         p {
 
@@ -301,12 +281,9 @@
 
     @media(min-width:768px) {
 
-        background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+
         height: 40vw;
-        @include Flexjustify(flex, column, center);
+
 
         p {
 
@@ -442,6 +419,7 @@
 
     .fondosHome {
         @include Flexcompleto(flex, column, center, center);
+
         div {
             @include Flexcompleto(flex, column, center, center);
             width: 250px;
@@ -466,10 +444,10 @@
             padding-top: 10px;
         }
 
-       
+
         gap:15px;
 
-      
+
     }
 
     @media(min-width:768px) {
@@ -483,7 +461,7 @@
                 @include Flexcompleto(flex, column, center, center);
                 width: 250px;
                 height: 350px;
-                
+
             }
 
             h3 {

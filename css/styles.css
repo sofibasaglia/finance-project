@@ -93,7 +93,7 @@ footer .footerdiv div p {
 
 .background-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -101,8 +101,8 @@ footer .footerdiv div p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   z-index: 1;
 }
@@ -124,9 +124,7 @@ footer .footerdiv div p {
 }
 .background-container .titulos h1 {
   width: 80vw;
-  text-align: left;
-  padding: 10px;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .background-container .titulos p {
   font-size: 1.2rem;
@@ -149,7 +147,7 @@ footer .footerdiv div p {
 }
 @media (min-width: 480px) {
   .background-container .titulos h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .background-container .titulos p {
     font-size: 1.3rem;
@@ -206,16 +204,14 @@ footer .footerdiv div p {
   gap: 20px;
 }
 .textohome .invertir {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
+  width: 250px;
+  height: 280px;
+  padding: 10px;
   cursor: pointer;
   border: 1px solid gray;
   transition: all 0.3s ease-in-out;
 }
 .textohome .invertir h2 {
-  font-size: 1rem;
-  text-align: center;
   border: none;
 }
 .textohome .invertir:hover {
@@ -282,8 +278,8 @@ footer .footerdiv div p {
   background-size: cover;
   display: grid;
   place-items: center;
-  height: 99vw;
-  padding: 20px;
+  height: 35vh;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,7 +287,6 @@ footer .footerdiv div p {
 .nosotrosHome p {
   text-align: center;
   font-size: 0.8rem;
-  margin: 20px;
   padding: 20px;
 }
 .nosotrosHome .boton {
@@ -311,22 +306,7 @@ footer .footerdiv div p {
     background-size: cover;
     display: grid;
     place-items: center;
-    height: 80vw;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (min-width: 350px) {
-  .nosotrosHome {
-    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 65vw;
+    height: 35vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -335,32 +315,12 @@ footer .footerdiv div p {
 }
 @media (min-width: 400px) {
   .nosotrosHome {
-    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 50vw;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 32vh;
   }
 }
 @media (min-width: 480px) {
   .nosotrosHome {
-    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-    height: 45vw;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 35vh;
   }
   .nosotrosHome p {
     font-size: 0.9rem;
@@ -371,14 +331,7 @@ footer .footerdiv div p {
 }
 @media (min-width: 768px) {
   .nosotrosHome {
-    background: linear-gradient(rgba(16, 16, 16, 0.853), rgba(27, 27, 27, 0.8)), url(../images/business-hands-joined-together-teamwork.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     height: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .nosotrosHome p {
     font-size: 1rem;
@@ -961,7 +914,7 @@ section .integrantesequipo strong {
 
 .background-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
